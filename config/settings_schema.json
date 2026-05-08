@@ -1548,501 +1548,297 @@
         "id": "filter_color1",
         "label": "Option value 1 选项值1"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color1.png",
-        "label": "Custom image for value 1 自定义图片用于选项值1"
-      },
+ 
       {
         "type": "text",
         "id": "filter_color2",
         "label": "Option value 2 选项值2"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color2.png",
-        "label": "Custom image for value 2 自定义图片用于选项值2"
-      },
+   
       {
         "type": "text",
         "id": "filter_color3",
         "label": "Option value 3 选项值3"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color3.png",
-        "label": "Custom image for value 3 自定义图片用于选项值3"
-      },
+   
       {
         "type": "text",
         "id": "filter_color4",
         "label": "Option value 4 选项值4"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color4.png",
-        "label": "Custom image for value 4 自定义图片用于选项值4"
-      },
+  
       {
         "type": "text",
         "id": "filter_color5",
         "label": "Option value 5 选项值5"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color5.png",
-        "label": "Custom image for value 5 自定义图片用于选项值5"
-      },
+   
       {
         "type": "text",
         "id": "filter_color6",
         "label": "Option value 6 选项值6"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color6.png",
-        "label": "Custom image for value 6 自定义图片用于选项值6"
-      },
+ 
       {
         "type": "text",
         "id": "filter_color7",
         "label": "Option value 7 选项值7"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color7.png",
-        "label": "Custom image for value 7 自定义图片用于选项值7"
-      },
+   
       {
         "type": "text",
         "id": "filter_color8",
         "label": "Option value 8 选项值8"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color8.png",
-        "label": "Custom image for value 8 自定义图片用于选项值8"
-      },
+ 
       {
         "type": "text",
         "id": "filter_color9",
         "label": "Option value 9 选项值9"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color9.png",
-        "label": "Custom image for value 9 自定义图片用于选项值9"
-      },
+
       {
         "type": "text",
         "id": "filter_color10",
         "label": "Option value 10 选项值10"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color10.png",
-        "label": "Custom image for value10 自定义图片用于选项值10"
-      },
+ 
       {
         "type": "text",
         "id": "filter_color11",
         "label": "Option value 11 选项值11"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color11.png",
-        "label": "Custom image for value11 自定义图片用于选项值11"
-      },
+    
       {
         "type": "text",
         "id": "filter_color12",
         "label": "Option value 12 选项值12"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color12.png",
-        "label": "Custom image for value12 自定义图片用于选项值12"
-      },
+ 
       {
         "type": "text",
         "id": "filter_color13",
         "label": "Option value 13 选项值13"
       }, 
-      {
-        "type": "image_picker",
-        "id": "filter_color13.png",
-        "label": "Custom image for value13 自定义图片用于选项值13"
-      },
+ 
       {
         "type": "text",
         "id": "filter_color14",
         "label": "Option value 14 选项值14"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color14.png",
-        "label": "Custom image for value14 自定义图片用于选项值14"
-      },
+     
       {
         "type": "text",
         "id": "filter_color15",
         "label": "Option value 15 选项值15"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color15.png",
-        "label": "Custom image for value15 自定义图片用于选项值15"
-      },
+    
       {
         "type": "text",
         "id": "filter_color16",
         "label": "Option value 16 选项值16"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color16.png",
-        "label": "Custom image for value16 自定义图片用于选项值16"
-      },
+    
       {
         "type": "text",
         "id": "filter_color17",
         "label": "Option value 17 选项值17"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color17.png",
-        "label": "Custom image for value17 自定义图片用于选项值17"
-      },
+   
       {
         "type": "text",
         "id": "filter_color18",
         "label": "Option value 18 选项值18"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color18.png",
-        "label": "Custom image for value18 自定义图片用于选项值18"
-      },
+   
       {
         "type": "text",
         "id": "filter_color19",
         "label": "Option value 19 选项值19"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color19.png",
-        "label": "Custom image for value19 自定义图片用于选项值19"
-      },
+   
       {
         "type": "text",
         "id": "filter_color20",
         "label": "Option value 20 选项值20"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color20.png",
-        "label": "Custom image for value20 自定义图片用于选项值20"
-      },
+    
       {
         "type": "text",
         "id": "filter_color21",
         "label": "Option value 21 选项值21"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color21.png",
-        "label": "Custom image for value21 自定义图片用于选项值21"
-      },
+    
       {
         "type": "text",
         "id": "filter_color22",
         "label": "Option value 22 选项值22"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color22.png",
-        "label": "Custom image for value22 自定义图片用于选项值22"
-      },
+   
       {
         "type": "text",
         "id": "filter_color23",
         "label": "Option value 23 选项值23"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color23.png",
-        "label": "Custom image for value23 自定义图片用于选项值23"
-      },
+    
       {
         "type": "text",
         "id": "filter_color24",
         "label": "Option value 24 选项值24"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color24.png",
-        "label": "Custom image for value24 自定义图片用于选项值24"
-      },
+  
       {
         "type": "text",
         "id": "filter_color25",
         "label": "Option value 25 选项值25"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color25.png",
-        "label": "Custom image for value25 自定义图片用于选项值25"
-      },
+   
       {
         "type": "text",
         "id": "filter_color26",
         "label": "Option value 26 选项值26"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color26.png",
-        "label": "Custom image for value26 自定义图片用于选项值26"
-      },
+   
       {
         "type": "text",
         "id": "filter_color27",
         "label": "Option value 27 选项值27"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color27.png",
-        "label": "Custom image for value27 自定义图片用于选项值27"
-      },
+  
       {
         "type": "text",
         "id": "filter_color28",
         "label": "Option value 28 选项值28"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color28.png",
-        "label": "Custom image for value28 自定义图片用于选项值28"
-      },
+    
       {
         "type": "text",
         "id": "filter_color29",
         "label": "Option value 29 选项值29"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color29.png",
-        "label": "Custom image for value29 自定义图片用于选项值29"
-      },
+  
       {
         "type": "text",
         "id": "filter_color30",
         "label": "Option value 30 选项值30"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color30.png",
-        "label": "Custom image for value30 自定义图片用于选项值30"
-      },
+    
       {
         "type": "text",
         "id": "filter_color31",
         "label": "Option value 31 选项值31"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color31.png",
-        "label": "Custom image for value31 自定义图片用于选项值31"
-      },
+   
       {
         "type": "text",
         "id": "filter_color32",
         "label": "Option value 32 选项值32"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color32.png",
-        "label": "Custom image for value32 自定义图片用于选项值32"
-      },
+   
       {
         "type": "text",
         "id": "filter_color33",
         "label": "Option value 33 选项值33"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color33.png",
-        "label": "Custom image for value33 自定义图片用于选项值33"
-      },
+    
       {
         "type": "text",
         "id": "filter_color34",
         "label": "Option value 34 选项值34"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color34.png",
-        "label": "Custom image for value34 自定义图片用于选项值34"
-      },
+    
       {
         "type": "text",
         "id": "filter_color35",
         "label": "Option value 35 选项值35"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color35.png",
-        "label": "Custom image for value35 自定义图片用于选项值35"
-      },
+    
       {
         "type": "text",
         "id": "filter_color36",
         "label": "Option value 36 选项值36"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color36.png",
-        "label": "Custom image for value36 自定义图片用于选项值36"
-      },
-      {
-        "type": "text",
-        "id": "filter_color37",
-        "label": "Option value 37 选项值37"
-      },
-      {
-        "type": "image_picker",
-        "id": "filter_color37.png",
-        "label": "Custom image for value37 自定义图片用于选项值37"
-      },
+   
+ 
+   
       {
         "type": "text",
         "id": "filter_color38",
         "label": "Option value 38 选项值38"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color38.png",
-        "label": "Custom image for value38 自定义图片用于选项值38"
-      },
+    
       {
         "type": "text",
         "id": "filter_color39",
         "label": "Option value 39 选项值39"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color39.png",
-        "label": "Custom image for value39 自定义图片用于选项值39"
-      },
+    
       {
         "type": "text",
         "id": "filter_color40",
         "label": "Option value 40 选项值40"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color40.png",
-        "label": "Custom image for value40 自定义图片用于选项值40"
-      },
+    
       {
         "type": "text",
         "id": "filter_color41",
         "label": "Option value 41 选项值41"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color41.png",
-        "label": "Custom image for value41 自定义图片用于选项值41"
-      },
+     
       {
         "type": "text",
         "id": "filter_color42",
         "label": "Option value 42 选项值42"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color42.png",
-        "label": "Custom image for value42 自定义图片用于选项值42"
-      },
+   
       {
         "type": "text",
         "id": "filter_color43",
         "label": "Option value 43 选项值43"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color43.png",
-        "label": "Custom image for value43 自定义图片用于选项值43"
-      },
+     
       {
         "type": "text",
         "id": "filter_color44",
         "label": "Option value 44 选项值44"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color44.png",
-        "label": "Custom image for value44 自定义图片用于选项值44"
-      },
+     
       {
         "type": "text",
         "id": "filter_color45",
         "label": "Option value 45 选项值45"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color45.png",
-        "label": "Custom image for value45 自定义图片用于选项值45"
-      },
+    
       {
         "type": "text",
         "id": "filter_color46",
         "label": "Option value 46 选项值46"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color46.png",
-        "label": "Custom image for value46 自定义图片用于选项值46"
-      },
+      
       {
         "type": "text",
         "id": "filter_color47",
         "label": "Option value 47 选项值47"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color47.png",
-        "label": "Custom image for value47 自定义图片用于选项值47"
-      },
+    
       {
         "type": "text",
         "id": "filter_color48",
         "label": "Option value 48 选项值48"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color48.png",
-        "label": "Custom image for value48 自定义图片用于选项值48"
-      },
+     
       {
         "type": "text",
         "id": "filter_color49",
         "label": "Option value 49 选项值49"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color49.png",
-        "label": "Custom image for value49 自定义图片用于选项值49"
-      },
+   
       {
         "type": "text",
         "id": "filter_color50",
         "label": "Option value 50 选项值50"
       },
-      {
-        "type": "image_picker",
-        "id": "filter_color50.png",
-        "label": "Custom image for value50 自定义图片用于选项值50"
-      }
+  
     ]
   },
   {
