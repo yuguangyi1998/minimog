@@ -106,7 +106,7 @@
 
 {% schema %}
 {
-  "name": "Blog posts",
+  "name": "Blog posts 博客文章",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
@@ -117,26 +117,26 @@
     },
     {
       "type": "header",
-      "content": "Section header"
+      "content": "Section header 标题"
     },
     {
       "type": "text",
       "id": "heading",
-      "label": "Heading",
+      "label": "Heading 标题",
       "default": "Blog posts"
     },
     {
       "type": "select",
       "id": "heading_size",
-      "label": "Heading size",
+      "label": "Heading size 标题大小",
       "default": "h3",
       "options": [
         {
-          "label": "Medium",
+          "label": "中等",
           "value": "h3"
         },
         {
-          "label": "Large",
+          "label": "大",
           "value": "h2"
         }
       ]
@@ -144,71 +144,71 @@
     {
       "type": "text",
       "id": "subheading",
-      "label": "Subheading"
+      "label": "Subheading 副标题"
     },
     {
       "type": "textarea",
       "id": "description",
-      "label": "Description"
+      "label": "Description 描述"
     },
     {
       "type": "select",
       "id": "header_alignment",
-      "label": "Text alignment",
+      "label": "Text alignment 文本对齐",
       "default": "center",
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "Left 左对齐"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "Center 居中对齐"
         }
       ]
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "General 通用"
     },
     {
       "type": "select",
       "id": "container",
-      "label": "Container type",
+      "label": "Container type 容器类型",
       "default": "container-fluid",
       "options": [
         {
           "value": "container-fluid",
-          "label": "Default"
+          "label": "Default 默认"
         },
         {
           "value": "w-full",
-          "label": "Full width"
+          "label": "Full width 全宽"
         },
         {
           "value": "container",
-          "label": "Use container box"
+          "label": "Use container box 使用容器框"
         }
       ]
     },
     {
       "type": "color_scheme",
       "id": "color_scheme",
-      "label": "Color scheme"
+      "label": "Color scheme 颜色方案"
     },
     {
       "type": "header",
-      "content": "Content"
+      "content": "Content 内容"
     },
     {
       "id": "blog",
       "type": "blog",
-      "label": "Blog"
+      "label": "Blog 博客"
     },
     {
       "type": "range",
       "id": "limit",
-      "label": "Posts to show",
+      "label": "Posts to show 显示文章数量",
       "min": 2,
       "max": 12,
       "step": 1,
@@ -217,7 +217,7 @@
     {
       "type": "range",
       "id": "column",
-      "label": "Posts per row",
+      "label": "Posts per row 每行显示文章数量",
       "min": 2,
       "max": 6,
       "step": 1,
@@ -226,7 +226,7 @@
     {
       "type": "range",
       "id": "column_gap",
-      "label": "Column gap",
+      "label": "Column gap 列间距",
       "min": 0,
       "max": 50,
       "step": 2,
@@ -236,7 +236,7 @@
     {
       "type": "range",
       "id": "mobile_gap",
-      "label": "Column gap on mobile",
+      "label": "Column gap on mobile 移动设备列间距",
       "min": 0,
       "max": 30,
       "step": 2,
@@ -245,17 +245,17 @@
     },
     {
       "type": "header",
-      "content": "Card settings"
+      "content": "Card settings 卡片设置"
     },
     {
       "type": "select",
       "id": "article_image_aspect_ratio",
-      "label": "Image aspect ratio",
+      "label": "Image aspect ratio 图片宽高比",
       "default": "16/9",
       "options": [
         {
           "value": "original",
-          "label": "Original aspect ratio"
+          "label": "Original aspect ratio 原始宽高比"
         },
         {
           "value": "1/1",
@@ -278,19 +278,19 @@
     {
       "type": "select",
       "id": "article_align_content",
-      "label": "Content alignment",
+      "label": "Content alignment 内容对齐",
       "default": "text-left",
       "options": [
         {
-          "label": "Left",
+          "label": "Left 左对齐",
           "value": "text-left"
         },
         {
-          "label": "Center",
+          "label": "Center 居中对齐",
           "value": "text-center"
         },
         {
-          "label": "Right",
+          "label": "Right 右对齐",
           "value": "text-right"
         }
       ]
@@ -298,72 +298,72 @@
     {
       "type": "checkbox",
       "id": "article_show_tags",
-      "label": "Show tags",
+      "label": "Show tags 显示标签",
       "default": true
     },
     {
       "type": "checkbox",
       "id": "article_show_date",
-      "label": "Show publised date",
+      "label": "Show publised date 显示发布日期",
       "default": true
     },
     {
       "type": "checkbox",
       "id": "article_show_excerpt",
-      "label": "Show excerpt",
+      "label": "Show excerpt 显示摘要",
       "default": true
     },
     {
       "type": "checkbox",
       "id": "article_show_button",
-      "label": "Show read more link",
+      "label": "Show read more link 显示阅读更多链接",
       "default": true
     },
     {
       "type": "header",
-      "content": "Button settings"
+      "content": "Button settings 按钮设置"
     },
     {
       "type": "checkbox",
       "id": "show_button_on_header",
-      "label": "Show button on header"
+      "label": "Show button on header 显示按钮在标题"
     },
     {
       "type": "url",
       "id": "button_link",
-      "label": "Button link"
+      "label": "Button link 按钮链接"
     },
     {
       "type": "text",
       "id": "button_text",
-      "label": "Button label",
+      "label": "Button label 按钮标签",
       "default": "View More",
       "info": "Leave it blank to hide"
     },
     {
       "type": "select",
       "id": "button_style",
-      "label": "Button style",
+      "label": "Button style 按钮样式",
       "options": [
         {
           "value": "m-button--primary",
-          "label": "Primary button"
+          "label": "Primary button 主要按钮"
         },
         {
           "value": "m-button--secondary",
-          "label": "Secondary button"
+          "label": "Secondary button 次要按钮"
         },
         {
           "value": "m-button--white",
-          "label": "White button"
+          "label": "White button 白色按钮"
         },
         {
           "value": "m-button--link",
-          "label": "Underline button"
+          "label": "Underline button 下划线按钮"
         },
         {
           "value": "m-button--plain",
-          "label": "Plain button"
+          "label": "Plain button 普通按钮"
         }
       ],
       "default": "m-button--primary"
@@ -371,41 +371,41 @@
     {
       "type": "select",
       "id": "button_size",
-      "label": "Button size",
+      "label": "Button size 按钮大小",
       "options": [
         {
           "value": "m-button--small",
-          "label": "Button small"
+          "label": "Button small 小按钮"
         },
         {
           "value": "",
-          "label": "Button medium"
+          "label": "Button medium 中按钮"
         },
         {
           "value": "m-button--large",
-          "label": "Button large"
+          "label": "Button large 大按钮"
         }
       ],
       "default": ""
     },
     {
       "type": "header",
-      "content": "Mobile Settings"
+      "content": "Mobile Settings 移动设备设置"
     },
     {
       "type": "checkbox",
       "id": "use_scroll_mobile",
-      "label": "Enable horizontal scroll",
+      "label": "Enable horizontal scroll 启用水平滚动",
       "default": true
     },
     {
       "type": "header",
-      "content": "Section Padding"
+      "content": "Section Padding 段落内边距"
     },
     {
       "type": "range",
       "id": "padding_top",
-      "label": "Padding Top",
+      "label": "Padding Top 上内边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -415,7 +415,7 @@
     {
       "type": "range",
       "id": "padding_bottom",
-      "label": "Padding Bottom",
+      "label": "Padding Bottom 下内边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -424,50 +424,50 @@
     },
     {
       "type": "header",
-      "content": "Custom Attributes"
+      "content": "Custom Attributes 自定义属性"
     },
     {
       "type": "text",
       "id": "custom_class",
-      "label": "Custom classes"
+      "label": "Custom classes 自定义类"
     },
     {
       "type": "header",
-      "content": "Animations"
+      "content": "Animations 动画"
     },
     {
       "type": "select",
       "id": "animations",
-      "label": "Visible in the view animation",
+      "label": "Visible in the view animation 在视图中可见动画",
       "default": "inherit",
       "options": [
         {
           "value": "inherit",
-          "label": "Inherit global setting"
+          "label": "Inherit global setting 继承全局设置"
         },
         {
           "value": "fade-in",
-          "label": "Fade in"
+          "label": "Fade in 淡入"
         },
         {
           "value": "fade-in-up",
-          "label": "Fade in up"
+          "label": "Fade in up 淡入上"
         },
         {
           "value": "fade-in-left",
-          "label": "Fade in left"
+          "label": "Fade in left 淡入左"
         },
         {
           "value": "fade-in-right",
-          "label": "Fade in right"
+          "label": "Fade in right 淡入右"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Blog posts",
-      "category": "Blog"
+      "name": "Blog posts 博客文章",
+      "category": "Blog 博客"
     }
   ]
 }

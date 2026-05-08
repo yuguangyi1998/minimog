@@ -26,6 +26,7 @@
   assign swatch_value = null
   assign swatch_focal_point = null
 
+  # Check "name" variable
   if swatch == blank
     assign value_downcase = value | downcase | strip
     assign product_colors = settings.product_colors | split: ','
@@ -33,9 +34,9 @@
 
     for product_color in product_colors
       assign parts = product_color | strip | split: ':'
-      assign name = parts.first | downcase | strip
+      assign color_name = parts.first | downcase | strip
       assign color = parts.last | strip
-      if name == value_downcase
+      if color_name == value_downcase
         assign swatch_value = color
       endif
     endfor

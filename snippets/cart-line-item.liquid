@@ -311,34 +311,32 @@
       </div>
     </div>
 
-    {%- assign item_discounts = 'template ' | split: ' ' -%}
     {%- if item.line_level_discount_allocations != blank -%}
-      {%- assign item_discounts = item.line_level_discount_allocations -%}
+      <ul
+        class="m-cart__discount m:flex m:flex-wrap m:justify-end md:m:justify-start"
+        role="list"
+        aria-label="{{ 'customer.order.discount' | t }}"
+        data-cart-item-discount-list
+      >
+        {%- for discount in item.line_level_discount_allocations -%}
+          <li class="m-cart__discount--item m:inline-flex m:items-center" data-cart-item-discount>
+            {%- liquid
+              assign discount_amount = discount.amount | money
+              if settings.currency_code_enabled
+                assign discount_amount = discount.amount | money_with_currency
+              endif
+            -%}
+            <svg aria-hidden="true" width="20" height="20" focusable="false" role="presentation" viewBox="0 0 12 13">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7 .5h3a2 2 0 0 1 2 2v3a.995.995 0 0 1-.293.707l-6 6a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414l6-6A.995.995 0 0 1 7 .5zm2 2a1 1 0 1 0 2 0 1 1 0 0 0-2 0z" fill="currentColor"></path>
+            </svg>
+            <span data-cart-item-discount-title>
+              {{- discount.discount_application.title -}}
+              <span data-cart-item-discount-amount>(-{{ discount_amount }})</span>
+            </span>
+          </li>
+        {%- endfor -%}
+      </ul>
     {%- endif -%}
-
-    <ul
-      class="m-cart__discount{% if item.line_level_discount_allocations == blank %} m:hidden{% endif %}"
-      aria-label="{{ 'customer.order.discount' | t }}"
-      data-cart-item-discount-list
-    >
-      {%- for discount_allocation in item_discounts -%}
-        <li class="m-cart__discount--item m:justify-end md:m:justify-start" data-cart-item-discount>
-          {%- liquid
-            assign discount_amount = discount_allocation.amount | money
-            if settings.currency_code_enabled
-              assign discount_amount = discount_allocation.amount | money_with_currency
-            endif
-          -%}
-          <svg aria-hidden="true" width="20" height="20" focusable="false" role="presentation" viewBox="0 0 12 13">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 .5h3a2 2 0 0 1 2 2v3a.995.995 0 0 1-.293.707l-6 6a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414l6-6A.995.995 0 0 1 7 .5zm2 2a1 1 0 1 0 2 0 1 1 0 0 0-2 0z" fill="currentColor"></path>
-          </svg>
-          <span data-cart-item-discount-title>
-            {{- discount_allocation.discount_application.title -}}
-            <span data-cart-item-discount-amount>(-{{ discount_amount }})</span></span
-          >
-        </li>
-      {%- endfor -%}
-    </ul>
   </div>
 
   <div class="m-cart__column m-cart__column--quantity m:display-flex m:items-center">

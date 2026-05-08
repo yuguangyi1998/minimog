@@ -12,7 +12,9 @@
         "new_window": "Otvorí sa v novom okne."
       },
       "close_header": "Zavrieť hlavičku",
-      "close": "Zavrieť"
+      "close": "Zavrieť",
+      "view_more": "Zobraziť viac",
+      "view_less": "Zobraziť menej"
     },
     "meta": {
       "tags": "Označený „{{ tags }}“",
@@ -150,6 +152,9 @@
       "taxes_included_but_shipping_at_checkout": "Vrátane dane a poštovné sa vypočíta pri pokladni",
       "taxes_included_and_shipping_policy_html": "Vrátane dane. <a href=\"{{ link }}\">Doprava</a> vypočítaná pri pokladni.",
       "enter_discount_code": "Tu zadajte zľavový kód",
+      "remove_discount": "Odstrániť {{ code }}",
+      "discount_duplicate_error_message": "Zľavný kód už bol použitý na váš košík.",
+      "discount_apply_error_message": "Zľavný kód sa nedá uplatniť na váš košík.",
       "checkout": "Odhlásiť sa",
       "viewcart": "Pohľadnica",
       "empty": "Váš košík je momentálne prázdny.",

@@ -903,7 +903,8 @@
                       >
                     </div>
                     {% assign url = shop.url | append: product.url %}
-                    {% render 'social-sharing', url: url %}
+                    {% assign share_image = product.selected_variant.featured_image | default: product.featured_image %}
+                    {% render 'social-sharing', url: url, share_title: product.title, share_image: share_image %}
                   </div>
                 </m-sharing>
                 <script src="{{ 'sharing.js' | asset_url }}" defer="defer"></script>

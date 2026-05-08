@@ -33,8 +33,8 @@
         <path d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"/>
       </svg>
     </button>
-    <div class="m:flex m:flex-col m:h-full" id="MinimogCartDrawerHeader">
-      <div class="m-cart-drawer__header">
+    <div class="m:flex m:flex-col m:h-full">
+      <div class="m-cart-drawer__header" id="MinimogCartDrawerHeader">
         <h3 class="m-cart-drawer__title m:text-xl md:m:text-2xl m:font-medium">{{ 'cart.general.title' | t }}</h3>
         {% if template.name != 'cart' %}
           <foxkit-cart-countdown></foxkit-cart-countdown>
@@ -46,7 +46,14 @@
         id="MinimogCartDrawerBody"
         data-section-name="cart-drawer"
       >
-        <form action="{{ routes.cart_url }}" method="post" id="cart-drawer-form" class="m:w-full" novalidate>
+        <form
+          is="m-cart-form"
+          action="{{ routes.cart_url }}"
+          method="post"
+          id="cart-drawer-form"
+          class="m:w-full"
+          novalidate
+        >
           {%- if cart.items.size > 0 -%}
             <div class="m-cart-drawer__items">
               {% for item in cart.items %}
@@ -127,22 +134,22 @@
           <div class="m-cart__summary m-cart-drawer__summary">
             <div data-foxkit-cart-summary></div>
             <div data-minimog-cart-discounts>
-              {%- if cart.cart_level_discount_applications.size > 0 -%}
-                <ul class="m-cart__discount" role="list">
-                  {%- for discount in cart.cart_level_discount_applications -%}
-                    <li class="m-cart__discount--item m:justify-end m:items-center">
-                      <svg
-                        aria-hidden="true"
-                        width="20"
-                        height="20"
-                        focusable="false"
-                        role="presentation"
-                        viewBox="0 0 12 13"
-                      >
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 .5h3a2 2 0 0 1 2 2v3a.995.995 0 0 1-.293.707l-6 6a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414l6-6A.995.995 0 0 1 7 .5zm2 2a1 1 0 1 0 2 0 1 1 0 0 0-2 0z" fill="currentColor"></path>
-                      </svg>
-                      <span>{{ discount.title | upcase }}&nbsp;(-{{ discount.total_allocated_amount | money }})</span>
-                    </li>
+              {% liquid
+                assign discount_codes = cart.cart_level_discount_applications
+                for item in cart.items
+                  for allocation in item.line_level_discount_allocations
+                    if allocation.discount_application.type == 'discount_code'
+                      assign discount_codes = item.line_level_discount_allocations | slice: forloop.index0 | map: 'discount_application' | concat: discount_codes
+                    endif
+                  endfor
+                endfor
+
+                assign discount_codes = discount_codes | uniq
+              %}
+              {%- if discount_codes.size > 0 -%}
+                <ul class="m-cart__discount m:flex m:flex-wrap m:justify-end m:items-center" role="list">
+                  {%- for discount in discount_codes -%}
+                    {% render 'cart-discount-item', discount: discount %}
                   {%- endfor -%}
                 </ul>
               {%- endif -%}

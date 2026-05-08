@@ -80,92 +80,92 @@
 
 {% schema %}
 {
-  "name": "Announcement bar",
+  "name": "公告栏",
   "enabled_on": {
     "groups": ["header"]
   },
   "settings": [
     {
       "type": "paragraph",
-      "content": "[Watch tutorial](https://foxecom.link/zDfFJy)"
+      "content": "[观看教程](https://foxecom.link/zDfFJy)"
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "通用设置"
     },
     {
       "type": "select",
       "id": "container",
-      "label": "Container type",
+      "label": "容器类型",
       "default": "container",
       "options": [
         {
           "value": "container-fluid",
-          "label": "Default"
+          "label": "默认"
         },
         {
           "value": "w-full",
-          "label": "Full width"
+          "label": "全宽"
         },
         {
           "value": "container",
-          "label": "Use container box"
+          "label": "使用容器框"
         }
       ]
     },
     {
       "type": "color_scheme",
       "id": "color_scheme",
-      "label": "Color scheme"
+      "label": "配色方案"
     },
     {
       "type": "checkbox",
       "id": "show_announcement",
-      "label": "Show announcement",
+      "label": "显示公告",
       "default": true
     },
     {
       "type": "checkbox",
       "id": "homepage_only",
-      "label": "Home page only",
+      "label": "仅首页显示",
       "default": true
     },
     {
       "type": "checkbox",
       "id": "show_close",
-      "label": "Show close button",
+      "label": "显示关闭按钮",
       "default": true
     },
     {
       "type": "checkbox",
       "id": "show_divider",
-      "label": "Show divider",
+      "label": "显示分隔线",
       "default": false
     },
     {
       "type": "header",
-      "content": "Slider settings"
+      "content": "滑块设置"
     },
     {
       "type": "paragraph",
-      "content": "Slider work when more than more 2 items"
+      "content": "条目数超过 2 个时滑块才会生效"
     },
     {
       "type": "checkbox",
       "id": "show_nav",
-      "label": "Show navigation",
+      "label": "显示导航",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "autorotate",
-      "label": "Auto-rotate slides",
+      "label": "自动切换幻灯片",
       "default": false
     },
     {
       "type": "range",
       "id": "autorotate_speed",
-      "label": "Change slides every",
+      "label": "幻灯片切换间隔",
       "max": 10,
       "min": 2,
       "step": 1,
@@ -176,25 +176,25 @@
   "blocks": [
     {
       "type": "item",
-      "name": "Announcement item",
+      "name": "公告条目",
       "settings": [
         {
           "type": "textarea",
           "id": "message",
-          "label": "Message",
+          "label": "公告内容",
           "default": "Free shipping for all orders from $60+"
         },
         {
           "type": "url",
           "id": "message_link",
-          "label": "Link"
+          "label": "链接"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Announcement bar",
+      "name": "公告栏",
       "category": "Image",
       "blocks": [
         {

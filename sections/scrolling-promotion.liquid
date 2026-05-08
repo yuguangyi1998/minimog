@@ -128,7 +128,7 @@
 </section>
 {% schema %}
 {
-  "name": "Scrolling promotion",
+  "name": "Scrolling promotion 滚动促销",
   "settings": [
     {
       "type": "paragraph",
@@ -137,38 +137,38 @@
     {
       "type": "select",
       "id": "container",
-      "label": "Container type",
+      "label": "容器类型",
       "default": "w-full",
       "options": [
         {
           "value": "container-fluid",
-          "label": "Default"
+          "label": "默认"
         },
         {
           "value": "w-full",
-          "label": "Full width"
+          "label": "撑满宽度"
         },
         {
           "value": "container",
-          "label": "Use container box"
+          "label": "使用当前区域"
         }
       ]
     },
     {
       "type": "header",
-      "content": "Settings"
+      "content": "Settings 设置"
     },
     {
       "type": "select",
       "id": "direction",
-      "label": "Direction",
+      "label": "Direction 方向",
       "options": [
         {
-          "label": "Left",
+          "label": "左",
           "value": "left"
         },
         {
-          "label": "Right",
+          "label": "右",
           "value": "right"
         }
       ],
@@ -177,7 +177,7 @@
     {
       "type": "range",
       "id": "speed",
-      "label": "Speed",
+      "label": "Speed 速度",
       "min": 2,
       "max": 60,
       "unit": "s",
@@ -187,7 +187,7 @@
     {
       "type": "range",
       "id": "item_gap",
-      "label": "Item gap",
+      "label": "Item gap 项目间距",
       "default": 50,
       "min": 0,
       "max": 200,
@@ -197,7 +197,7 @@
     {
       "type": "range",
       "id": "item_gap_mobile",
-      "label": "Item gap mobile",
+      "label": "Item gap mobile 移动项目间距",
       "default": 30,
       "min": 0,
       "max": 50,
@@ -206,21 +206,21 @@
     },
     {
       "type": "header",
-      "content": "Colors"
+      "content": "Colors 颜色"
     },
     {
       "type": "color_scheme",
       "id": "color_scheme",
-      "label": "Color scheme"
+      "label": "颜色方案"
     },
     {
       "type": "header",
-      "content": "Section Padding"
+      "content": "段落内边距"
     },
     {
       "type": "range",
       "id": "padding_top",
-      "label": "Padding Top",
+      "label": "上内边距",
       "default": 40,
       "min": 0,
       "max": 100,
@@ -230,7 +230,7 @@
     {
       "type": "range",
       "id": "padding_bottom",
-      "label": "Padding Bottom",
+      "label": "下内边距",
       "default": 40,
       "min": 0,
       "max": 100,
@@ -239,28 +239,28 @@
     },
     {
       "type": "header",
-      "content": "Custom Attributes"
+      "content": "自定义属性"
     },
     {
       "type": "text",
       "id": "custom_class",
-      "label": "Custom classes"
+      "label": "自定义类"
     }
   ],
   "blocks": [
     {
       "type": "image",
-      "name": "Image",
+      "name": "Image 图片",
       "settings": [
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image"
+          "label": "Image 图片"
         },
         {
           "type": "range",
           "id": "image_height",
-          "label": "Image height",
+          "label": "Image height 图片高度",
           "default": 120,
           "min": 0,
           "max": 200,
@@ -270,68 +270,68 @@
         {
           "type": "url",
           "id": "image_link",
-          "label": "Image link"
+          "label": "Image link 图片链接"
         }
       ]
     },
     {
       "type": "testimonial",
-      "name": "Testimonial",
+      "name": "Testimonial 客户评价",
       "settings": [
         {
           "type": "richtext",
           "id": "text",
           "default": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
-          "label": "Text"
+          "label": "Text 文本"
         },
         {
           "type": "text",
           "id": "author",
           "default": "Author's name",
-          "label": "Author"
+          "label": "Author 作者"
         },
         {
           "type": "product",
           "id": "product",
-          "label": "Select product"
+          "label": "Select product 选择产品"
         },
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image"
+          "label": "Image 图片"
         },
         {
           "type": "select",
           "id": "icon",
-          "label": "Icon",
+          "label": "Icon 图标",
           "options": [
             {
               "value": "none",
-              "label": "None"
+              "label": "None 无"
             },
             {
               "value": "quote",
-              "label": "Quote"
+              "label": "Quote 引用"
             },
             {
               "value": "1-star",
-              "label": "1 star"
+              "label": "1 star 一星"
             },
             {
               "value": "2-stars",
-              "label": "2 stars"
+              "label": "2 stars 两星"
             },
             {
               "value": "3-stars",
-              "label": "3 stars"
+              "label": "3 stars 三星"
             },
             {
               "value": "4-stars",
-              "label": "4 stars"
+              "label": "4 stars 四星"
             },
             {
               "value": "5-stars",
-              "label": "5 stars"
+              "label": "5 stars 五星"
             }
           ]
         }
@@ -344,38 +344,38 @@
         {
           "type": "textarea",
           "id": "custom_svg",
-          "label": "Custom SVG icon"
+          "label": "Custom SVG icon 自定义 SVG 图标"
         },
         {
           "type": "select",
           "id": "icon_size",
-          "label": "Icon size",
+          "label": "Icon size 图标大小",
           "default": "medium",
           "options": [
             {
-              "label": "Small",
+              "label": "小",
               "value": "small"
             },
             {
-              "label": "Medium",
+              "label": "中等",
               "value": "medium"
             },
             {
-              "label": "Large",
+              "label": "大",
               "value": "large"
             }
           ]
         },
         {
           "type": "textarea",
-          "label": "Text",
+          "label": "Text 文本",
           "id": "text",
           "default": "Welcome to our store"
         },
         {
           "type": "range",
           "id": "text_size",
-          "label": "Text size",
+          "label": "Text size 文本大小",
           "min": 12,
           "max": 150,
           "unit": "px",
@@ -385,14 +385,14 @@
         {
           "type": "url",
           "id": "text_link",
-          "label": "Link"
+          "label": "Link 链接"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Scrolling promotion",
+      "name": "滚动促销",
       "category": "Promotional",
       "blocks": [
         {

@@ -25,7 +25,7 @@
     class="m-cart"
     id="MinimogCart"
   >
-    <form action="{{ routes.cart_url }}" method="post" novalidate>
+    <form is="m-cart-form" action="{{ routes.cart_url }}" method="post" novalidate>
       <div class="m-cart__wrapper m:w-full">
         <div class="m-cart__header" id="MinimogCartHeader">
           <div class="m-cart__header--wrapper{% if cart == empty %} m:hidden{% else %} m:flex{% endif %}">
@@ -67,10 +67,6 @@
       <div class="m-cart__footer m:flex m:justify-end" id="MinimogCartFooter">
         <div class="m-cart__footer--wrapper{% if cart == empty %} m:hidden{% else %} m:block{% endif %}">
           {% render 'cart-addons' %}
-          {%- assign cart_discounts = 'template ' | split: ' ' -%}
-          {%- if cart.cart_level_discount_applications.size > 0 -%}
-            {%- assign cart_discounts = cart.cart_level_discount_applications -%}
-          {%- endif -%}
           <div class="m-cart__gift-wrapping">
             {%- if gift_wrapping != null -%}
               <m-gift-wrapping-component
@@ -130,31 +126,24 @@
             <div
               data-minimog-cart-discounts
             >
-              {% if cart.cart_level_discount_applications.size > 0 %}
+              {% liquid
+                assign discount_codes = cart.cart_level_discount_applications
+                for item in cart.items
+                  for allocation in item.line_level_discount_allocations
+                    if allocation.discount_application.type == 'discount_code'
+                      assign discount_codes = item.line_level_discount_allocations | slice: forloop.index0 | map: 'discount_application' | concat: discount_codes
+                    endif
+                  endfor
+                endfor
+
+                assign discount_codes = discount_codes | uniq
+              %}
+              {%- if discount_codes.size > 0 -%}
                 <span class="m:visually-hidden">{{ 'customer.order.discounts' | t }}</span>
                 <div data-discounts>
-                  <ul class="m-cart__discount" data-discounts-list>
-                    {%- for discount_application in cart_discounts -%}
-                      {% if discount_application.total_allocated_amount != blank %}
-                        <li class="m-cart__discount--item m:justify-end m:items-center">
-                          <svg
-                            aria-hidden="true"
-                            width="20"
-                            height="20"
-                            focusable="false"
-                            role="presentation"
-                            viewBox="0 0 12 13"
-                          >
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 .5h3a2 2 0 0 1 2 2v3a.995.995 0 0 1-.293.707l-6 6a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414l6-6A.995.995 0 0 1 7 .5zm2 2a1 1 0 1 0 2 0 1 1 0 0 0-2 0z" fill="currentColor"></path>
-                          </svg>
-                          <span data-cart-discount-title>
-                            {{- discount_application.title -}}
-                            &nbsp;(-<span data-cart-discount-amount>
-                              {{- discount_application.total_allocated_amount | money -}}</span
-                            >)</span
-                          >
-                        </li>
-                      {% endif %}
+                  <ul class="m-cart__discount m:flex m:flex-wrap m:justify-end m:items-center" data-discounts-list>
+                    {%- for discount in discount_codes -%}
+                      {% render 'cart-discount-item', discount: discount %}
                     {%- endfor -%}
                   </ul>
                 </div>

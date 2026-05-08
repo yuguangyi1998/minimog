@@ -87,7 +87,7 @@
 {% endif %}
 {% schema %}
 {
-  "name": "Cascading product",
+  "name": "Cascading product 级联产品",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
@@ -98,72 +98,72 @@
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "General 通用"
     },
     {
       "type": "color_scheme",
       "id": "color_scheme",
-      "label": "Color scheme"
+      "label": "Color scheme 颜色方案"
     },
     {
       "type": "select",
       "id": "container",
-      "label": "Container type",
+      "label": "Container type 容器类型",
       "default": "container-fluid",
       "options": [
         {
           "value": "container-fluid",
-          "label": "Default"
+          "label": "Default 默认"
         },
         {
           "value": "w-full",
-          "label": "Full width"
+          "label": "Full width 全宽"
         },
         {
           "value": "container",
-          "label": "Use container box"
+          "label": "Use container box 使用容器框"
         }
       ]
     },
     {
       "type": "collection",
       "id": "collection",
-      "label": "Collection"
+      "label": "Collection 集合"
     },
     {
       "type": "range",
       "id": "product_to_show",
-      "label": "Products to show",
+      "label": "Products to show 产品显示数量",
       "min": 2,
       "max": 12,
       "default": 6
     },
     {
       "type": "header",
-      "content": "Section header"
+      "content": "Section header 段落标题"
     },
     {
       "type": "text",
       "id": "heading",
-      "label": "Heading",
+      "label": "Heading 标题",
       "default": "Shop by collections"
     },
     {
       "type": "select",
       "id": "heading_size",
-      "label": "Heading size",
+      "label": "Heading size 标题大小",
       "default": "h3",
       "options": [
         {
-          "label": "Small",
+          "label": "Small 小",
           "value": "h3"
         },
         {
-          "label": "Medium",
+          "label": "Medium 中等",
           "value": "h2"
         },
         {
-          "label": "Large",
+          "label": "Large 大",
           "value": "h1"
         }
       ],
@@ -172,52 +172,52 @@
     {
       "type": "select",
       "id": "heading_alignment",
-      "label": "Text aligmnent",
+      "label": "Text aligmnent 文本对齐",
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "Left 左对齐"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "Center 居中对齐"
         },
         {
           "value": "right",
-          "label": "Right"
+          "label": "Right 右对齐"
         }
       ]
     },
     {
       "type": "checkbox",
       "id": "overlay_heading",
-      "label": "Overlay heading",
+      "label": "Overlay heading 覆盖标题",
       "default": true
     },
     {
       "type": "header",
-      "content": "Grid settings"
+      "content": "Grid settings 网格设置"
     },
     {
       "type": "paragraph",
-      "content": "Adjust variation and sequence of media sizes to create unique layouts"
+      "content": "Adjust variation and sequence of media sizes to create unique layouts 调整媒体大小变体和序列以创建独特的布局"
     },
     {
       "type": "select",
       "id": "spacing",
-      "label": "Vertical space between items",
+      "label": "Vertical space between items 项目之间的垂直空间",
       "options": [
         {
           "value": "small",
-          "label": "Small"
+          "label": "Small 小"
         },
         {
           "value": "medium",
-          "label": "Medium"
+          "label": "Medium 中等"
         },
         {
           "value": "large",
-          "label": "Large"
+          "label": "Large 大"
         }
       ],
       "default": "medium"
@@ -225,23 +225,23 @@
     {
       "type": "select",
       "id": "variance",
-      "label": "Variation between media sizes",
+      "label": "Variation between media sizes 媒体大小之间的变体",
       "options": [
         {
           "value": "none",
-          "label": "None"
+          "label": "None 无"
         },
         {
           "value": "low",
-          "label": "Low"
+          "label": "Low 低"
         },
         {
           "value": "medium",
-          "label": "Medium"
+          "label": "Medium 中等"
         },
         {
           "value": "high",
-          "label": "High"
+          "label": "High 高"
         }
       ],
       "default": "medium"
@@ -252,13 +252,13 @@
       "min": 1,
       "max": 5,
       "step": 1,
-      "label": "Sequence",
+      "label": "Sequence 序列",
       "default": 1
     },
     {
       "type": "range",
       "id": "column_gap",
-      "label": "Desktop column gap",
+      "label": "Desktop column gap 桌面列间距",
       "min": 50,
       "max": 250,
       "step": 5,
@@ -267,12 +267,12 @@
     },
     {
       "type": "header",
-      "content": "Animation"
+      "content": "Animation 动画"
     },
     {
       "type": "checkbox",
       "id": "cascade_enable_parallax",
-      "label": "Enable parallax animations",
+      "label": "Enable parallax animations 启用视差动画",
       "info": "When enabled small cascade media will scroll faster than large cascade media.",
       "default": true
     },
@@ -283,18 +283,18 @@
       "max": 100,
       "step": 1,
       "unit": "%",
-      "label": "Parallax intensity",
+      "label": "Parallax intensity 视差强度",
       "info": "Adjust the level of parallax animations.",
       "default": 50
     },
     {
       "type": "header",
-      "content": "Section Padding"
+      "content": "Section Padding 段落内边距"
     },
     {
       "type": "range",
       "id": "padding_top",
-      "label": "Padding Top",
+      "label": "Padding Top 上边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -304,7 +304,7 @@
     {
       "type": "range",
       "id": "padding_bottom",
-      "label": "Padding Bottom",
+      "label": "Padding Bottom 下边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -313,17 +313,17 @@
     },
     {
       "type": "header",
-      "content": "Custom Attributes"
+      "content": "Custom Attributes 自定义属性"
     },
     {
       "type": "text",
       "id": "custom_class",
-      "label": "Custom classes"
+      "label": "Custom classes 自定义类"
     }
   ],
   "presets": [
     {
-      "name": "Cascading product"
+      "name": "Cascading product 级联产品"
     }
   ]
 }

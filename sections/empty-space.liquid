@@ -24,39 +24,39 @@
 
 {% schema %}
 {
-  "name": "Empty space",
+  "name": "Empty space 空空间",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
   "settings": [
     {
       "type": "header",
-      "content": "General"
+      "content": "通用"
     },
     {
       "type": "select",
       "id": "container",
-      "label": "Container type",
+      "label": "容器类型",
       "default": "container-fluid",
       "options": [
         {
           "value": "container-fluid",
-          "label": "Default"
+          "label": "默认"
         },
         {
           "value": "w-full",
-          "label": "Full width"
+          "label": "撑满宽度"
         },
         {
           "value": "container",
-          "label": "Use container box"
+          "label": "使用当前区域"
         }
       ]
     },
     {
       "type": "color_scheme",
       "id": "color_scheme",
-      "label": "Color scheme"
+      "label": "颜色方案"
     },
     {
       "type": "checkbox",
@@ -70,7 +70,7 @@
       "label": "Divider style",
       "options": [
         {
-          "value": "solid",
+          "value": "实线",
           "label": "Solid"
         },
         {
@@ -99,12 +99,12 @@
     },
     {
       "type": "header",
-      "content": "Section Padding"
+      "content": "段落内边距"
     },
     {
       "type": "range",
       "id": "padding_top",
-      "label": "Padding Top",
+      "label": "上内边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -114,7 +114,7 @@
     {
       "type": "range",
       "id": "padding_bottom",
-      "label": "Padding Bottom",
+      "label": "下内边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -123,17 +123,17 @@
     },
     {
       "type": "header",
-      "content": "Custom Attributes"
+      "content": "自定义属性"
     },
     {
       "type": "text",
       "id": "custom_class",
-      "label": "Custom classes"
+      "label": "自定义类"
     }
   ],
   "presets": [
     {
-      "name": "Empty space"
+      "name": "Empty space 空空间"
     }
   ]
 }

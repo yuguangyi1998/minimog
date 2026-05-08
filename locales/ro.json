@@ -12,7 +12,9 @@
         "new_window": "Se deschide într-o fereastră nouă."
       },
       "close_header": "Închide antetul",
-      "close": "Închide"
+      "close": "Închide",
+      "view_more": "Vezi mai mult",
+      "view_less": "Vezi mai puțin"
     },
     "meta": {
       "tags": "Etichetat „{{ tags }}”",
@@ -150,6 +152,9 @@
       "taxes_included_but_shipping_at_checkout": "Taxa inclusă și transportul calculat la finalizare",
       "taxes_included_and_shipping_policy_html": "Taxă inclusă. <a href=\"{{ link }}\">Livrarea</a> calculată la finalizarea comenzii.",
       "enter_discount_code": "Introdu codul de reducere aici",
+      "remove_discount": "Eliminați {{ code }}",
+      "discount_duplicate_error_message": "Codul de reducere a fost deja aplicat pe coșul dvs.",
+      "discount_apply_error_message": "Codul de reducere nu poate fi aplicat pe coșul dvs.",
       "checkout": "Verifică",
       "viewcart": "Vizualizare coș",
       "empty": "Coșul tău este momentan gol.",

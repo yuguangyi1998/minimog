@@ -25,7 +25,7 @@
 %}
 {% schema %}
 {
-  "name": "Breadcrumb",
+  "name": "Breadcrumb 面包屑",
   "enabled_on": {
     "templates": [
       "product",
@@ -37,72 +37,72 @@
     {
       "type": "select",
       "id": "container",
-      "label": "Container type",
+      "label": "Container type 容器类型",
       "default": "container",
       "options": [
         {
           "value": "container-fluid",
-          "label": "Default"
+          "label": "Default 默认"
         },
         {
           "value": "w-full",
-          "label": "Full width"
+          "label": "Full width 全宽"
         },
         {
           "value": "container",
-          "label": "Use container box"
+          "label": "Use container box 使用容器框"
         }
       ]
     },
     {
       "type": "select",
       "id": "text_alignment",
-      "label": "Text alignment",
+      "label": "Text alignment 文本对齐",
       "default": "center",
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "Left 左对齐"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "Center 居中对齐"
         }
       ]
     },
     {
       "type": "checkbox",
       "id": "hide_current",
-      "label": "Hide current page",
+      "label": "Hide current page 隐藏当前页面",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "hide_on_mb",
-      "label": "Hide on mobile",
+      "label": "Hide on mobile 隐藏在移动设备上",
       "default": false
     },
     {
       "type": "header",
-      "content": "Animations"
+      "content": "Animations 动画"
     },
     {
       "type": "select",
       "id": "animations",
-      "label": "Visible in the view animation",
+      "label": "Visible in the view animation 在视图中可见动画",
       "default": "inherit",
       "options": [
-        {"value": "inherit", "label": "Inherit global setting"},
-        {"value": "fade-in", "label": "Fade in"},
-        {"value": "fade-in-up", "label": "Fade in up"},
-        {"value": "fade-in-left", "label": "Fade in left"},
-        {"value": "fade-in-right", "label": "Fade in right"}
+        {"value": "inherit", "label": "Inherit global setting 继承全局设置"},
+        {"value": "fade-in", "label": "Fade in 淡入"},
+        {"value": "fade-in-up", "label": "Fade in up 淡入上"},
+        {"value": "fade-in-left", "label": "Fade in left 淡入左"},
+        {"value": "fade-in-right", "label": "Fade in right 淡入右"}
       ]
     }
   ],
   "presets": [
     {
-      "name": "Breadcrumb"
+      "name": "面包屑"
     }
   ]
 }

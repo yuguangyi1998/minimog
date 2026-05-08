@@ -97,135 +97,135 @@
 
 {% schema %}
 {
-  "name": "Age verifier popup",
+  "name": "年龄验证弹窗",
   "settings": [
     {
       "type": "header",
-      "content": "Design mode"
+      "content": "设计模式"
     },
     {
       "type": "paragraph",
-      "content": "Enable design mode to make popup always displays during setup on the customize page. Ensure 'Design mode' is disabled when launching your store."
+      "content": "开启设计模式后，弹窗将在自定义页面中始终显示，方便配置。正式上线前请务必关闭设计模式。"
     },
     {
       "type": "checkbox",
       "id": "design_mode",
-      "label": "Design mode",
+      "label": "设计模式",
       "default": false
     },
     {
       "type": "header",
-      "content": "Settings"
+      "content": "基本设置"
     },
     {
       "type": "checkbox",
       "id": "enable",
-      "label": "Enable",
+      "label": "启用年龄验证",
       "default": false
     },
     {
       "type": "header",
-      "content": "Background image"
+      "content": "背景图片"
     },
     {
       "type": "image_picker",
       "id": "bg_image",
-      "label": "Image",
-      "info": "2000 x 800px recommended"
+      "label": "背景图片",
+      "info": "建议尺寸：2000 x 800px"
     },
     {
       "type": "checkbox",
       "id": "bg_blur",
-      "label": "Blur the image",
+      "label": "模糊背景图片",
       "default": false
     },
     {
       "type": "header",
-      "content": "Decline content"
+      "content": "拒绝访问内容"
     },
     {
       "type": "paragraph",
-      "content": "This content will display if the user does not meet the age verifier requirements."
+      "content": "当用户不满足年龄要求时，将显示以下内容。"
     },
     {
       "type": "text",
       "id": "decline_heading",
-      "label": "Heading",
-      "default": "Come back when you're older"
+      "label": "标题",
+      "default": "您未达到访问年龄要求"
     },
     {
       "type": "richtext",
       "id": "decline_content",
-      "label": "Text",
-      "default": "<p>Sorry, the content of this store can't be seen by a younger audience. Come back when you're older.</p>"
+      "label": "正文",
+      "default": "<p>抱歉，本店铺的内容不适合未成年人浏览。请您成年后再来访问。</p>"
     },
     {
       "type": "text",
       "id": "return_button",
-      "label": "Return button text",
-      "default": "Oops, I entered incorrectly"
+      "label": "返回按钮文字",
+      "default": "我填写错误了，重新填写"
     }
   ],
   "blocks": [
     {
       "type": "heading",
-      "name": "Heading",
+      "name": "标题",
       "limit": 1,
       "settings": [
         {
           "type": "text",
           "id": "heading",
-          "label": "Heading",
-          "default": "Confirm your age"
+          "label": "标题",
+          "default": "请确认您的年龄"
         }
       ]
     },
     {
       "type": "subheading",
-      "name": "Subheading",
+      "name": "副标题",
       "limit": 1,
       "settings": [
         {
           "type": "text",
           "id": "subheading",
-          "label": "Subheading",
-          "default": "Subheading text"
+          "label": "副标题",
+          "default": "副标题文字"
         }
       ]
     },
     {
       "type": "text",
-      "name": "Text",
+      "name": "文本",
       "limit": 1,
       "settings": [
         {
           "type": "richtext",
           "id": "text",
-          "label": "Content",
-          "default": "<p>Are you 18 years old or older?</p>"
+          "label": "内容",
+          "default": "<p>您是否已满18周岁？</p>"
         }
       ]
     },
     {
       "type": "image",
-      "name": "Image",
+      "name": "图片",
       "limit": 1,
       "settings": [
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image"
+          "label": "图片"
         },
         {
           "type": "checkbox",
           "id": "use_custom_image_width",
-          "label": "Use custom image width",
+          "label": "使用自定义图片宽度",
           "default": true
         },
         {
           "type": "range",
           "id": "custom_image_width",
-          "label": "Custom image width (PX)",
+          "label": "自定义图片宽度（PX）",
           "unit": "PX",
           "min": 50,
           "max": 350,
@@ -236,20 +236,20 @@
     },
     {
       "type": "buttons",
-      "name": "Buttons",
+      "name": "按钮",
       "limit": 1,
       "settings": [
         {
           "type": "text",
           "id": "decline_button",
-          "label": "Decline button text",
-          "default": "No, I'm not"
+          "label": "拒绝按钮文字",
+          "default": "不，我未满18岁"
         },
         {
           "type": "text",
           "id": "approve_button",
-          "label": "Approve button text",
-          "default": "Yes, I am"
+          "label": "确认按钮文字",
+          "default": "是的，我已满18岁"
         }
       ]
     }

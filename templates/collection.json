@@ -3,52 +3,88 @@
     "collection-header": {
       "type": "collection-page-header",
       "settings": {
-        "color_scheme": "dark",
-        "container": "container-fluid",
+        "color_scheme": "",
+        "container": "container",
         "layout": "inside",
-        "image_position": "background",
-        "enable_parallax": false,
-        "parallax_direction": "vertical",
+        "header_height": "small",
+        "enable_parallax": true,
         "text_alignment": "center",
+        "vertical_alignment": "center",
         "text_color": "inherit",
-        "upper_title": false,
-        "show_desc": true,
+        "upper_title": true,
+        "show_desc": false,
         "collection_all_desc": "",
-        "padding_top": 36,
-        "padding_bottom": 50,
         "enable_bg_zoom_effect": true
       }
     },
     "main": {
       "type": "main-collection-product-grid",
       "blocks": {
-        "banner_promotion_KppNc9": {
-          "type": "banner_promotion",
+        "26ef6509-772d-4c44-bd90-efc089bd9355": {
+          "type": "filter",
           "settings": {
-            "color_scheme": "dark",
-            "text_size": "medium",
-            "text_color": "white",
-            "link": "",
-            "content_position": "bottom_center",
-            "content_alignment": "center",
-            "title": "SALE UP TO 25% OFF",
-            "subtitle": "Online Exclusive",
-            "button_label": "Shop The Sale",
-            "button_style": "m-button--primary",
-            "button_size": "",
-            "button_fixed": false
+            "design_filtergroup": "button",
+            "title": "Size",
+            "filtergroup": "XS,S,M,L,XL",
+            "show_label": false,
+            "use_accordion": false,
+            "open_filtergroup": true
+          }
+        },
+        "e12de6da-eab8-4abe-967c-06d0d959a18a": {
+          "type": "filter",
+          "settings": {
+            "design_filtergroup": "color",
+            "title": "Colors",
+            "filtergroup": "Blue, Red, White ,Black ,Pink ,Silver,Purple,Brown,Yellow,Grey,Green,Tan,Violet,Dark Grey,Beige,Light Blue, Dark Blue, Light Grey, Light Pink, Mint, Rose Gold, Night Blue, Copper, Coral, Rosy Brown",
+            "show_label": false,
+            "use_accordion": false,
+            "open_filtergroup": true
+          }
+        },
+        "fa31a837-9c99-4c92-8cfe-0527ffbe7b15": {
+          "type": "filter",
+          "settings": {
+            "design_filtergroup": "default",
+            "title": "Prices",
+            "filtergroup": "$0-$50,$50-$100,$100-$150,$150-$200,$200-$300,$300-$400",
+            "show_label": false,
+            "use_accordion": false,
+            "open_filtergroup": true
+          }
+        },
+        "4903963a-90f0-4fe1-be23-ee4f8749e483": {
+          "type": "filter",
+          "settings": {
+            "design_filtergroup": "inrow",
+            "title": "Brands",
+            "filtergroup": "Minimog,Retrolie,Abby,Brook,Learts,Vagabond",
+            "show_label": false,
+            "use_accordion": false,
+            "open_filtergroup": true
+          }
+        },
+        "00b3badd-1613-4230-85d8-f87f04306aaa": {
+          "type": "filter",
+          "settings": {
+            "design_filtergroup": "inrow",
+            "title": "Tags",
+            "filtergroup": "Dress,Tops,Shirts,Fashion,Hats,Sandal,Belt,Bags,Snacker,Denim,Minimog,Vagabond,Sunglasses, Beachwear,Vintage",
+            "show_label": false,
+            "use_accordion": true,
+            "open_filtergroup": true
           }
         }
       },
       "block_order": [
-        "banner_promotion_KppNc9"
-      ],
-      "custom_css": [
-        ".m-banner-promotion {order: 3 !important; margin-top: 30px; margin-bottom: 0;}",
-        ".m-collection-filters-form {margin-bottom: 0;}"
+        "26ef6509-772d-4c44-bd90-efc089bd9355",
+        "e12de6da-eab8-4abe-967c-06d0d959a18a",
+        "fa31a837-9c99-4c92-8cfe-0527ffbe7b15",
+        "4903963a-90f0-4fe1-be23-ee4f8749e483",
+        "00b3badd-1613-4230-85d8-f87f04306aaa"
       ],
       "settings": {
-        "container": "container-fluid",
+        "container": "container",
         "grid_layout": "grid",
         "grid_columns": "4",
         "show_columns_switcher": true,
@@ -56,28 +92,27 @@
         "paginate_type": "paginate",
         "show_sorting": true,
         "show_filter": true,
-        "filters_type": "storefront_filters",
+        "filters_type": "tags_filter",
         "sidebar": "leftColumn",
         "sidebar_title": "Filters",
-        "limit_height_widget": true,
+        "limit_height_widget": false,
         "limit_height": 300,
         "change_product_variant_on_fitlering": true,
         "show_product_count": true,
-        "collapsed_groups": "Product type, Brand, Vendor, Size",
-        "color_swatches": "color,colour,couleur,farbe",
-        "color_swatches_design": "list"
+        "collapsed_groups": "Brand, Vendor, Size",
+        "color_swatches": "color,colour,couleur,farbe"
       }
     },
     "recent-viewed": {
       "type": "recent-viewed-products",
       "settings": {
-        "container": "container-fluid",
+        "container": "container",
         "color_scheme": "",
         "heading": "Recently Viewed Products",
         "heading_size": "h3",
         "text_align": "left",
         "limit": 8,
-        "columns": 5,
+        "columns": 4,
         "column_gap": 30,
         "pcard_layout": "",
         "pcard_image_ratio": "",

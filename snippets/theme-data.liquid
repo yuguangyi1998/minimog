@@ -46,6 +46,8 @@ window.MinimogStrings = {
   unitPriceSeparator: {{ 'general.accessibility.unit_price_separator' | t | json }},
   cartError: "{% render 'new-locale', key: 'cart.general.cart_error' %}",
   quantityError: "{{ 'products.product.not_enough_items_message' | t: quantity: '{{ quantity }}' }}",
+  duplicateDiscountError: `{{ 'cart.general.discount_duplicate_error_message' | t }}`, 
+  applyDiscountError: `{{ 'cart.general.discount_apply_error_message' | t }}`,
   selectVariant: "{% render 'new-locale', key: 'products.product.select_variant' %}",
   valideDateTimeDelivery: "{% render 'new-locale', key: 'cart.general.delivery_error' %}"
 };
@@ -76,7 +78,7 @@ window.MinimogSettings = {
     id: {{ theme.id }},
     name: {{ theme.name | json }},
     role: {{ theme.role | json }},
-    version: "5.7.0",
+    version: "5.9.0",
     online_store_version: "2.0",
     preview_url: "{{ shop.url }}?preview_theme_id={{ theme.id }}",
   },

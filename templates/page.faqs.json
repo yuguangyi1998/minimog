@@ -1,46 +1,15 @@
 {
   "sections": {
-    "breadcrumb_RHyjx4": {
-      "type": "breadcrumb",
-      "settings": {
-        "container": "container",
-        "text_alignment": "center",
-        "hide_current": false,
-        "hide_on_mb": false,
-        "animations": "inherit"
-      }
-    },
-    "custom_content_tAfTRN": {
-      "type": "custom-content",
-      "settings": {
-        "heading": "FAQs",
-        "heading_size": "h2",
-        "subheading": "",
-        "description": "",
-        "header_alignment": "center",
-        "container": "container-fluid",
-        "color_scheme": "",
-        "content_color_scheme": "",
-        "enable_parallax": false,
-        "parallax_direction": "vertical",
-        "gap": 30,
-        "gap_mobile": 16,
-        "use_scroll_mobile": false,
-        "padding_top": 30,
-        "padding_bottom": 30,
-        "custom_class": ""
-      }
-    },
     "main": {
       "type": "page-faqs",
       "blocks": {
-        "custom-content": {
+        "2802736b-f08f-4510-a4f7-4ad7d748992d": {
           "type": "content",
           "settings": {
             "content": "<div class=\"mb-10\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0561\/2742\/2636\/files\/faqs.jpg?v=1620784288\"><\/div>\n<h3 class=\"font-medium text-xl mb-4\">Awkwardness gives me great comfort. I’ve never been cool, but I’ve felt cool. I’ve been in the cool place, but I wasn’t really cool – I was trying to pass for hip or cool.<\/h3>\n<p>A girl should be two things: classy and fabulous. I am convinced that there can be luxury in simplicity. I wanted to dress the woman who lives and works, not the woman in a painting. It’s hard to balance everything. It’s always challenging. My relationships with producers or photographers – these are relationships that took years. I can’t get sucked into that celebrity thing, because I think it’s just crass. My aim is to make the poor look rich.<\/p>"
           }
         },
-        "accordion-1": {
+        "4e151238-4480-4122-b893-7f4a19886e4c": {
           "type": "accordion",
           "settings": {
             "title": "What shipping methods are availbale?",
@@ -48,7 +17,7 @@
             "open": true
           }
         },
-        "accordion-2": {
+        "c5d4d04d-f6c1-4d1e-99f0-3c221393a3cf": {
           "type": "accordion",
           "settings": {
             "title": "How long will it take to get my package?",
@@ -56,7 +25,7 @@
             "open": false
           }
         },
-        "accordion-3": {
+        "0131747b-8b40-432f-b634-b1289ec41911": {
           "type": "accordion",
           "settings": {
             "title": "Do you ship internationally?",
@@ -64,7 +33,7 @@
             "open": false
           }
         },
-        "accordion-4": {
+        "5d7206e9-5375-4da6-9a1f-24e1c46230b0": {
           "type": "accordion",
           "settings": {
             "title": "What payment methods are accepted?",
@@ -72,7 +41,7 @@
             "open": false
           }
         },
-        "accordion-5": {
+        "4008f61e-055e-42ba-8969-cb3715c0aece": {
           "type": "accordion",
           "settings": {
             "title": "Is buying on-line safe?",
@@ -82,24 +51,20 @@
         }
       },
       "block_order": [
-        "custom-content",
-        "accordion-1",
-        "accordion-2",
-        "accordion-3",
-        "accordion-4",
-        "accordion-5"
+        "2802736b-f08f-4510-a4f7-4ad7d748992d",
+        "4e151238-4480-4122-b893-7f4a19886e4c",
+        "c5d4d04d-f6c1-4d1e-99f0-3c221393a3cf",
+        "0131747b-8b40-432f-b634-b1289ec41911",
+        "5d7206e9-5375-4da6-9a1f-24e1c46230b0",
+        "4008f61e-055e-42ba-8969-cb3715c0aece"
       ],
       "settings": {
         "container": "container",
-        "color_scheme": "",
-        "menu": "",
-        "custom_class": ""
+        "menu": "faqs-menu"
       }
     }
   },
   "order": [
-    "breadcrumb_RHyjx4",
-    "custom_content_tAfTRN",
     "main"
   ]
 }

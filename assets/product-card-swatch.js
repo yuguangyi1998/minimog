@@ -14,14 +14,18 @@ if (!customElements.get("pcard-swatch")) {
         compareAtPrice: [".m-price-item--regular"],
         unitPrice: ".m-price__unit",
         soldOutBadge: ".m-product-tag--soldout",
+        saleBadge: ".m-product-tag--sale"
       };
       this.container = this.closest(this.selectors.container);
       this.pcard = this.closest(this.selectors.pcard);
       this.variantIdNode = this.pcard && this.pcard.querySelector('[name="id"]');
       this.featuredImage = this.pcard && this.pcard.querySelector(this.selectors.featuredImage);
-      this.keepFeaturedImage = this.dataset.keepFeaturedImage === "true";
       this.domNodes = queryDomNodes(this.selectors, this.pcard);
       this.initializeData();
+    }
+
+    get disableSelectedVariantByDefault() {
+      return this.dataset.disableSelectedVariantByDefault === "true";
     }
 
     async initializeData() {
@@ -47,7 +51,7 @@ if (!customElements.get("pcard-swatch")) {
           );
         }
 
-        if (!this.keepFeaturedImage) {
+        if (!this.disableSelectedVariantByDefault) {
           this.updateOptionsByVariant(currentVariant);
           this.updateProductImage(currentVariant);
           window.MinimogEvents.subscribe("m:image-loaded", () => {
@@ -201,6 +205,7 @@ if (!customElements.get("pcard-swatch")) {
       }
 
       this.updateBySelectedVariant(newVariant);
+      this.updateSaleBadge(newVariant);
     }
 
     updateBySelectedVariant(variant) {
@@ -223,6 +228,36 @@ if (!customElements.get("pcard-swatch")) {
       }
     }
 
+    updateSaleBadge(variant) {
+      if (!variant || !this.domNodes.saleBadge) return;
+
+      const moneyFormat = window.MinimogSettings.money_format;
+      const saleBadgeType = this.pcard.dataset.saleBadge
+
+      const { compare_at_price, price } = variant;
+
+      if (!compare_at_price || compare_at_price <= price) {
+        this.domNodes.saleBadge.classList.add('!m:hidden');
+        return;
+      }
+
+      this.domNodes.saleBadge.classList.remove('!m:hidden');
+
+      let discount = compare_at_price - price;
+
+      if (saleBadgeType === 'show_percentage') {
+        discount = Math.round(discount / compare_at_price * 100);
+        this.domNodes.saleBadge.innerHTML = `-${discount}%`;
+
+      } else if (saleBadgeType === 'show_fixed_amount') {
+        const saved = this.domNodes.saleBadge.querySelector('.m-currency--saved');
+        discount = Math.round(discount);
+        if (saved) {
+          saved.innerHTML = formatMoney(discount, moneyFormat);
+        }
+      }
+    }
+
     getVariantsByOptionValue = (value) => {
       const { productData: { variants } = {} } = this;
       return variants.filter((variant) => variant.options.includes(value));
@@ -240,7 +275,6 @@ if (!customElements.get("pcard-swatch")) {
     }
 
     updatePrice(variant) {
-      if (MinimogSettings.pcard_show_lowest_prices) return;
       const classes = {
         onSale: "m-price--on-sale",
         soldOut: "m-price--sold-out",

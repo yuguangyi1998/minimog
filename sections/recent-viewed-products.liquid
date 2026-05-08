@@ -123,7 +123,7 @@
 </m-recently-viewed>
 {% schema %}
 {
-  "name": "Recently viewed products",
+  "name": "Recently viewed products 最近浏览产品",
   "disabled_on": {
     "groups": ["header"]
   },
@@ -131,55 +131,55 @@
   "settings": [
     {
       "type": "header",
-      "content": "General"
+      "content": "通用"
     },
     {
       "type": "select",
       "id": "container",
-      "label": "Container type",
+      "label": "容器类型",
       "default": "container",
       "options": [
         {
           "value": "container-fluid",
-          "label": "Default"
+          "label": "默认"
         },
         {
           "value": "w-full",
-          "label": "Full width"
+          "label": "撑满宽度"
         },
         {
           "value": "container",
-          "label": "Use container box"
+          "label": "使用当前区域"
         }
       ]
     },
     {
       "type": "color_scheme",
       "id": "color_scheme",
-      "label": "Color scheme"
+      "label": "颜色方案"
     },
     {
       "type": "header",
-      "content": "Header settings"
+      "content": "头部设置"
     },
     {
       "type": "text",
       "id": "heading",
-      "label": "Heading",
+      "label": "标题",
       "default": "Recently Viewed Products"
     },
     {
       "type": "select",
       "id": "heading_size",
-      "label": "Heading size",
+      "label": "标题大小",
       "options": [
         {
           "value": "h3",
-          "label": "Medium"
+          "label": "中等"
         },
         {
           "value": "h2",
-          "label": "Large"
+          "label": "大"
         }
       ],
       "default": "h3"
@@ -187,27 +187,27 @@
     {
       "type": "select",
       "id": "text_align",
-      "label": "Text alignment",
+      "label": "文本对齐",
       "default": "left",
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "左"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "中"
         }
       ]
     },
     {
       "type": "header",
-      "content": "Grid settings"
+      "content": "网格设置"
     },
     {
       "type": "range",
       "id": "limit",
-      "label": "Products to show",
+      "label": "显示产品数量",
       "default": 8,
       "min": 3,
       "max": 20
@@ -215,7 +215,7 @@
     {
       "type": "range",
       "id": "columns",
-      "label": "Products per row",
+      "label": "每行显示产品数量",
       "default": 4,
       "min": 3,
       "max": 8
@@ -223,7 +223,7 @@
     {
       "type": "range",
       "id": "column_gap",
-      "label": "Column gap",
+      "label": "列间距",
       "default": 30,
       "min": 0,
       "max": 50,
@@ -231,17 +231,17 @@
     },
     {
       "type": "header",
-      "content": "Product card settings"
+      "content": "产品卡片设置"
     },
     {
       "type": "select",
       "id": "pcard_layout",
-      "label": "Design layout",
+      "label": "设计布局",
       "default": "",
       "options": [
         {
           "value": "",
-          "label": "Use global settings"
+          "label": "使用全局设置"
         },
         {
           "value": "1",
@@ -273,11 +273,11 @@
       "options": [
         {
           "value": "",
-          "label": "Use global settings"
+          "label": "使用全局设置"
         },
         {
           "value": "original",
-          "label": "Original aspect ratio"
+          "label": "原始比例"
         },
         {
           "value": "1/1",
@@ -300,58 +300,58 @@
     {
       "type": "checkbox",
       "id": "show_vendor",
-      "label": "Show product vendors",
+      "label": "显示产品厂商",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "hide_title",
-      "label": "Hide product title",
+      "label": "隐藏产品标题",
       "default": false
     },
     {
       "type": "header",
-      "content": "Slider settings"
+      "content": "幻灯片配置"
     },
     {
       "type": "checkbox",
       "id": "enable_slider",
-      "label": "Enable slider",
+      "label": "启用幻灯片",
       "default": true
     },
     {
       "type": "checkbox",
       "id": "show_pagination",
-      "label": "Show pagination",
+      "label": "显示分页",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "show_navigation",
-      "label": "Show navigation",
+      "label": "显示导航",
       "default": false
     },
     {
       "type": "header",
-      "content": "Mobile settings"
+      "content": "移动端设置"
     },
     {
       "type": "checkbox",
-      "label": "Disable slider",
+      "label": "禁用幻灯片",
       "id": "mobile_disable_slider",
       "default": false
     },
     {
       "type": "checkbox",
-      "label": "Use horizontal scrollbar",
+      "label": "使用水平滚动条",
       "id": "use_scroll_mobile",
       "default": true,
-      "info": "Uncheck to display as grid"
+      "info": "取消则显示为网格"
     },
     {
       "type": "range",
       "id": "item_gap_mobile",
-      "label": "Column gap",
+      "label": "列间距",
       "min": 0,
       "max": 30,
       "step": 2,
@@ -360,12 +360,12 @@
     },
     {
       "type": "header",
-      "content": "Section Padding"
+      "content": "段落内边距"
     },
     {
       "type": "range",
       "id": "padding_top",
-      "label": "Padding Top",
+      "label": "上内边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -375,7 +375,7 @@
     {
       "type": "range",
       "id": "padding_bottom",
-      "label": "Padding Bottom",
+      "label": "下内边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -384,49 +384,49 @@
     },
     {
       "type": "header",
-      "content": "Custom Attributes"
+      "content": "自定义属性"
     },
     {
       "type": "text",
       "id": "custom_class",
-      "label": "Custom classes"
+      "label": "自定义类"
     },
     {
       "type": "header",
-      "content": "Animations"
+      "content": "动画"
     },
     {
       "type": "select",
       "id": "animations",
-      "label": "Visible in the view animation",
+      "label": "在视图中可见的动画",
       "default": "inherit",
       "options": [
         {
           "value": "inherit",
-          "label": "Inherit global setting"
+          "label": "继承全局设置",
         },
         {
           "value": "fade-in",
-          "label": "Fade in"
+          "label": "淡入",
         },
         {
           "value": "fade-in-up",
-          "label": "Fade in up"
+          "label": "淡入向上",
         },
         {
           "value": "fade-in-left",
-          "label": "Fade in left"
+          "label": "淡入向左",
         },
         {
           "value": "fade-in-right",
-          "label": "Fade in right"
+          "label": "淡入向右",
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Recently viewed products",
+      "name": "最近浏览产品",
       "settings": {}
     }
   ]

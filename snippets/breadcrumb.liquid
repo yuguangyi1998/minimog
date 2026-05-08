@@ -65,18 +65,34 @@
             elsif product and product.collections.size > 0
               assign current_collection = product.collections.first
             endif
+
+            assign primary_collection = product.metafields.breadcrumbs.primary_collection
           %}
-          {% if current_collection %}
+          {%- if collection.url != blank -%}
             {{ separator }}
-            {% if current_collection.handle %}
-              {% capture url %}/collections/{{ current_collection.handle }}{% endcapture %}
-              <a href="{{ url }}" class="m-breadcrumb--item">{{ current_collection.title }}</a>
-            {% endif %}
-          {% endif %}
-          {% unless hide_current == true %}
+            {%- if primary_collection != blank -%}
+              {{ primary_collection.value.title | link_to: primary_collection.value.url, class: 'm-breadcrumb--item' }}
+            {%- else -%}
+              {{ collection.title | link_to: collection.url, class: 'm-breadcrumb--item' }}
+            {%- endif -%}
+          {%- else -%}
+            {%- assign current_collection = product.collections | first -%}
             {{ separator }}
-            <span class="m-breadcrumb--item-current m-breadcrumb--item">{{ product.title }}</span>
-          {% endunless %}
+            {%- if primary_collection != blank -%}
+              <a href="{{ primary_collection.value.url }}" class="m-breadcrumb--item">
+                {{- primary_collection.value.title -}}
+              </a>
+            {%- elsif current_collection != blank -%}
+              <a href="{{ current_collection.url }}" class="m-breadcrumb--item">
+                {{- current_collection.title -}}
+              </a>
+            {%- else -%}
+              <a href="{{ routes.all_products_collection_url }}" class="m-breadcrumb--item">{{ 'products.product.collection' | t }}</a>
+            {%- endif -%}
+          {%- endif -%}
+          {{ separator }}
+          <span class="m-breadcrumb--item-current m-breadcrumb--item">{{ product.title }}</span>
+
         {% elsif template.name == 'collection' and collection.handle %}
           {{ separator }}
           {% if current_tags %}

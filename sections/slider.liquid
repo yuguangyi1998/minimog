@@ -307,7 +307,7 @@
 
 {% schema %}
 {
-  "name": "Slideshow",
+  "name": "幻灯片",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
@@ -319,121 +319,121 @@
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "通用"
     },
     {
       "type": "select",
       "id": "container",
-      "label": "Container type",
+      "label": "容器类型",
       "default": "w-full",
       "options": [
         {
           "value": "container-fluid",
-          "label": "Default"
+          "label": "默认"
         },
         {
           "value": "w-full",
-          "label": "Full width"
+          "label": "撑满宽度"
         },
         {
           "value": "container",
-          "label": "Use container box"
+          "label": "使用当前区域"
         }
       ]
     },
     {
       "type": "select",
       "id": "slideshow_height",
-      "label": "Slide height",
+      "label": "幻灯片高度",
       "default": "adapt",
       "options": [
         {
-          "label": "Adapt to first slide image",
+          "label": "适应第一张幻灯片图片",
           "value": "adapt"
         },
         {
-          "label": "Small",
+          "label": "小",
           "value": "small"
         },
         {
-          "label": "Medium",
+          "label": "中等",
           "value": "medium"
         },
         {
-          "label": "Large",
+          "label": "大",
           "value": "large"
         },
         {
-          "label": "Full screen",
+          "label": "全屏",
           "value": "fullscreen"
         }
       ],
-      "info": "Only applies to screens > 767px"
+      "info": "仅适用于屏幕 > 767px"
     },
     {
       "type": "checkbox",
       "id": "show_overlay",
-      "label": "Show overlay",
+      "label": "显示覆盖",
       "default": false
     },
     {
       "type": "select",
       "id": "dots_position",
-      "label": "Pagination position",
+      "label": "分页位置",
       "default": "bottom",
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "左"
         },
         {
           "value": "bottom",
-          "label": "Bottom"
+          "label": "下"
         },
         {
           "value": "right",
-          "label": "Right"
+          "label": "右"
         }
       ]
     },
     {
       "type": "select",
       "id": "dots_color",
-      "label": "Controls color",
+      "label": "控制颜色",
       "default": "dark",
       "options": [
         {
           "value": "dark",
-          "label": "Dark"
+          "label": "暗色",
         },
         {
           "value": "light",
-          "label": "Light"
+          "label": "浅色"
         }
       ]
     },
     {
       "type": "checkbox",
       "id": "show_dots",
-      "label": "Show pagination",
+      "label": "显示分页",
       "default": true
     },
     {
       "type": "checkbox",
       "id": "show_arrows",
-      "label": "Show navigation",
+      "label": "显示导航",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "autorotate",
-      "label": "Auto-rotate slides",
+      "label": "自动旋转幻灯片",
       "default": false
     },
     {
       "type": "range",
       "id": "autorotate_speed",
-      "label": "Change slides every",
+      "label": "每秒切换幻灯片",
       "info": "Work when auto-rotate",
       "max": 10,
       "min": 2,
@@ -443,52 +443,52 @@
     },
     {
       "type": "header",
-      "content": "Mobile settings"
+      "content": "移动端设置"
     },
     {
       "type": "checkbox",
       "id": "use_content_above",
-      "label": "Use content above the image",
+      "label": "内容在图片上方",
       "default": false
     },
     {
       "type": "header",
-      "content": "Advanced"
+      "content": "高级设置"
     },
     {
       "type": "text",
       "id": "custom_class",
-      "label": "Custom classes"
+      "label": "自定义类"
     },
     {
       "type": "header",
-      "content": "Animations"
+      "content": "动画"
     },
     {
       "type": "select",
       "id": "animations",
-      "label": "Visible in the view animation",
+      "label": "在视图中可见的动画",
       "default": "inherit",
       "options": [
         {
           "value": "inherit",
-          "label": "Inherit global setting"
+          "label": "继承全局设置",
         },
         {
           "value": "fade-in",
-          "label": "Fade in"
+          "label": "淡入",
         },
         {
           "value": "fade-in-up",
-          "label": "Fade in up"
+          "label": "淡入向上",
         },
         {
           "value": "fade-in-left",
-          "label": "Fade in left"
+          "label": "淡入向左",
         },
         {
           "value": "fade-in-right",
-          "label": "Fade in right"
+          "label": "淡入向右",
         }
       ]
     }
@@ -496,74 +496,74 @@
   "blocks": [
     {
       "type": "slider_item",
-      "name": "Image slide",
+      "name": "图片幻灯片",
       "settings": [
         {
           "type": "header",
-          "content": "Background settings"
+          "content": "背景设置"
         },
         {
           "type": "image_picker",
           "id": "background",
-          "label": "Image on desktop",
+          "label": "桌面图片",
           "info": "1920 x 900px recommended"
         },
         {
           "type": "image_picker",
           "id": "mb_background",
-          "label": "Image on mobile",
+          "label": "移动图片",
           "info": "600 x 480px recommended"
         },
         {
           "type": "header",
-          "content": "Content"
+          "content": "内容"
         },
         {
           "type": "checkbox",
           "id": "content_in_container",
-          "label": "Content in container box",
+          "label": "内容在容器框中",
           "default": false
         },
         {
           "type": "select",
           "id": "content_position",
-          "label": "Content position",
+          "label": "内容位置",
           "default": "center middle",
           "options": [
             {
-              "label": "Top left",
-              "value": "left top"
+              "label": "上左",
+              "value": "左上"
             },
             {
-              "label": "Top center",
-              "value": "center top"
+              "label": "上中",
+              "value": "中上"
             },
             {
-              "label": "Top right",
-              "value": "right top"
+              "label": "上右",
+              "value": "右上"
             },
             {
-              "label": "Middle left",
-              "value": "left middle"
+              "label": "中左",
+              "value": "左中"
             },
             {
-              "label": "Middle center",
+              "label": "中",
               "value": "center middle"
             },
             {
-              "label": "Middle right",
+              "label": "中右",
               "value": "right middle"
             },
             {
-              "label": "Bottom left",
+              "label": "下左",
               "value": "left bottom"
             },
             {
-              "label": "Bottom center",
+              "label": "下中",
               "value": "center bottom"
             },
             {
-              "label": "Bottom right",
+              "label": "下右",
               "value": "right bottom"
             }
           ]
@@ -571,115 +571,115 @@
         {
           "type": "select",
           "id": "text_alignment",
-          "label": "Content alignment",
+          "label": "内容对齐",
           "default": "center",
           "options": [
             {
               "value": "left",
-              "label": "Left"
+              "label": "左"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "中"
             },
             {
               "value": "right",
-              "label": "Right"
+              "label": "右"
             }
           ]
         },
         {
           "type": "select",
           "id": "text_size",
-          "label": "Text size",
+          "label": "文本大小",
           "default": "medium",
           "options": [
             {
               "value": "medium",
-              "label": "Medium"
+              "label": "中等"
             },
             {
               "value": "large",
-              "label": "Large"
+              "label": "大"
             }
           ]
         },
         {
           "type": "select",
           "id": "text_color",
-          "label": "Text color",
+          "label": "文本颜色",
           "default": "black",
           "options": [
             {
               "value": "black",
-              "label": "Dark"
+              "label": "暗色",
             },
             {
               "value": "white",
-              "label": "Light"
+              "label": "浅色"
             }
           ]
         },
         {
           "type": "textarea",
           "id": "subheading",
-          "label": "Subheading",
-          "info": "Allow custom HTML"
+          "label": "副标题",
+          "info": "允许自定义 HTML"
         },
         {
           "type": "textarea",
           "id": "title",
-          "label": "Heading",
+          "label": "标题",
           "default": "New Collection",
-          "info": "Allow custom HTML"
+          "info": "允许自定义 HTML"
         },
         {
           "type": "richtext",
           "id": "description",
-          "label": "Description",
+          "label": "描述",
           "default": "<p>Tell your campaign through images</p>"
         },
         {
           "type": "url",
           "id": "image_link",
           "label": "Image link",
-          "info": "Link to image"
+          "info": "链接到图片"
         },
         {
           "type": "header",
-          "content": "First Button"
+          "content": " 第一个按钮"
         },
         {
           "type": "text",
           "id": "button_text",
-          "label": "Button label",
+          "label": "按钮标签",
           "default": "Shop now"
         },
         {
           "type": "url",
           "id": "button_link",
-          "label": "Button link"
+          "label": "按钮链接"
         },
         {
           "type": "select",
           "id": "button_style",
-          "label": "Button style",
+          "label": "按钮风格",
           "options": [
             {
               "value": "m-button--primary",
-              "label": "Primary button"
+              "label": "主题按钮"
             },
             {
               "value": "m-button--secondary",
-              "label": "Secondary button"
+              "label": "次要按钮"
             },
             {
               "value": "m-button--white",
-              "label": "White button"
+              "label": "白色按钮"
             },
             {
               "value": "m-button--link",
-              "label": "Underline button"
+              "label": "下划线按钮"
             }
           ],
           "default": "m-button--primary"
@@ -687,57 +687,57 @@
         {
           "type": "select",
           "id": "button_size",
-          "label": "Button size",
+          "label": "按钮大小",
           "options": [
             {
               "value": "m-button--small",
-              "label": "Button small"
+              "label": "小按钮"
             },
             {
               "value": "",
-              "label": "Button medium"
+              "label": "中按钮"
             },
             {
               "value": "m-button--large",
-              "label": "Button large"
+              "label": "大按钮"
             }
           ],
           "default": ""
         },
         {
           "type": "header",
-          "content": "Second Button"
+          "content": "第二个按钮"
         },
         {
           "type": "text",
           "id": "second_button_text",
-          "label": "Button label"
+          "label": "按钮标题"
         },
         {
           "type": "url",
           "id": "second_button_link",
-          "label": "Button link"
+          "label": "按钮链接"
         },
         {
           "type": "select",
           "id": "second_button_style",
-          "label": "Button style",
+          "label": "按钮风格",
           "options": [
             {
               "value": "m-button--primary",
-              "label": "Primary button"
+              "label": "主题按钮"
             },
             {
               "value": "m-button--secondary",
-              "label": "Secondary button"
+              "label": "次要按钮"
             },
             {
               "value": "m-button--white",
-              "label": "White button"
+              "label": "白色按钮"
             },
             {
               "value": "m-button--link",
-              "label": "Underline button"
+              "label": "下划线按钮"
             }
           ],
           "default": "m-button--primary"
@@ -745,19 +745,19 @@
         {
           "type": "select",
           "id": "second_button_size",
-          "label": "Button size",
+          "label": "按钮大小",
           "options": [
             {
               "value": "m-button--small",
-              "label": "Button small"
+              "label": "小按钮"
             },
             {
               "value": "",
-              "label": "Button medium"
+              "label": "中按钮"
             },
             {
               "value": "m-button--large",
-              "label": "Button large"
+              "label": "大按钮"
             }
           ],
           "default": ""
@@ -770,24 +770,24 @@
           "type": "checkbox",
           "id": "show_footer",
           "default": false,
-          "label": "Show footer"
+          "label": "显示底部"
         },
         {
           "type": "select",
           "id": "footer_alignment",
-          "label": "Footer alignment",
+          "label": "底部对齐",
           "options": [
             {
               "value": "start",
-              "label": "Left"
+              "label": "左"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "中"
             },
             {
               "value": "end",
-              "label": "Right"
+              "label": "右"
             }
           ],
           "default": "end"
@@ -795,103 +795,103 @@
         {
           "type": "text",
           "id": "footer_text",
-          "label": "Footer text",
+          "label": "Footer text 底部文本",
           "default": "New Collection"
         },
         {
           "type": "text",
           "id": "footer_button",
-          "label": "Footer button",
+          "label": "Footer button 底部按钮",
           "default": "Shop Now"
         },
         {
           "type": "url",
           "id": "footer_link",
-          "label": "Footer link"
+          "label": "Footer link 底部链接",
         },
         {
           "type": "header",
-          "content": "Advanced"
+          "content": "高级设置"
         },
         {
           "type": "checkbox",
           "id": "enable_preload_image",
-          "label": "Enable preload image",
+          "label": "Enable preload image 启用预加载图片",
           "info": "If this section is visible when the page loads, enabling this setting can reduce LCP and may improve site speed scores."
         }
       ]
     },
     {
       "type": "video_slide",
-      "name": "Video slide",
+      "name": "Video slide 视频幻灯片",
       "settings": [
         {
           "type": "header",
-          "content": "Background settings"
+          "content": "背景设置"
         },
         {
           "type": "textarea",
           "id": "video",
-          "label": "Video",
+          "label": "Video 视频",
           "default": "https://cdn.shopify.com/videos/c/o/v/fbb140fd46e3429eba459e1549dbbe38.mp4",
           "info": "Allow multiple format, each video in a new line. MP4, MOV and WEBM supported."
         },
         {
           "type": "image_picker",
           "id": "mb_background",
-          "label": "Image on mobile",
+          "label": "Image on mobile 移动图片",
           "info": "600 x 480px recommended"
         },
         {
           "type": "header",
-          "content": "Content"
+          "content": "内容"
         },
         {
           "type": "checkbox",
           "id": "content_in_container",
-          "label": "Content in container box",
+          "label": "内容在容器框中",
           "default": false
         },
         {
           "type": "select",
           "id": "content_position",
-          "label": "Content position",
+          "label": "内容位置",
           "default": "center middle",
           "options": [
             {
-              "label": "Top left",
-              "value": "left top"
+              "label": "上左",
+              "value": "左上"
             },
             {
-              "label": "Top center",
-              "value": "center top"
+              "label": "上中",
+              "value": "中上"
             },
             {
-              "label": "Top right",
-              "value": "right top"
+              "label": "上右",
+              "value": "右上"
             },
             {
-              "label": "Middle left",
-              "value": "left middle"
+              "label": "中左",
+              "value": "左中"
             },
             {
-              "label": "Middle center",
+              "label": "中",
               "value": "center middle"
             },
             {
-              "label": "Middle right",
+              "label": "中右",
               "value": "right middle"
             },
             {
-              "label": "Bottom left",
+              "label": "下左",
               "value": "left bottom"
             },
             {
-              "label": "Bottom center",
+              "label": "下中",
               "value": "center bottom"
             },
             {
-              "label": "Bottom right",
+              "label": "下右",
               "value": "right bottom"
             }
           ]
@@ -899,115 +899,115 @@
         {
           "type": "select",
           "id": "text_alignment",
-          "label": "Content alignment",
+          "label": "内容对齐",
           "default": "center",
           "options": [
             {
               "value": "left",
-              "label": "Left"
+              "label": "左"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "中"
             },
             {
               "value": "right",
-              "label": "Right"
+              "label": "右"
             }
           ]
         },
         {
           "type": "select",
           "id": "text_size",
-          "label": "Text size",
+          "label": "文本大小",
           "default": "medium",
           "options": [
             {
               "value": "medium",
-              "label": "Medium"
+              "label": "中等"
             },
             {
               "value": "large",
-              "label": "Large"
+              "label": "大"
             }
           ]
         },
         {
           "type": "select",
           "id": "text_color",
-          "label": "Text color",
+          "label": "文本颜色",
           "default": "black",
           "options": [
             {
               "value": "black",
-              "label": "Dark"
+              "label": "暗色",
             },
             {
               "value": "white",
-              "label": "Light"
+              "label": "浅色"
             }
           ]
         },
         {
           "type": "textarea",
           "id": "subheading",
-          "label": "Subheading",
-          "info": "Allow custom HTML"
+          "label": "副标题",
+          "info": "允许自定义 HTML"
         },
         {
           "type": "textarea",
           "id": "title",
-          "label": "Heading",
+          "label": "标题",
           "default": "New Collection",
-          "info": "Allow custom HTML"
+          "info": "允许自定义 HTML"
         },
         {
           "type": "richtext",
           "id": "description",
-          "label": "Description",
+          "label": "描述",
           "default": "<p>Tell your campaign through images</p>"
         },
         {
           "type": "url",
           "id": "image_link",
           "label": "Image link",
-          "info": "Link to image"
+          "info": "链接到图片"
         },
         {
           "type": "header",
-          "content": "Button"
+          "content": "Button 按钮"
         },
         {
           "type": "text",
           "id": "button_text",
-          "label": "Button label",
+          "label": "按钮标签",
           "default": "Shop now"
         },
         {
           "type": "url",
           "id": "button_link",
-          "label": "Button link"
+          "label": "按钮链接"
         },
         {
           "type": "select",
           "id": "button_style",
-          "label": "Button style",
+          "label": "按钮风格",
           "options": [
             {
               "value": "m-button--primary",
-              "label": "Primary button"
+              "label": "主题按钮"
             },
             {
               "value": "m-button--secondary",
-              "label": "Secondary button"
+              "label": "次要按钮"
             },
             {
               "value": "m-button--white",
-              "label": "White button"
+              "label": "白色按钮"
             },
             {
               "value": "m-button--link",
-              "label": "Underline button"
+              "label": "下划线按钮"
             }
           ],
           "default": "m-button--primary"
@@ -1015,19 +1015,19 @@
         {
           "type": "select",
           "id": "button_size",
-          "label": "Button size",
+          "label": "按钮大小",
           "options": [
             {
               "value": "m-button--small",
-              "label": "Button small"
+              "label": "小按钮"
             },
             {
               "value": "",
-              "label": "Button medium"
+              "label": "中按钮"
             },
             {
               "value": "m-button--large",
-              "label": "Button large"
+              "label": "大按钮"
             }
           ],
           "default": ""
@@ -1040,24 +1040,24 @@
           "type": "checkbox",
           "id": "show_footer",
           "default": false,
-          "label": "Show footer"
+          "label": "Show footer 显示底部"
         },
         {
           "type": "select",
           "id": "footer_alignment",
-          "label": "Footer alignment",
+          "label": "Footer alignment 底部对齐",
           "options": [
             {
               "value": "start",
-              "label": "Left"
+              "label": "左"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "中"
             },
             {
               "value": "end",
-              "label": "Right"
+              "label": "右"
             }
           ],
           "default": "end"
@@ -1065,13 +1065,13 @@
         {
           "type": "text",
           "id": "footer_text",
-          "label": "Footer text",
+          "label": "Footer text 底部文本",
           "default": "New Collection"
         },
         {
           "type": "text",
           "id": "footer_button",
-          "label": "Footer button",
+          "label": "Footer button 底部按钮",
           "default": "Shop Now"
         },
         {
@@ -1084,7 +1084,7 @@
   ],
   "presets": [
     {
-      "name": "Slideshow",
+      "name": "幻灯片",
       "category": "Image",
       "blocks": [
         {

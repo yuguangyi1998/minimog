@@ -220,14 +220,14 @@
         </div>
       </div>
 
-      {%- if item.discounts.size > 0 -%}
+      {%- if item.line_level_discount_allocations != blank -%}
         <ul class="m-cart__discount" role="list">
-          {%- for discount in item.discounts -%}
-            <li class="m-cart__discount--item">
+          {%- for discount in item.line_level_discount_allocations -%}
+            <li class="m-cart__discount--item m:inline-flex m:items-center">
               <svg aria-hidden="true" width="20" height="20" focusable="false" role="presentation" viewBox="0 0 12 13">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7 .5h3a2 2 0 0 1 2 2v3a.995.995 0 0 1-.293.707l-6 6a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414l6-6A.995.995 0 0 1 7 .5zm2 2a1 1 0 1 0 2 0 1 1 0 0 0-2 0z" fill="currentColor"></path>
               </svg>
-              {{- discount.title -}}
+              {{- discount.discount_application.title -}}
             </li>
           {%- endfor -%}
         </ul>

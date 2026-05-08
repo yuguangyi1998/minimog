@@ -163,40 +163,40 @@
 </script>
 {% schema %}
 {
-  "name": "Search",
+  "name": "Search 搜索",
   "settings": [
     {
       "type": "header",
-      "content": "General"
+      "content": "通用"
     },
     {
       "type": "select",
       "id": "container",
-      "label": "Container type",
+      "label": "容器类型",
       "default": "container-fluid",
       "options": [
         {
           "value": "container-fluid",
-          "label": "Default"
+          "label": "默认"
         },
         {
           "value": "container-full",
-          "label": "Full width"
+          "label": "撑满宽度"
         },
         {
           "value": "container",
-          "label": "Use container box"
+          "label": "使用当前区域"
         }
       ]
     },
     {
       "type": "header",
-      "content": "Pagination"
+      "content": "Pagination 分页"
     },
     {
       "type": "range",
       "id": "results_per_page",
-      "label": "Results per page",
+      "label": "Results per page 每页结果数",
       "default": 12,
       "min": 8,
       "max": 48,
@@ -204,64 +204,64 @@
     },
     {
       "type": "header",
-      "content": "SORTING AND FILTERING"
+      "content": "SORTING AND FILTERING 排序和过滤"
     },
     {
       "type": "checkbox",
       "id": "show_sorting",
-      "label": "Enable sorting",
+      "label": "Enable sorting 启用排序",
       "default": true
     },
     {
       "type": "checkbox",
       "id": "show_filter",
-      "label": "Enable filtering",
+      "label": "Enable filtering 启用过滤",
       "default": true
     },
     {
       "type": "checkbox",
       "id": "show_product_count",
-      "label": "Show results count on filter item",
+      "label": "Show results count on filter item 在过滤项上显示结果数",
       "default": true
     },
     {
       "type": "checkbox",
       "id": "change_product_variant_on_fitlering",
-      "label": "Change product card variant on filtering",
+      "label": "Change product card variant on filtering 在过滤时更改产品卡片变体",
       "default": true,
       "info": "Change product card options, price and image based on the variant after filtering."
     },
     {
       "type": "text",
       "id": "sidebar_title",
-      "label": "Filters title",
+      "label": "Filters title 过滤标题",
       "default": "Filters",
       "info": "Leave blank to hide"
     },
     {
       "type": "text",
       "id": "collapsed_groups",
-      "label": "Collapsed filter groups",
+      "label": "Collapsed filter groups 折叠过滤组",
       "default": "Brand, Vendor, Size",
       "info": "Filters groups that collapsed by default. Separate by comma."
     },
     {
       "type": "text",
       "id": "color_swatches",
-      "label": "Color swatches group",
+      "label": "Color swatches group 颜色 swatches 组",
       "default": "color,colour,couleur,farbe",
       "info": "Enter color option name, separate by comma."
     },
     {
       "type": "checkbox",
       "id": "limit_height_widget",
-      "label": "Limit filter widget's height",
+      "label": "Limit filter widget's height 限制过滤小部件的高度",
       "default": false
     },
     {
       "type": "range",
       "id": "limit_height",
-      "label": "Max height",
+      "label": "Max height 最大高度",
       "default": 300,
       "step": 10,
       "min": 200,

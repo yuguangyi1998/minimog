@@ -12,7 +12,9 @@
         "new_window": "Öffnet in einem neuen Fenster."
       },
       "close_header": "Kopfzeile schließen",
-      "close": "Schließen"
+      "close": "Schließen",
+      "view_more": "Mehr anzeigen",
+      "view_less": "Weniger anzeigen"
     },
     "meta": {
       "tags": "Markiert mit „{{ tags }}“",
@@ -150,6 +152,9 @@
       "taxes_included_but_shipping_at_checkout": "Die Mehrwertsteuer ist inbegriffen und der Versand wird an der Kasse berechnet",
       "taxes_included_and_shipping_policy_html": "Steuern inklusive. <a href=\"{{ link }}\">Versand</a> wird beim Bezahlvorgang berechnet.",
       "enter_discount_code": "Geben Sie hier den Rabattcode ein",
+      "remove_discount": "Entfernen {{ code }}",
+      "discount_duplicate_error_message": "Der Rabattcode wurde bereits auf Ihren Warenkorb angewendet.",
+      "discount_apply_error_message": "Der Rabattcode kann nicht auf Ihren Warenkorb angewendet werden.",
       "checkout": "Kasse",
       "viewcart": "Warenkorb ansehen",
       "empty": "Ihr Warenkorb ist derzeit leer.",

@@ -172,86 +172,86 @@
 </section>
 {% schema %}
 {
-  "name": "Product bundles",
+  "name": "产品套装",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
   "settings": [
     {
       "type": "paragraph",
-      "content": "[Read How-to](https://foxecom.link/oyn5fn)"
+      "content": "[Read How-to](https://foxecom.link/oyn5fn) 阅读教程"
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "通用"
     },
     {
       "type": "select",
       "id": "container",
-      "label": "Container type",
+      "label": "容器类型",
       "default": "container-fluid",
       "options": [
         {
           "value": "container-fluid",
-          "label": "Default"
+          "label": "默认"
         },
         {
           "value": "container-full",
-          "label": "Full width"
+          "label": "撑满宽度"
         },
         {
           "value": "container",
-          "label": "Use container box"
+          "label": "使用当前区域"
         }
       ]
     },
     {
       "type": "color_scheme",
       "id": "color_scheme",
-      "label": "Color scheme"
+      "label": "颜色方案"
     },
     {
       "type": "header",
-      "content": "Layout"
+      "content": "Layout 布局"
     },
     {
       "type": "select",
       "id": "layout",
-      "label": "Layout",
+      "label": "Layout 布局",
       "default": "1",
       "options": [
         {
           "value": "1",
-          "label": "Layout 1"
+          "label": "Layout 1 布局1"
         },
         {
           "value": "2",
-          "label": "Layout 2"
+          "label": "Layout 2 布局2"
         }
       ]
     },
     {
       "type": "header",
-      "content": "Section header"
+      "content": "Section header 头部"
     },
     {
       "type": "text",
       "id": "heading",
-      "label": "Heading",
-      "default": "Product bundles"
+      "label": "标题",
+      "default": "Product bundles 产品套装"
     },
     {
       "type": "select",
       "id": "heading_size",
-      "label": "Heading size",
+      "label": "标题大小",
       "default": "h3",
       "options": [
         {
-          "label": "Medium",
+          "label": "中等",
           "value": "h3"
         },
         {
-          "label": "Large",
+          "label": "大",
           "value": "h2"
         }
       ]
@@ -259,67 +259,67 @@
     {
       "type": "html",
       "id": "subheading",
-      "label": "Subheading"
+      "label": "副标题"
     },
     {
       "type": "textarea",
       "id": "description",
-      "label": "Description"
+      "label": "描述"
     },
     {
       "type": "select",
       "id": "header_alignment",
-      "label": "Text alignment",
+      "label": "文本对齐",
       "default": "left",
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "左"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "中"
         }
       ]
     },
     {
       "type": "header",
-      "content": "Image settings"
+      "content": "图片设置"
     },
     {
       "type": "image_picker",
       "id": "image",
-      "label": "Image"
+      "label": "Image 图片"
     },
     {
       "type": "select",
       "id": "image_position",
-      "label": "Image position",
+      "label": "Image position 图片位置",
       "default": "right",
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "左"
         },
         {
           "value": "right",
-          "label": "Right"
+          "label": "右"
         }
       ]
     },
     {
       "type": "header",
-      "content": "Product settings"
+      "content": "Product settings 产品设置"
     },
     {
       "type": "select",
       "id": "image_ratio",
-      "label": "Image aspect ratio",
+      "label": "Image aspect ratio 图片比例",
       "default": "original",
       "options": [
         {
           "value": "original",
-          "label": "Original aspect ratio"
+          "label": "原始比例"
         },
         {
           "value": "1/1",
@@ -346,12 +346,12 @@
     },
     {
       "type": "header",
-      "content": "Section Padding"
+      "content": "段落内边距"
     },
     {
       "type": "range",
       "id": "padding_top",
-      "label": "Padding Top",
+      "label": "上内边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -361,7 +361,7 @@
     {
       "type": "range",
       "id": "padding_bottom",
-      "label": "Padding Bottom",
+      "label": "下内边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -370,53 +370,53 @@
     },
     {
       "type": "header",
-      "content": "Custom Attributes"
+      "content": "自定义属性"
     },
     {
       "type": "text",
       "id": "custom_class",
-      "label": "Custom classes"
+      "label": "自定义类"
     },
     {
       "type": "header",
-      "content": "Animations"
+      "content": "动画"
     },
     {
       "type": "select",
       "id": "animations",
-      "label": "Visible in the view animation",
+      "label": "在视图中可见的动画",
       "default": "inherit",
       "options": [
         {
           "value": "inherit",
-          "label": "Inherit global setting"
+          "label": "继承全局设置",
         },
         {
           "value": "fade-in",
-          "label": "Fade in"
+          "label": "淡入",
         },
         {
           "value": "fade-in-up",
-          "label": "Fade in up"
+          "label": "淡入向上",
         },
         {
           "value": "fade-in-left",
-          "label": "Fade in left"
+          "label": "淡入向左",
         },
         {
           "value": "fade-in-right",
-          "label": "Fade in right"
+          "label": "淡入向右",
         }
       ]
     },
     {
       "type": "header",
-      "content": "Advanced"
+      "content": "高级设置"
     },
     {
       "type": "checkbox",
       "id": "enable_preload_image",
-      "label": "Enable preload image",
+      "label": "Enable preload image 启用预加载图片",
       "info": "If this section is visible when the page loads, enabling this setting can reduce LCP and may improve site speed scores."
     }
   ],
@@ -428,16 +428,16 @@
         {
           "type": "product",
           "id": "product",
-          "label": "Select product"
+          "label": "Select product 选择产品"
         },
         {
           "type": "header",
-          "content": "Hotspot position"
+          "content": "Hotspot position 热点位置"
         },
         {
           "type": "range",
           "id": "top",
-          "label": "Vertical",
+          "label": "Vertical 垂直",
           "min": 10,
           "max": 90,
           "unit": "%",
@@ -447,7 +447,7 @@
         {
           "type": "range",
           "id": "left",
-          "label": "Horizontal",
+          "label": "Horizontal 水平",
           "min": 10,
           "max": 90,
           "unit": "%",
@@ -459,7 +459,7 @@
   ],
   "presets": [
     {
-      "name": "Product bundles",
+      "name": "Product bundles 产品套装",
       "category": "Product",
       "blocks": [
         {

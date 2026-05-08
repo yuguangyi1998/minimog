@@ -22,13 +22,13 @@
 {% endcomment %}
 
 {% liquid
-  assign formId = 'ContactSubscribe-' | append: custom_id
+  assign form_id = 'ContactSubscribe-' | append: custom_id
   assign button_type = button_type | default: 'text'
   assign button_style = button_style | default: 'm-button--blank'
 %}
 
 <div class="m-newsletter-form m-newsletter-form--{{ style | default: 'bordered' }} {{ extra_classes }}">
-  {% form 'customer', id: formId %}
+  {% form 'customer', id: form_id, is: 'newsletter-form' %}
     {%- capture success_message -%}
       {{ 'general.newsletter_form.confirmation' | t }}
     {%- endcapture -%}
@@ -53,7 +53,7 @@
         <input
           type="email"
           name="contact[email]"
-          id="{{ formId }}-email"
+          id="{{ form_id }}-email"
           value="{% if customer.email != blank %}{{ customer.email }}{% endif %}"
           placeholder="{{ placeholder }}"
           autocorrect="off"

@@ -117,7 +117,7 @@
 
 {% schema %}
 {
-  "name": "Collection image showcase",
+  "name": "集合图片展示",
   "class": "shopify-section-collection-image-showcase",
   "disabled_on": {
     "groups": ["header", "footer"]
@@ -129,62 +129,62 @@
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "General 通用"
     },
     {
       "type": "select",
       "id": "container",
-      "label": "Container type",
+      "label": "Container type 容器类型",
       "default": "container-fluid",
       "options": [
         {
           "value": "container-fluid",
-          "label": "Default"
+          "label": "默认"
         },
         {
           "value": "container-full",
-          "label": "Full width"
+          "label": "撑满宽度"
         },
         {
           "value": "container",
-          "label": "Use container box"
+          "label": "使用当前区域"
         }
       ]
     },
     {
       "type": "color_scheme",
       "id": "color_scheme",
-      "label": "Color scheme"
+      "label": "Color scheme 颜色方案"
     },
     {
       "type": "header",
-      "content": "Header"
+      "content": "Header 标题"
     },
     {
       "type": "text",
       "id": "heading",
-      "label": "Heading"
+      "label": "Heading 标题"
     },
     {
       "type": "select",
       "id": "heading_size",
-      "label": "Heading size",
+      "label": "标题大小",
       "default": "h5",
       "options": [
         {
-          "label": "Extra small",
+          "label": "最小",
           "value": "h5"
         },
         {
-          "label": "Small",
+          "label": "小",
           "value": "h4"
         },
         {
-          "label": "Medium",
+          "label": "中等",
           "value": "h3"
         },
         {
-          "label": "Large",
+          "label": "大",
           "value": "h2"
         },
         {
@@ -195,42 +195,42 @@
     },
     {
       "type": "header",
-      "content": "Custom Attributes"
+      "content": "Custom Attributes 自定义属性"
     },
     {
       "type": "text",
       "id": "custom_class",
-      "label": "Custom classes"
+      "label": "Custom classes 自定义类"
     },
     {
       "type": "header",
-      "content": "Animations"
+      "content": "Animations 动画"
     },
     {
       "type": "select",
       "id": "animations",
-      "label": "Visible in the view animation",
+      "label": "Visible in the view animation 在视图中可见的动画",
       "default": "inherit",
       "options": [
         {
           "value": "inherit",
-          "label": "Inherit global setting"
+          "label": "继承全局设置",
         },
         {
           "value": "fade-in",
-          "label": "Fade in"
+          "label": "淡入",
         },
         {
           "value": "fade-in-up",
-          "label": "Fade in up"
+          "label": "淡入向上",
         },
         {
           "value": "fade-in-left",
-          "label": "Fade in left"
+          "label": "淡入向左",
         },
         {
           "value": "fade-in-right",
-          "label": "Fade in right"
+          "label": "淡入向右",
         }
       ]
     }
@@ -272,24 +272,24 @@
   ],
   "presets": [
     {
-      "name": "Collection image showcase",
+      "name": "集合图片展示",
       "blocks": [
         {
           "type": "collection",
           "settings": {
-            "title": "Collection title"
+            "title": "集合标题"
           }
         },
         {
           "type": "collection",
           "settings": {
-            "title": "Collection title"
+            "title": "集合标题"
           }
         },
         {
           "type": "collection",
           "settings": {
-            "title": "Collection title"
+            "title": "集合标题"
           }
         }
       ]

@@ -152,7 +152,7 @@
 
 {% schema %}
 {
-  "name": "Collage tabs",
+  "name": "Collage tabs 拼贴标签",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
@@ -163,77 +163,77 @@
     },
     {
       "type": "header",
-      "content": "Collage tabs"
+      "content": "Collage tabs 拼贴标签"
     },
     {
       "type": "select",
       "id": "container",
-      "label": "Container type",
+      "label": "Container type 容器类型",
       "default": "container-fluid",
       "options": [
         {
           "value": "container-fluid",
-          "label": "Default"
+          "label": "默认"
         },
         {
           "value": "w-full",
-          "label": "Full width"
+          "label": "Full width 全宽"
         },
         {
           "value": "container",
-          "label": "Use container box"
+          "label": "Use container box 使用容器框"
         }
       ]
     },
     {
       "type": "color_scheme",
       "id": "color_scheme",
-      "label": "Color scheme"
+      "label": "Color scheme 颜色方案"
     },
     {
       "type": "header",
-      "content": "Tab settings"
+      "content": "Tab settings 标签设置"
     },
     {
       "type": "select",
       "id": "desktop_navigation_alignment",
-      "label": "Desktop navigation alignment",
+      "label": "Desktop navigation alignment 桌面导航对齐",
       "default": "center",
       "options": [
         {
           "value": "start",
-          "label": "Left"
+          "label": "Left 左"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "Center 中心"
         },
         {
           "value": "end",
-          "label": "Right"
+          "label": "Right 右"
         }
       ]
     },
     {
       "type": "select",
       "id": "desktop_image_position",
-      "label": "Desktop image position",
+      "label": "Desktop image position 桌面图片位置",
       "default": "left",
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "Left 左"
         },
         {
           "value": "right",
-          "label": "Right"
+          "label": "Right 右"
         }
       ]
     },
     {
       "type": "range",
-      "id": "desktop_image_width",
-      "label": "Desktop image width",
+      "id": "desktop_image_width ",
+      "label": "Desktop image width 桌面图片宽度",
       "default": 50,
       "min": 0,
       "max": 80,
@@ -243,35 +243,35 @@
     {
       "type": "select",
       "id": "image_aspect_ratio",
-      "label": "Image ratio",
+      "label": "Image ratio 图片比例",
       "default": "adapt",
       "options": [
         {
           "value": "adapt",
-          "label": "Adapt to image"
+          "label": "Adapt to image 适应图片"
         },
         {
           "value": "1/1",
-          "label": "Square (1:1)"
+          "label": "Square (1:1) 方形 (1:1)"
         },
         {
           "value": "3/4",
-          "label": "Portrait (3:4)"
+          "label": "Portrait (3:4) 肖像 (3:4)"
         },
         {
           "value": "4/3",
-          "label": "Landscape (4:3)"
+          "label": "Landscape (4:3) 风景 (4:3)"
         }
       ]
     },
     {
       "type": "header",
-      "content": "Section Padding"
+      "content": "Section Padding 段落内边距"
     },
     {
       "type": "range",
       "id": "padding_top",
-      "label": "Padding Top",
+      "label": "Padding Top 上边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -281,7 +281,7 @@
     {
       "type": "range",
       "id": "padding_bottom",
-      "label": "Padding Bottom",
+      "label": "Padding Bottom 下边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -290,42 +290,42 @@
     },
     {
       "type": "header",
-      "content": "Custom Attributes"
+      "content": "Custom Attributes 自定义属性"
     },
     {
       "type": "text",
       "id": "custom_class",
-      "label": "Custom classes"
+      "label": "Custom classes 自定义类"
     },
     {
       "type": "header",
-      "content": "Animations"
+      "content": "Animations 动画"
     },
     {
       "type": "select",
       "id": "animations",
-      "label": "Visible in the view animation",
+      "label": "Visible in the view animation 在视图中可见的动画",
       "default": "inherit",
       "options": [
         {
           "value": "inherit",
-          "label": "Inherit global setting"
+          "label": "Inherit global setting 继承全局设置"
         },
         {
           "value": "fade-in",
-          "label": "Fade in"
+          "label": "Fade in 淡入"
         },
         {
           "value": "fade-in-up",
-          "label": "Fade in up"
+          "label": "Fade in up 淡入向上"
         },
         {
           "value": "fade-in-left",
-          "label": "Fade in left"
+          "label": "Fade in left 淡入向左"
         },
         {
           "value": "fade-in-right",
-          "label": "Fade in right"
+          "label": "Fade in right 淡入向右"
         }
       ]
     }
@@ -333,133 +333,133 @@
   "blocks": [
     {
       "type": "tab",
-      "name": "Tab",
+      "name": "Tab 标签",
       "settings": [
         {
           "type": "color_scheme",
           "id": "tab_color_scheme",
-          "label": "Color scheme"
+          "label": "Color scheme 颜色方案"
         },
         {
           "type": "text",
-          "label": "Navigation title",
+          "label": "Navigation title 导航标题",
           "id": "navigation_title"
         },
         {
           "type": "image_picker",
-          "label": "Image",
+          "label": "Image 图片",
           "id": "image"
         },
         {
           "type": "text",
           "id": "heading",
-          "label": "Heading"
+          "label": "Heading 标题"
         },
         {
           "type": "select",
           "id": "heading_size",
-          "label": "Heading size",
+          "label": "Heading size 标题大小",
           "default": "h2",
           "options": [
             {
               "value": "h5",
-              "label": "Extra small"
+              "label": "Extra small 额外小"
             },
             {
               "value": "h4",
-              "label": "Small"
+              "label": "Small 小"
             },
             {
               "value": "h3",
-              "label": "Medium"
+              "label": "Medium 中等"
             },
             {
               "value": "h2",
-              "label": "Large"
+              "label": "Large 大"
             },
             {
               "value": "h1",
-              "label": "Extra large"
+              "label": "Extra large 额外大"
             }
           ]
         },
         {
           "type": "text",
           "id": "subheading",
-          "label": "Subheading"
+          "label": "Subheading 副标题"
         },
         {
           "type": "richtext",
           "id": "description",
-          "label": "Description"
+          "label": "Description 描述"
         },
         {
           "type": "select",
           "id": "text_alignment",
-          "label": "Text alignment",
+          "label": "Text alignment 文本对齐",
           "default": "center",
           "options": [
             {
               "value": "left",
-              "label": "Left"
+              "label": "Left 左"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "Center 中心"
             },
             {
               "value": "right",
-              "label": "Right"
+              "label": "Right 右"
             }
           ]
         },
         {
           "type": "header",
-          "content": "Button settings"
+          "content": "Button settings 按钮设置"
         },
         {
           "type": "text",
           "id": "button_label",
-          "label": "Button label",
+          "label": "Button label 按钮标签",
           "info": "Leave blank to hide the button"
         },
         {
           "type": "url",
           "id": "button_link",
-          "label": "Button link"
+          "label": "Button link 按钮链接"
         },
         {
           "type": "select",
           "id": "button_style",
-          "label": "Button style",
+          "label": "Button style 按钮样式",
           "options": [
             {
               "value": "m-button--primary",
-              "label": "Primary button"
+              "label": "Primary button 主要按钮"
             },
             {
               "value": "m-button--secondary",
-              "label": "Secondary button"
+              "label": "Secondary button 次要按钮"
             },
             {
               "value": "m-button--white",
-              "label": "White button"
+              "label": "White button 白色按钮"
             },
             {
               "value": "m-button--link",
-              "label": "Underline button"
+              "label": "Underline button 下划线按钮"
             }
           ],
           "default": "m-button--primary"
         },
         {
           "type": "header",
-          "content": "Advanced"
+          "content": "Advanced 高级"
         },
         {
           "type": "checkbox",
           "id": "enable_preload_image",
-          "label": "Enable preload image",
+          "label": "Enable preload image 启用预加载图片",
           "info": "If this section is visible when the page loads, enabling this setting can reduce LCP and may improve site speed scores."
         }
       ]
@@ -467,15 +467,15 @@
   ],
   "presets": [
     {
-      "name": "Collage tabs",
+      "name": "Collage tabs 拼贴标签",
       "blocks": [
         {
           "type": "tab",
           "settings": {
             "navigation_title": "Tab 1",
-            "heading": "Collage tab heading",
+            "heading": "Collage tab heading 拼贴标签标题",
             "description": "<p>Fill in the text content of the tab item here. You can provide details information tab item here.</p>",
-            "button_label": "Button text",
+            "button_label": "Button text 按钮文本",
             "button_link": "#"
           }
         },
@@ -483,9 +483,9 @@
           "type": "tab",
           "settings": {
             "navigation_title": "Tab 2",
-            "heading": "Collage tab heading",
+            "heading": "Collage tab heading 拼贴标签标题",
             "description": "<p>Fill in the text content of the tab item here. You can provide details information tab item here.</p>",
-            "button_label": "Button text",
+            "button_label": "Button text 按钮文本",
             "button_link": "#"
           }
         }

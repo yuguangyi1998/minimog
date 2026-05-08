@@ -12,7 +12,9 @@
         "new_window": "เปิดในหน้าต่างใหม่"
       },
       "close_header": "ปิดส่วนหัว",
-      "close": "ปิด"
+      "close": "ปิด",
+      "view_more": "ดูเพิ่มเติม",
+      "view_less": "ดูน้อยลง"
     },
     "meta": {
       "tags": "แท็ก \"{{ tags }}\"",
@@ -150,6 +152,9 @@
       "taxes_included_but_shipping_at_checkout": "รวมภาษีและค่าจัดส่งคำนวณเมื่อชำระเงิน",
       "taxes_included_and_shipping_policy_html": "รวมภาษี. <a href=\"{{ link }}\">การจัดส่ง</a> คำนวณเมื่อชำระเงิน",
       "enter_discount_code": "ใส่รหัสส่วนลดที่นี่",
+      "remove_discount": "ลบ {{ code }}",
+      "discount_duplicate_error_message": "รหัสส่วนลดได้ถูกนำไปใช้กับรถเข็นของคุณแล้ว",
+      "discount_apply_error_message": "รหัสส่วนลดไม่สามารถนำไปใช้กับรถเข็นของคุณได้",
       "checkout": "เช็คเอาท์",
       "viewcart": "ดูตะกร้าสินค้า",
       "empty": "ขณะนี้รถเข็นของคุณว่างเปล่า",

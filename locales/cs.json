@@ -12,7 +12,9 @@
         "new_window": "Otevře se v novém okně."
       },
       "close_header": "Zavřít záhlaví",
-      "close": "Zavřít"
+      "close": "Zavřít",
+      "view_more": "Zobrazit více",
+      "view_less": "Zobrazit méně"
     },
     "meta": {
       "tags": "Označeno „{{ tags }}“",
@@ -150,6 +152,9 @@
       "taxes_included_but_shipping_at_checkout": "Včetně daně a dopravy vypočítané při pokladně",
       "taxes_included_and_shipping_policy_html": "Včetně daně. <a href=\"{{ link }}\">Doprava</a> se počítá při placení.",
       "enter_discount_code": "Zde zadejte slevový kód",
+      "remove_discount": "Odebrat {{ code }}",
+      "discount_duplicate_error_message": "Slevový kód již byl použit na váš vozík.",
+      "discount_apply_error_message": "Slevový kód nelze použít na váš vozík.",
       "checkout": "Překontrolovat",
       "viewcart": "Prohlédnout košík",
       "empty": "Váš nákupní košík je momentálně prázdný.",

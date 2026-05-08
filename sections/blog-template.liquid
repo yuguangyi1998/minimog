@@ -77,70 +77,70 @@
   "settings": [
     {
       "type": "header",
-      "content": "General"
+      "content": "General 通用"
     },
     {
       "type": "select",
       "id": "container",
-      "label": "Container type",
+      "label": "Container type 容器类型",
       "default": "container-fluid",
       "options": [
         {
           "value": "container-fluid",
-          "label": "Default"
+          "label": "Default 默认"
         },
         {
           "value": "w-full",
-          "label": "Full width"
+          "label": "Full width 全宽"
         },
         {
           "value": "container",
-          "label": "Use container box"
+          "label": "Use container box 使用容器框"
         }
       ]
     },
     {
       "type": "header",
-      "content": "Sidebar"
+      "content": "Sidebar 侧边栏"
     },
     {
       "type": "checkbox",
       "id": "show_sidebar",
-      "label": "Show sidebar",
+      "label": "Show sidebar 显示侧边栏",
       "default": true
     },
     {
       "type": "select",
       "id": "layout",
-      "label": "Placement",
+      "label": "Placement 位置",
       "default": "right_column",
       "options": [
         {
           "value": "left_column",
-          "label": "Left column"
+          "label": "Left column 左列"
         },
         {
           "value": "right_column",
-          "label": "Right column"
+          "label": "Right column 右列"
         }
       ]
     },
     {
       "type": "header",
-      "content": "layout"
+      "content": "layout 布局"
     },
     {
       "type": "select",
       "id": "view",
-      "label": "Layout",
+      "label": "Layout 布局",
       "default": "grid",
       "options": [
         {
-          "label": "Grid",
+          "label": "Grid 网格",
           "value": "grid"
         },
         {
-          "label": "List",
+          "label": "List 列表",
           "value": "list"
         }
       ]
@@ -148,7 +148,7 @@
     {
       "type": "range",
       "id": "blog_list",
-      "label": "Posts to show",
+      "label": "Posts to show 显示文章数量",
       "default": 6,
       "min": 2,
       "max": 12,
@@ -157,7 +157,7 @@
     {
       "type": "range",
       "id": "show_item_per_row",
-      "label": "Posts per row",
+      "label": "Posts per row 每行显示文章数量",
       "min": 2,
       "max": 6,
       "step": 1,
@@ -167,103 +167,103 @@
   "blocks": [
     {
       "type": "categories",
-      "name": "Widget categories",
+      "name": "Widget categories 小部件分类",
       "limit": 1,
       "settings": [
         {
           "type": "text",
           "id": "title",
-          "label": "Title",
+          "label": "Title 标题",
           "default": "Categories"
         },
         {
           "type": "link_list",
           "id": "list_blog",
-          "label": "Select categories menu"
+          "label": "Select categories menu 选择分类菜单"
         }
       ]
     },
     {
       "type": "tags",
-      "name": "Widget tags",
+      "name": "Widget tags 小部件标签",
       "limit": 1,
       "settings": [
         {
           "type": "text",
           "id": "title",
-          "label": "Title",
+          "label": "Title 标题",
           "default": "Tags"
         }
       ]
     },
     {
       "type": "recent_post",
-      "name": "Widget recent posts",
+      "name": "Widget recent posts 小部件最近文章",
       "limit": 1,
       "settings": [
         {
           "type": "text",
           "id": "title",
-          "label": "Title",
+          "label": "Title 标题",
           "default": "Recent Post"
         },
         {
           "type": "blog",
           "id": "sidebar_recent_blog_name",
-          "label": "Blog Name"
+          "label": "Blog Name 博客名称"
         },
         {
           "type": "text",
           "id": "sidebar_recent_blog_count",
-          "label": "Post Count",
+          "label": "Post Count 文章数量",
           "info": "Integer",
           "default": "3"
         },
         {
           "type": "checkbox",
           "id": "blog_show_tags",
-          "label": "Show tags",
+          "label": "Show tags 显示标签",
           "default": true
         },
         {
           "type": "checkbox",
           "id": "blog_show_author",
-          "label": "Show author",
+          "label": "Show author 显示作者",
           "default": false
         },
         {
           "type": "checkbox",
           "id": "blog_show_date",
-          "label": "Show date",
+          "label": "Show date 显示日期",
           "default": false
         },
         {
           "type": "checkbox",
           "id": "show_excerpt",
-          "label": "Show excerpt",
+          "label": "Show excerpt 显示摘要",
           "default": false
         },
         {
           "type": "paragraph",
-          "content": "Show \"Content\" instead if \"Excerpt\" is empty."
+          "content": "Show \"Content\" instead if \"Excerpt\" is empty. 如果摘要为空，则显示内容。"
         },
         {
           "type": "checkbox",
           "id": "truncate_excerpt",
-          "label": "Truncate Excerpt",
+          "label": "Truncate Excerpt 截断摘要",
           "default": false
         },
         {
           "type": "text",
           "id": "truncate",
-          "label": "Show Words",
+          "label": "Show Words 显示单词",
           "default": "15",
           "info": "Integer"
         },
         {
           "type": "text",
           "id": "truncate_last_symbols",
-          "label": "Last Symbols",
+          "label": "Last Symbols 最后符号",
           "default": "..."
         }
       ]

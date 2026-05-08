@@ -12,7 +12,9 @@
         "new_window": "Odpre se v novem oknu."
       },
       "close_header": "Zapri glavo",
-      "close": "Zapri"
+      "close": "Zapri",
+      "view_more": "Poglej več",
+      "view_less": "Poglej manj"
     },
     "meta": {
       "tags": "Označeno »{{ tags }}«",
@@ -150,6 +152,9 @@
       "taxes_included_but_shipping_at_checkout": "Davek je vključen in poštnina izračunana na blagajni",
       "taxes_included_and_shipping_policy_html": "Davek vključen. <a href=\"{{ link }}\">Poštnina</a> se izračuna na blagajni.",
       "enter_discount_code": "Tukaj vnesite kodo za popust",
+      "remove_discount": "Odstrani {{ code }}",
+      "discount_duplicate_error_message": "Koda za popust je že uporabljena za vaš voziček.",
+      "discount_apply_error_message": "Kode za popust ni mogoče uporabiti za vaš voziček.",
       "checkout": "Preveri",
       "viewcart": "Poglej voziček",
       "empty": "Vaša košarica je trenutno prazna.",

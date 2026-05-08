@@ -12,7 +12,9 @@
         "new_window": "Mở ra trong một cửa sổ mới."
       },
       "close_header": "Đóng tiêu đề",
-      "close": "Đóng"
+      "close": "Đóng",
+      "view_more": "Xem thêm",
+      "view_less": "Thu gọn"
     },
     "meta": {
       "tags": "Được gắn thẻ \"{{ tags }}\"",
@@ -150,6 +152,9 @@
       "taxes_included_but_shipping_at_checkout": "Đã bao gồm thuế và phí vận chuyển được tính khi thanh toán",
       "taxes_included_and_shipping_policy_html": "Đã bao gồm thuế. <a href=\"{{ link }}\">Phí vận chuyển</a> được tính khi thanh toán.",
       "enter_discount_code": "Nhập mã giảm giá vào đây",
+      "remove_discount": "Xóa {{ code }}",
+      "discount_duplicate_error_message": "Mã giảm giá đã được áp dụng cho giỏ hàng của bạn.",
+      "discount_apply_error_message": "--",
       "checkout": "Thủ tục thanh toán",
       "viewcart": "Xem giỏ hàng",
       "empty": "Giỏ hàng của bạn hiện đang trống.",

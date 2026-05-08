@@ -84,51 +84,51 @@
 </m-product-details-tabs>
 {% schema %}
 {
-  "name": "Product information tabs",
+  "name": "产品信息标签",
   "settings": [
     {
       "type": "header",
-      "content": "General"
+      "content": "通用"
     },
     {
       "type": "select",
       "id": "container",
-      "label": "Container type",
+      "label": "容器类型",
       "default": "container",
       "options": [
         {
           "value": "container",
-          "label": "Fixed width"
+          "label": "固定宽度"
         },
         {
           "value": "container-fluid",
-          "label": "Stretched width"
+          "label": "拉伸宽度"
         },
         {
           "value": "container-narrow",
-          "label": "Narrow width"
+          "label": "窄宽度"
         }
       ]
     },
     {
       "type": "color_scheme",
       "id": "color_scheme",
-      "label": "Color scheme"
+      "label": "颜色方案"
     },
     {
       "type": "checkbox",
       "id": "default_open",
-      "label": "Default open first tab on mobile",
+      "label": "Default open first tab on mobile 默认在移动端打开第一个标签",
       "default": true
     },
     {
       "type": "header",
-      "content": "Section Padding"
+      "content": "段落内边距"
     },
     {
       "type": "range",
       "id": "padding_top",
-      "label": "Padding Top",
+      "label": "上内边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -138,7 +138,7 @@
     {
       "type": "range",
       "id": "padding_bottom",
-      "label": "Padding Bottom",
+      "label": "下内边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -147,42 +147,42 @@
     },
     {
       "type": "header",
-      "content": "Custom Attributes"
+      "content": "自定义属性"
     },
     {
       "type": "text",
       "id": "custom_class",
-      "label": "Custom classes"
+      "label": "自定义类"
     },
     {
       "type": "header",
-      "content": "Animations"
+      "content": "动画"
     },
     {
       "type": "select",
       "id": "animations",
-      "label": "Visible in the view animation",
+      "label": "在视图中可见的动画",
       "default": "inherit",
       "options": [
         {
           "value": "inherit",
-          "label": "Inherit global setting"
+          "label": "继承全局设置",
         },
         {
           "value": "fade-in",
-          "label": "Fade in"
+          "label": "淡入",
         },
         {
           "value": "fade-in-up",
-          "label": "Fade in up"
+          "label": "淡入向上",
         },
         {
           "value": "fade-in-left",
-          "label": "Fade in left"
+          "label": "淡入向左",
         },
         {
           "value": "fade-in-right",
-          "label": "Fade in right"
+          "label": "淡入向右",
         }
       ]
     }
@@ -191,107 +191,107 @@
   "blocks": [
     {
       "type": "description",
-      "name": "Product description",
+      "name": "Product description 产品描述",
       "limit": 1,
       "settings": [
         {
           "type": "paragraph",
-          "content": "This tab will show the product's description"
+          "content": "This tab will show the product's description 这个标签将显示产品描述"
         },
         {
           "type": "text",
           "id": "header",
-          "label": "Tab header",
+          "label": "Tab header 标签头部",
           "default": "Product description"
         }
       ]
     },
     {
       "type": "reviews",
-      "name": "Product reviews",
+      "name": "Product reviews 产品评论",
       "limit": 1,
       "settings": [
         {
           "type": "header",
-          "content": "Requirements",
+          "content": "Requirements 要求",
           "info": "This section requires a product reviews app to work. Such as Shopify product reviews, Growave, Judge.me, Loox"
         },
         {
           "type": "text",
           "id": "header",
-          "label": "Tab header",
+          "label": "Tab header 标签头部",
           "default": "Product reviews"
         },
         {
           "type": "select",
           "id": "container",
-          "label": "Container type",
+          "label": "容器类型",
           "default": "container",
           "options": [
             {
               "value": "container",
-              "label": "Fixed width"
+              "label": "固定宽度"
             },
             {
               "value": "container-fluid",
-              "label": "Stretched width"
+              "label": "拉伸宽度"
             },
             {
               "value": "container-narrow",
-              "label": "Narrow width"
+              "label": "窄宽度"
             }
           ]
         },
         {
           "type": "header",
-          "content": "Other review app"
+          "content": "其他评论应用"
         },
         {
           "type": "liquid",
           "id": "custom_liquid",
-          "label": "Custom liquid",
-          "info": "Paste the liquid code of the app review here"
+          "label": "自定义 liquid",
+          "info": "粘贴评论应用的 liquid 代码"
         }
       ]
     },
     {
       "type": "tab",
-      "name": "Custom content",
+      "name": "Custom content 自定义内容",
       "settings": [
         {
           "type": "text",
           "id": "header",
-          "label": "Tab heading",
+          "label": "Tab heading 标签头部",
           "default": "Shipping & Return",
           "placeholder": "Shipping & Return"
         },
         {
           "type": "richtext",
           "id": "content",
-          "label": "Tab content",
+          "label": "Tab content 标签内容",
           "default": "<p>Shipping cost is based on weight. Just add products to your cart and use the Shipping Calculator to see the shipping price.</p><p>We want you to be 100% satisfied with your purchase. Items can be returned or exchanged within 30 days of delivery.</p>"
         },
         {
           "type": "page",
           "id": "content_page",
-          "label": "Tab content from page"
+          "label": "Tab content from page 标签内容来自页面",
         }
       ]
     },
     {
       "type": "liquid",
-      "name": "Custom liquid",
+      "name": "Custom liquid 自定义 liquid",
       "settings": [
         {
           "type": "text",
           "id": "header",
-          "label": "Tab heading",
+          "label": "Tab heading 标签头部",
           "default": "Tab heading"
         },
         {
           "type": "liquid",
           "id": "custom_liquid",
-          "label": "Custom liquid"
+          "label": "Custom liquid 自定义 liquid"
         }
       ]
     }

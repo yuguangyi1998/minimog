@@ -12,7 +12,9 @@
         "new_window": "Åbner i et nyt vindue."
       },
       "close_header": "Luk header",
-      "close": "Tæt"
+      "close": "Tæt",
+      "view_more": "Vis mere",
+      "view_less": "Vis mindre"
     },
     "meta": {
       "tags": "Tagget \"{{ tags }}\"",
@@ -150,6 +152,9 @@
       "taxes_included_but_shipping_at_checkout": "Moms inkluderet og fragt beregnes ved kassen",
       "taxes_included_and_shipping_policy_html": "Skat inkluderet. <a href=\"{{ link }}\">Forsendelse</a> beregnes ved kassen.",
       "enter_discount_code": "Indtast rabatkode her",
+      "remove_discount": "Fjern {{ code }}",
+      "discount_duplicate_error_message": "Rabatkoden er allerede anvendt på din indkøbskurv.",
+      "discount_apply_error_message": "Rabatkoden kan ikke anvendes på din indkøbskurv.",
       "checkout": "Tjek ud",
       "viewcart": "Se indkøbsvogn",
       "empty": "Din indkøbskurv er i øjeblikket tom.",

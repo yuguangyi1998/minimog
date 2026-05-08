@@ -12,7 +12,9 @@
         "new_window": "Otvara se u novom prozoru."
       },
       "close_header": "Zatvori zaglavlje",
-      "close": "Zatvoriti"
+      "close": "Zatvoriti",
+      "view_more": "Prikaži više",
+      "view_less": "Prikaži manje"
     },
     "meta": {
       "tags": "Označeno \"{{ tags }}\"",
@@ -150,6 +152,9 @@
       "taxes_included_but_shipping_at_checkout": "Porez je uključen i poštarina se obračunava na blagajni",
       "taxes_included_and_shipping_policy_html": "Porez uključen. <a href=\"{{ link }}\">Poštarina</a> obračunava se prilikom naplate.",
       "enter_discount_code": "Ovdje unesite kod za popust",
+      "remove_discount": "Ukloni {{ code }}",
+      "discount_duplicate_error_message": "Kod popusta već je primijenjen na vašu košaricu.",
+      "discount_apply_error_message": "Kod popusta ne može se primijeniti na vašu košaricu.",
       "checkout": "Provjeri",
       "viewcart": "Pogledaj košaricu",
       "empty": "Vaša košarica je trenutno prazna.",

@@ -12,7 +12,9 @@
         "new_window": "Se abre en una nueva ventana."
       },
       "close_header": "Cerrar encabezado",
-      "close": "Cerca"
+      "close": "Cerca",
+      "view_more": "Ver más",
+      "view_less": "Ver menos"
     },
     "meta": {
       "tags": "Etiquetado \"{{ tags }}\"",
@@ -150,6 +152,9 @@
       "taxes_included_but_shipping_at_checkout": "Impuestos incluidos y envío calculado al finalizar la compra.",
       "taxes_included_and_shipping_policy_html": "Impuesto incluido. <a href=\"{{ link }}\">Envío</a> calculado al finalizar la compra.",
       "enter_discount_code": "Introduce el código de descuento aquí",
+      "remove_discount": "Eliminar {{ code }}",
+      "discount_duplicate_error_message": "El código de descuento ya se ha aplicado a su carrito.",
+      "discount_apply_error_message": "El código de descuento no se puede aplicar a su carrito.",
       "checkout": "Verificar",
       "viewcart": "Ver carrito",
       "empty": "Su carrito está vacío.",

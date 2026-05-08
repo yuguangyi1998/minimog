@@ -242,32 +242,32 @@
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "通用"
     },
     {
       "type": "select",
       "id": "container",
-      "label": "Container type",
+      "label": "容器类型",
       "default": "container-fluid",
       "options": [
         {
           "value": "container-fluid",
-          "label": "Default"
+          "label": "默认"
         },
         {
           "value": "container-full",
-          "label": "Full width"
+          "label": "撑满宽度"
         },
         {
           "value": "container",
-          "label": "Use container box"
+          "label": "使用当前区域"
         }
       ]
     },
     {
       "type": "color_scheme",
       "id": "color_scheme",
-      "label": "Color scheme"
+      "label": "颜色方案"
     },
     {
       "type": "color_scheme",
@@ -287,11 +287,11 @@
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "左"
         },
         {
           "value": "right",
-          "label": "Right"
+          "label": "右"
         }
       ]
     },
@@ -307,7 +307,7 @@
     },
     {
       "type": "header",
-      "content": "Product card settings"
+      "content": "产品卡片设置"
     },
     {
       "type": "select",
@@ -317,7 +317,7 @@
       "options": [
         {
           "value": "original",
-          "label": "Original aspect ratio"
+          "label": "原始比例"
         },
         {
           "value": "1/1",
@@ -339,12 +339,12 @@
     },
     {
       "type": "header",
-      "content": "Section Padding"
+      "content": "段落内边距"
     },
     {
       "type": "range",
       "id": "padding_top",
-      "label": "Padding Top",
+      "label": "上内边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -354,7 +354,7 @@
     {
       "type": "range",
       "id": "padding_bottom",
-      "label": "Padding Bottom",
+      "label": "下内边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -363,42 +363,42 @@
     },
     {
       "type": "header",
-      "content": "Custom Attributes"
+      "content": "自定义属性"
     },
     {
       "type": "text",
       "id": "custom_class",
-      "label": "Custom classes"
+      "label": "自定义类"
     },
     {
       "type": "header",
-      "content": "Animations"
+      "content": "动画"
     },
     {
       "type": "select",
       "id": "animations",
-      "label": "Visible in the view animation",
+      "label": "在视图中可见的动画",
       "default": "inherit",
       "options": [
         {
           "value": "inherit",
-          "label": "Inherit global setting"
+          "label": "继承全局设置",
         },
         {
           "value": "fade-in",
-          "label": "Fade in"
+          "label": "淡入",
         },
         {
           "value": "fade-in-up",
-          "label": "Fade in up"
+          "label": "淡入向上",
         },
         {
           "value": "fade-in-left",
-          "label": "Fade in left"
+          "label": "淡入向左",
         },
         {
           "value": "fade-in-right",
-          "label": "Fade in right"
+          "label": "淡入向右",
         }
       ]
     }
@@ -428,33 +428,33 @@
         {
           "type": "text",
           "id": "subheading",
-          "label": "Subheading"
+          "label": "副标题"
         },
         {
           "type": "text",
           "id": "heading",
-          "label": "Heading"
+          "label": "标题"
         },
         {
           "type": "select",
           "id": "heading_size",
-          "label": "Heading size",
+          "label": "标题大小",
           "default": "h2",
           "options": [
             {
-              "label": "Extra small",
+              "label": "最小",
               "value": "h5"
             },
             {
-              "label": "Small",
+              "label": "小",
               "value": "h4"
             },
             {
-              "label": "Medium",
+              "label": "中等",
               "value": "h3"
             },
             {
-              "label": "Large",
+              "label": "大",
               "value": "h2"
             },
             {
@@ -466,30 +466,30 @@
         {
           "type": "text",
           "id": "button_text",
-          "label": "Button label",
+          "label": "按钮标签",
           "default": "Shop more",
           "info": "Leave it blank to hide"
         },
         {
           "type": "select",
           "id": "button_style",
-          "label": "Button style",
+          "label": "按钮风格",
           "options": [
             {
               "value": "m-button--primary",
-              "label": "Primary button"
+              "label": "主题按钮"
             },
             {
               "value": "m-button--secondary",
-              "label": "Secondary button"
+              "label": "次要按钮"
             },
             {
               "value": "m-button--white",
-              "label": "White button"
+              "label": "白色按钮"
             },
             {
               "value": "m-button--link",
-              "label": "Underline button"
+              "label": "下划线按钮"
             }
           ],
           "default": "m-button--primary"
@@ -497,19 +497,19 @@
         {
           "type": "select",
           "id": "button_size",
-          "label": "Button size",
+          "label": "按钮大小",
           "options": [
             {
               "value": "m-button--small",
-              "label": "Button small"
+              "label": "小按钮"
             },
             {
               "value": "",
-              "label": "Button medium"
+              "label": "中按钮"
             },
             {
               "value": "m-button--large",
-              "label": "Button large"
+              "label": "大按钮"
             }
           ],
           "default": ""
@@ -519,24 +519,24 @@
   ],
   "presets": [
     {
-      "name": "Collection showcase",
+      "name": "Collection showcase 系列展示",
       "blocks": [
         {
           "type": "collection",
           "settings": {
-            "title": "Collection title"
+            "title": "集合标题"
           }
         },
         {
           "type": "collection",
           "settings": {
-            "title": "Collection title"
+            "title": "集合标题"
           }
         },
         {
           "type": "collection",
           "settings": {
-            "title": "Collection title"
+            "title": "集合标题"
           }
         }
       ]

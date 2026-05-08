@@ -12,7 +12,9 @@
         "new_window": "Terbuka di jendela baru."
       },
       "close_header": "Tutup tajuk",
-      "close": "Menutup"
+      "close": "Menutup",
+      "view_more": "Lihat lebih banyak",
+      "view_less": "Lihat lebih sedikit"
     },
     "meta": {
       "tags": "Ditandai \"{{ tags }}\"",
@@ -150,6 +152,9 @@
       "taxes_included_but_shipping_at_checkout": "Termasuk pajak dan ongkos kirim dihitung saat checkout",
       "taxes_included_and_shipping_policy_html": "Termasuk pajak. <a href=\"{{ link }}\">Pengiriman</a> dihitung saat checkout.",
       "enter_discount_code": "Masukkan kode diskon di sini",
+      "remove_discount": "Hapus {{ code }}",
+      "discount_duplicate_error_message": "Kode diskon telah diterapkan pada keranjang Anda.",
+      "discount_apply_error_message": "Kode diskon tidak dapat diterapkan pada keranjang Anda.",
       "checkout": "Periksa",
       "viewcart": "Lihat Keranjang",
       "empty": "Keranjang Anda saat ini kosong.",

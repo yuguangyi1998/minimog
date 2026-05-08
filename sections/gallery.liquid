@@ -196,21 +196,21 @@
     {
       "type": "textarea",
       "id": "heading",
-      "label": "Heading",
+      "label": "标题",
       "default": "Gallery images"
     },
     {
       "type": "select",
       "id": "heading_size",
-      "label": "Heading size",
+      "label": "标题大小",
       "default": "h3",
       "options": [
         {
-          "label": "Medium",
+          "label": "中等",
           "value": "h3"
         },
         {
-          "label": "Large",
+          "label": "大",
           "value": "h2"
         }
       ]
@@ -218,44 +218,44 @@
     {
       "type": "text",
       "id": "subheading",
-      "label": "Subheading"
+      "label": "副标题"
     },
     {
       "type": "textarea",
       "id": "description",
-      "label": "Description"
+      "label": "描述"
     },
     {
       "type": "text",
       "id": "button_label",
-      "label": "Button label",
+      "label": "按钮标签",
       "info": "Leave blank to hide the button"
     },
     {
       "type": "url",
       "id": "button_link",
-      "label": "Button link"
+      "label": "按钮链接"
     },
     {
       "type": "select",
       "id": "button_style",
-      "label": "Button style",
+      "label": "按钮风格",
       "options": [
         {
           "value": "m-button--primary",
-          "label": "Primary button"
+          "label": "主题按钮"
         },
         {
           "value": "m-button--secondary",
-          "label": "Secondary button"
+          "label": "次要按钮"
         },
         {
           "value": "m-button--white",
-          "label": "White button"
+          "label": "白色按钮"
         },
         {
           "value": "m-button--link",
-          "label": "Underline button"
+          "label": "下划线按钮"
         }
       ],
       "default": "m-button--primary"
@@ -263,47 +263,47 @@
     {
       "type": "select",
       "id": "header_alignment",
-      "label": "Text alignment",
+      "label": "文本对齐",
       "default": "center",
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "左"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "中"
         }
       ]
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "通用"
     },
     {
       "type": "select",
       "id": "container",
-      "label": "Container type",
+      "label": "容器类型",
       "default": "container-fluid",
       "options": [
         {
           "value": "container-fluid",
-          "label": "Default"
+          "label": "默认"
         },
         {
           "value": "container-full",
-          "label": "Full width"
+          "label": "撑满宽度"
         },
         {
           "value": "container",
-          "label": "Use container box"
+          "label": "使用当前区域"
         }
       ]
     },
     {
       "type": "color_scheme",
       "id": "color_scheme",
-      "label": "Color scheme"
+      "label": "颜色方案"
     },
     {
       "type": "color_scheme",
@@ -365,7 +365,7 @@
     },
     {
       "type": "header",
-      "content": "Grid settings"
+      "content": "网格设置"
     },
     {
       "type": "range",
@@ -379,7 +379,7 @@
     {
       "type": "range",
       "id": "column_gap",
-      "label": "Column gap",
+      "label": "列间距",
       "min": 0,
       "max": 50,
       "default": 30,
@@ -396,7 +396,7 @@
     },
     {
       "type": "header",
-      "content": "Mobile settings"
+      "content": "移动端设置"
     },
     {
       "type": "select",
@@ -426,19 +426,19 @@
     },
     {
       "type": "checkbox",
-      "label": "Use horizontal scrollbar",
+      "label": "使用水平滚动条",
       "id": "use_scroll_mobile",
       "default": true,
-      "info": "Uncheck to display as grid"
+      "info": "取消则显示为网格"
     },
     {
       "type": "header",
-      "content": "Section Padding"
+      "content": "段落内边距"
     },
     {
       "type": "range",
       "id": "padding_top",
-      "label": "Padding Top",
+      "label": "上内边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -448,7 +448,7 @@
     {
       "type": "range",
       "id": "padding_bottom",
-      "label": "Padding Bottom",
+      "label": "下内边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -457,42 +457,42 @@
     },
     {
       "type": "header",
-      "content": "Custom Attributes"
+      "content": "自定义属性"
     },
     {
       "type": "text",
       "id": "custom_class",
-      "label": "Custom classes"
+      "label": "自定义类"
     },
     {
       "type": "header",
-      "content": "Animations"
+      "content": "动画"
     },
     {
       "type": "select",
       "id": "animations",
-      "label": "Visible in the view animation",
+      "label": "在视图中可见的动画",
       "default": "inherit",
       "options": [
         {
           "value": "inherit",
-          "label": "Inherit global setting"
+          "label": "继承全局设置",
         },
         {
           "value": "fade-in",
-          "label": "Fade in"
+          "label": "淡入",
         },
         {
           "value": "fade-in-up",
-          "label": "Fade in up"
+          "label": "淡入向上",
         },
         {
           "value": "fade-in-left",
-          "label": "Fade in left"
+          "label": "淡入向左",
         },
         {
           "value": "fade-in-right",
-          "label": "Fade in right"
+          "label": "淡入向右",
         }
       ]
     }
@@ -517,7 +517,7 @@
   ],
   "presets": [
     {
-      "name": "Gallery images",
+      "name": "Gallery images 图片画廊",
       "category": "Image",
       "blocks": [
         {

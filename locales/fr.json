@@ -12,7 +12,9 @@
         "new_window": "Ouvre dans une nouvelle fenêtre."
       },
       "close_header": "Fermer l'en-tête",
-      "close": "Fermer"
+      "close": "Fermer",
+      "view_more": "Voir plus",
+      "view_less": "Voir moins"
     },
     "meta": {
       "tags": "Tagué \"{{ tags }}\"",
@@ -150,6 +152,9 @@
       "taxes_included_but_shipping_at_checkout": "Taxes incluses et frais de port calculés à la caisse",
       "taxes_included_and_shipping_policy_html": "Taxe inclu. <a href=\"{{ link }}\">Expédition</a> calculée au moment du paiement.",
       "enter_discount_code": "Entrez le code de réduction ici",
+      "remove_discount": "Supprimer {{ code }}",
+      "discount_duplicate_error_message": "Le code de réduction a déjà été appliqué à votre panier.",
+      "discount_apply_error_message": "Le code de réduction ne peut pas être appliqué à votre panier.",
       "checkout": "Vérifier",
       "viewcart": "Voir le panier",
       "empty": "Votre carte est actuellement vide.",

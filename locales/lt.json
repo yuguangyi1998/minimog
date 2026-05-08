@@ -12,7 +12,9 @@
         "new_window": "Atsidaro naujame lange."
       },
       "close_header": "Uždaryti antraštę",
-      "close": "Uždaryti"
+      "close": "Uždaryti",
+      "view_more": "Rodyti daugiau",
+      "view_less": "Rodyti mažiau"
     },
     "meta": {
       "tags": "Pažymėta „{{ tags }}“",
@@ -150,6 +152,9 @@
       "taxes_included_but_shipping_at_checkout": "Į kainą įskaičiuoti mokesčiai ir pristatymas apskaičiuojamas atsiskaitant",
       "taxes_included_and_shipping_policy_html": "Mokesčiai įskaičiuoti. <a href=\"{{ link }}\">Pristatymas</a> apskaičiuojamas atsiskaitant.",
       "enter_discount_code": "Įveskite nuolaidos kodą čia",
+      "remove_discount": "Pašalinti {{ code }}",
+      "discount_duplicate_error_message": "Nuolaidų kodas jau buvo pritaikytas jūsų krepšeliui.",
+      "discount_apply_error_message": "Nuolaidų kodas negali būti pritaikytas jūsų krepšeliui.",
       "checkout": "Patikrinkite",
       "viewcart": "Peržiūrėti krepšelį",
       "empty": "Jūsų krepšelis šiuo metu tuščias.",

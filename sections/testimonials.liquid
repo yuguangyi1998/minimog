@@ -144,7 +144,7 @@
 
 {% schema %}
 {
-  "name": "Testimonials",
+  "name": "客户评价",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
@@ -160,21 +160,21 @@
     {
       "type": "text",
       "id": "heading",
-      "label": "Heading",
+      "label": "标题",
       "default": "What People Are Saying"
     },
     {
       "type": "select",
       "id": "heading_size",
-      "label": "Heading size",
+      "label": "标题大小",
       "default": "h3",
       "options": [
         {
-          "label": "Medium",
+          "label": "中等",
           "value": "h3"
         },
         {
-          "label": "Large",
+          "label": "大",
           "value": "h2"
         }
       ]
@@ -182,57 +182,57 @@
     {
       "type": "text",
       "id": "subheading",
-      "label": "Subheading"
+      "label": "副标题"
     },
     {
       "type": "textarea",
       "id": "description",
-      "label": "Description"
+      "label": "描述"
     },
     {
       "type": "select",
       "id": "header_alignment",
-      "label": "Text alignment",
+      "label": "文本对齐",
       "default": "center",
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "左"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "中"
         }
       ]
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "通用"
     },
     {
       "type": "select",
       "id": "container",
-      "label": "Container type",
+      "label": "容器类型",
       "default": "w-full",
       "options": [
         {
           "value": "container-fluid",
-          "label": "Default"
+          "label": "默认"
         },
         {
           "value": "w-full",
-          "label": "Full width"
+          "label": "撑满宽度"
         },
         {
           "value": "container",
-          "label": "Use container box"
+          "label": "使用当前区域"
         }
       ]
     },
     {
       "type": "color_scheme",
       "id": "color_scheme",
-      "label": "Color scheme"
+      "label": "颜色方案"
     },
     {
       "type": "select",
@@ -289,13 +289,13 @@
     {
       "type": "checkbox",
       "id": "show_navigation",
-      "label": "Show navigation",
+      "label": "显示导航",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "show_pagination",
-      "label": "Show pagination",
+      "label": "显示分页",
       "default": true
     },
     {
@@ -311,12 +311,12 @@
     },
     {
       "type": "header",
-      "content": "Section Padding"
+      "content": "段落内边距"
     },
     {
       "type": "range",
       "id": "padding_top",
-      "label": "Padding Top",
+      "label": "上内边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -326,7 +326,7 @@
     {
       "type": "range",
       "id": "padding_bottom",
-      "label": "Padding Bottom",
+      "label": "下内边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -335,42 +335,42 @@
     },
     {
       "type": "header",
-      "content": "Custom Attributes"
+      "content": "自定义属性"
     },
     {
       "type": "text",
       "id": "custom_class",
-      "label": "Custom classes"
+      "label": "自定义类"
     },
     {
       "type": "header",
-      "content": "Animations"
+      "content": "动画"
     },
     {
       "type": "select",
       "id": "animations",
-      "label": "Visible in the view animation",
+      "label": "在视图中可见的动画",
       "default": "inherit",
       "options": [
         {
           "value": "inherit",
-          "label": "Inherit global setting"
+          "label": "继承全局设置",
         },
         {
           "value": "fade-in",
-          "label": "Fade in"
+          "label": "淡入",
         },
         {
           "value": "fade-in-up",
-          "label": "Fade in up"
+          "label": "淡入向上",
         },
         {
           "value": "fade-in-left",
-          "label": "Fade in left"
+          "label": "淡入向左",
         },
         {
           "value": "fade-in-right",
-          "label": "Fade in right"
+          "label": "淡入向右",
         }
       ]
     }
@@ -401,7 +401,7 @@
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image",
+          "label": "图片",
           "info": "Optional"
         },
         {
@@ -426,7 +426,7 @@
   ],
   "presets": [
     {
-      "name": "Testimonials",
+      "name": "客户评价",
       "category": "Promotional",
       "blocks": [
         {

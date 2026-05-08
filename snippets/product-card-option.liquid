@@ -26,9 +26,14 @@
     endif
   endfor
 
+  assign disable_selected_variant_default = false
   assign pcard_keep_featured_image = settings.pcard_keep_featured_image
   if has_filters_value
     assign pcard_keep_featured_image = false
+  endif
+
+  if settings.pcard_show_lowest_prices or pcard_keep_featured_image
+    assign disable_selected_variant_default = true
   endif
 -%}
 
@@ -39,7 +44,7 @@
     data-product-handle="{{ product.handle }}"
   >
     <pcard-swatch
-      data-keep-featured-image="{{ pcard_keep_featured_image }}"
+      data-disable-selected-variant-by-default="{{ disable_selected_variant_default }}"
       class="m-product-option m-product-option--{{ pcard_picker_type }} m:flex-wrap m:items-center m:justify-{{ alignment }}"
     >
       {%- for option in product.options_with_values -%}
@@ -101,7 +106,7 @@
                     <div class="m-product-option--node m-tooltip m-tooltip--top">
                       <div class="m-product-option--swatch">
                         <label
-                          {% if option.selected_value == value and pcard_keep_featured_image == false %}
+                          {% if option.selected_value == value and disable_selected_variant_default == false %}
                             data-selected="true"
                           {% endif %}
                           class="m-product-option--node__label"
@@ -154,7 +159,7 @@
                 <select class="m-product-option--dropdown-select">
                   {% for value in option.values %}
                     <option
-                      {% if option.selected_value == value and pcard_keep_featured_image == false %}
+                      {% if option.selected_value == value %}
                         selected
                       {% endif %}
                       class="m-product-option--node__label"
@@ -223,7 +228,7 @@
                     <div class="m-product-option--node m-tooltip m-tooltip--top">
                       <div class="m-product-option__option m:display-flex m:items-center m:justify-center">
                         <label
-                          {% if option.selected_value == value and pcard_keep_featured_image == false %}
+                          {% if option.selected_value == value and disable_selected_variant_default == false %}
                             data-selected="true"
                           {% endif %}
                           class="{{ label_class }}"
@@ -301,7 +306,7 @@
                     <div class="m-product-option--node m-tooltip m-tooltip--top">
                       <div class="m-product-option--swatch">
                         <label
-                          {% if option.selected_value == value and pcard_keep_featured_image == false %}
+                          {% if option.selected_value == value and disable_selected_variant_default == false %}
                             data-selected="true"
                           {% endif %}
                           class="m-product-option--node__label"
@@ -351,7 +356,7 @@
                 {% for value in option.values %}
                   {%- if forloop.index0 < values_limit -%}
                     <label
-                      {% if option.selected_value == value and settings.pcard_keep_featured_image == false %}
+                      {% if option.selected_value == value and disable_selected_variant_default == false %}
                         data-selected="true"
                       {% endif %}
                       class="m-product-option--node__label"
@@ -431,7 +436,7 @@
                     <div class="m-product-option--node m-tooltip m-tooltip--top">
                       <div class="m-product-option--swatch">
                         <label
-                          {% if option.selected_value == value and pcard_keep_featured_image == false %}
+                          {% if option.selected_value == value and disable_selected_variant_default == false %}
                             data-selected="true"
                           {% endif %}
                           class="{{ label_class }}"

@@ -66,7 +66,7 @@
 </section>
 {% schema %}
 {
-  "name": "FAQs",
+  "name": "FAQs 常见问题",
   "enabled_on": {
     "templates": [
       "page"
@@ -76,85 +76,85 @@
   "settings": [
     {
       "type": "header",
-      "content": "General"
+      "content": "通用"
     },
     {
       "type": "select",
       "id": "container",
-      "label": "Container type",
+      "label": "容器类型",
       "default": "container",
       "options": [
         {
           "value": "container-fluid",
-          "label": "Default"
+          "label": "默认"
         },
         {
           "value": "w-full",
-          "label": "Full width"
+          "label": "撑满宽度"
         },
         {
           "value": "container",
-          "label": "Use container box"
+          "label": "使用当前区域"
         }
       ]
     },
     {
       "type": "color_scheme",
       "id": "color_scheme",
-      "label": "Color scheme"
+      "label": "颜色方案"
     },
     {
       "type": "header",
-      "content": "Settings"
+      "content": "Settings 设置"
     },
     {
       "type": "link_list",
       "id": "menu",
-      "label": "Select menu"
+      "label": "Select menu 选择菜单"
     },
     {
       "type": "header",
-      "content": "Custom Attributes"
+      "content": "自定义属性 自定义属性"
     },
     {
       "type": "text",
       "id": "custom_class",
-      "label": "Custom classes"
+      "label": "自定义类 "
     }
   ],
   "blocks": [
     {
       "type": "content",
-      "name": "Custom content",
+      "name": "Custom content 自定义内容",
       "settings": [
         {
           "type": "html",
           "id": "content",
           "label": "Content",
-          "info": "Allow html code"
+          "info": "Allow html code 允许 html 代码"
         }
       ]
     },
     {
       "type": "accordion",
-      "name": "Accordion item",
+      "name": "Accordion item 折叠项",
       "settings": [
         {
           "type": "textarea",
           "id": "title",
-          "label": "Heading",
+          "label": "标题",
           "default": "Question Name"
         },
         {
           "type": "richtext",
           "id": "content",
-          "label": "Content",
+          "label": "Content 内容",
           "default": "<p>Answer Content</p>"
         },
         {
           "type": "checkbox",
           "id": "open",
-          "label": "Open Tab By Default",
+          "label": "Open Tab By Default 默认打开",
           "default": false
         }
       ]
@@ -162,7 +162,7 @@
   ],
   "presets": [
     {
-      "name": "FAQs",
+      "name": "FAQs 常见问题",
       "blocks": [
         {
           "type": "accordion"

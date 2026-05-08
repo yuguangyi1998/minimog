@@ -12,7 +12,9 @@
         "new_window": "Si apre in una nuova finestra?"
       },
       "close_header": "Chiudi intestazione",
-      "close": "Vicino"
+      "close": "Vicino",
+      "view_more": "Vedi di più",
+      "view_less": "Vedi meno"
     },
     "meta": {
       "tags": "Contrassegnato \"{{ tags }}\"",
@@ -150,6 +152,9 @@
       "taxes_included_but_shipping_at_checkout": "Tasse incluse e spedizione calcolata al momento del pagamento",
       "taxes_included_and_shipping_policy_html": "Tasse incluse. <a href=\"{{ link }}\">Spedizione</a> calcolata al momento del pagamento.",
       "enter_discount_code": "Inserisci qui il codice sconto",
+      "remove_discount": "Rimuovi {{ code }}",
+      "discount_duplicate_error_message": "Il codice di sconto è già stato applicato al tuo carrello.",
+      "discount_apply_error_message": "Il codice di sconto non può essere applicato al carrello.",
       "checkout": "Guardare",
       "viewcart": "Visualizza carrello",
       "empty": "Il carrello è vuoto.",

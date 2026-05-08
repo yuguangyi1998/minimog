@@ -9,10 +9,12 @@
     assign show_breadcrumb = false
   endif
 
+  assign bg_image_mobile = blank
   for block in section.blocks
     assign selected_collection = collections[block.settings.collection]
     if selected_collection.handle == collection.handle
       assign bg_image = block.settings.image
+      assign bg_image_mobile = block.settings.image_mobile
     endif
   endfor
 
@@ -63,14 +65,18 @@
     assign main_classes = main_classes | append: ' m:overflow-hidden m-scroll-trigger animate--zoom-fade'
   endif
 
-  assign image_height = bg_image.width | divided_by: bg_image.aspect_ratio | round
   assign lazy_load = 'eager'
   assign fetchpriority = 'high'
   unless section.index < 3
     assign lazy_load = 'lazy'
     assign fetchpriority = 'low'
   endunless
-  assign alt_image = bg_image.alt | default: 'collection-banner-image'
+  assign alt_image = 'collection-banner-image'
+  if bg_image != blank
+    assign alt_image = bg_image.alt
+  elsif bg_image_mobile != blank
+    assign alt_image = bg_image_mobile.alt
+  endif
 
   assign color_scheme_first = settings.color_schemes | first
   assign color_scheme_inherit = false
@@ -80,6 +86,9 @@
 %}
 {% if enable_parallax %}
   <script src="{{ 'parallax.js' | asset_url }}" defer="defer"></script>
+{% endif %}
+{% if section.settings.toggle_showmore %}
+  <script src="{{ 'read-more.js' | asset_url }}" defer="defer"></script>
 {% endif %}
 
 {%- style -%}
@@ -101,18 +110,36 @@
       >
         <div class="m-parallax__wrapper m-image m:relative m:w-full m:h-full">
           <div class="m-parallax__image m:h-full">
-            {{
-              bg_image
-              | image_url: width: 3840
-              | image_tag:
-                loading: lazy_load,
-                fetchpriority: fetchpriority,
-                width: bg_image.width,
-                height: image_height,
-                sizes: '100vw',
-                widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
-                alt: alt_image
-            }}
+            {% if bg_image != blank or bg_image_mobile != blank %}
+              <picture class="m:block m:w-full m:h-full{% if bg_image == blank %} md:m:hidden{% endif %}">
+                {%- if bg_image_mobile != blank -%}
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="{{ bg_image_mobile | image_url: width: 400 }} 400w, {{ bg_image_mobile | image_url: width: 600 }} 600w, {{ bg_image_mobile | image_url: width: 800 }} 800w, {{ bg_image_mobile | image_url: width: 1000 }} 1000w"
+                    width="{{ bg_image_mobile.width }}"
+                    height="{{ bg_image_mobile.height }}"
+                  >
+                {%- endif %}
+                {% liquid
+                  if bg_image == blank
+                    assign bg_image = bg_image_mobile
+                  endif
+                  assign image_height = bg_image.width | divided_by: bg_image.aspect_ratio | round
+                %}
+                {{
+                  bg_image
+                  | image_url: width: 3840
+                  | image_tag:
+                    loading: lazy_load,
+                    fetchpriority: fetchpriority,
+                    width: bg_image.width,
+                    height: image_height,
+                    sizes: '100vw',
+                    widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                    alt: alt_image
+                }}
+              </picture>
+            {% endif %}
           </div>
         </div>
       </m-parallax>
@@ -121,18 +148,36 @@
       <div class="m-collection-page-header__wrapper m:overflow-hidden{% unless enable_parallax %} m-gradient m-color-{{ section.settings.color_scheme }}{% endunless %}{% unless color_scheme_inherit %} m:blocks-radius{% endunless %}">
         {% if bg_image != blank and enable_parallax == false %}
           <div class="m-collection-page-header__background m-image{% if color_scheme_inherit %} m:blocks-radius{% endif %}">
-            {{
-              bg_image
-              | image_url: width: 3840
-              | image_tag:
-                loading: lazy_load,
-                fetchpriority: fetchpriority,
-                width: bg_image.width,
-                height: image_height,
-                sizes: '100vw',
-                widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
-                alt: alt_image
-            }}
+            {% if bg_image != blank or bg_image_mobile != blank %}
+              <picture class="m:block m:w-full m:h-full{% if bg_image == blank %} md:m:hidden{% endif %}">
+                {%- if bg_image_mobile != blank -%}
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="{{ bg_image_mobile | image_url: width: 400 }} 400w, {{ bg_image_mobile | image_url: width: 600 }} 600w, {{ bg_image_mobile | image_url: width: 800 }} 800w, {{ bg_image_mobile | image_url: width: 1000 }} 1000w"
+                    width="{{ bg_image_mobile.width }}"
+                    height="{{ bg_image_mobile.height }}"
+                  >
+                {%- endif %}
+                {% liquid
+                  if bg_image == blank
+                    assign bg_image = bg_image_mobile
+                  endif
+                  assign image_height = bg_image.width | divided_by: bg_image.aspect_ratio | round
+                %}
+                {{
+                  bg_image
+                  | image_url: width: 3840
+                  | image_tag:
+                    loading: lazy_load,
+                    fetchpriority: fetchpriority,
+                    width: bg_image.width,
+                    height: image_height,
+                    sizes: '100vw',
+                    widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                    alt: alt_image
+                }}
+              </picture>
+            {% endif %}
           </div>
         {% endif %}
         <div class="m-collection-page-header__inner m-section-py m:text-{{ text_color }} m:text-{{ text_alignment }}">
@@ -150,7 +195,25 @@
           </h1>
           {% if section.settings.show_desc and collection_desc != blank %}
             <div class="m-collection-page-header__description rte {{ desc_color }}{% if animated %} m-scroll-trigger animate--{{ animation_effect }}{% endif %}">
-              {{ collection_desc }}
+              {% if section.settings.toggle_showmore %}
+                <read-more
+                  class="block read-more__text"
+                  data-toggle-class="text-limit-{{ section.settings.text_line_limit }}"
+                  data-show-text="{{ "general.accessibility.view_more" | t }}"
+                  data-hide-text="{{ "general.accessibility.view_less" | t }}"
+                >
+                  <div class="read-more__content rte">
+                    {{ collection_desc }}
+                  </div>
+                  <button class="read-more__toggle m-button {{ section.settings.button_style | replace: 'sf__btn-primary', 'm-button--primary' | replace: 'sf__btn-secondary', 'm-button--secondary' | replace: 'sf__btn-link', 'm-button--link' | replace: 'sf__btn-white', 'm-button--white' }} {{ section.settings.button_size }}">
+                    <span class="btn__text">{{ 'general.accessibility.view_more' | t }}</span>
+                  </button>
+                </read-more>
+              {% else %}
+                <div class="read-more__content rte">
+                  {{ collection_desc }}
+                </div>
+              {% endif %}
             </div>
           {% endif %}
         </div>
@@ -172,30 +235,30 @@
   "settings": [
     {
       "type": "header",
-      "content": "General"
+      "content": "通用"
     },
     {
       "type": "color_scheme",
       "id": "color_scheme",
-      "label": "Color scheme"
+      "label": "颜色方案"
     },
     {
       "type": "select",
       "id": "container",
-      "label": "Container type",
+      "label": "容器类型",
       "default": "container",
       "options": [
         {
           "value": "container-fluid",
-          "label": "Default"
+          "label": "默认"
         },
         {
           "value": "w-full",
-          "label": "Full width"
+          "label": "撑满宽度"
         },
         {
           "value": "container",
-          "label": "Use container box"
+          "label": "使用当前区域"
         }
       ]
     },
@@ -244,19 +307,19 @@
       "options": [
         {
           "value": "top",
-          "label": "Top"
+          "label": "上"
         },
         {
           "value": "right",
-          "label": "Right"
+          "label": "右"
         },
         {
           "value": "bottom",
-          "label": "Bottom"
+          "label": "下"
         },
         {
           "value": "left",
-          "label": "Left"
+          "label": "左"
         },
         {
           "value": "background",
@@ -298,38 +361,38 @@
     {
       "type": "select",
       "id": "text_alignment",
-      "label": "Content alignment",
+      "label": "内容对齐",
       "default": "left",
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "左"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "中"
         },
         {
           "value": "right",
-          "label": "Right"
+          "label": "右"
         }
       ]
     },
     {
       "type": "select",
       "id": "text_color",
-      "label": "Text color",
+      "label": "文本颜色",
       "options": [
         {
-          "label": "Dark",
+          "label": "暗色",
           "value": "black"
         },
         {
-          "label": "Light",
+          "label": "浅色",
           "value": "white"
         },
         {
-          "label": "Inherit",
+          "label": "继承",
           "value": "inherit"
         }
       ],
@@ -352,18 +415,75 @@
       "default": false
     },
     {
+      "type": "checkbox",
+      "id": "toggle_showmore",
+      "label": "Show view more button",
+      "default": false,
+      "visible_if": "{{ section.settings.show_desc }}"
+    },
+    {
+      "type": "select",
+      "id": "text_line_limit",
+      "label": "Text line limit",
+      "options": [
+        { "value": "1-line", "label": "1 line" },
+        { "value": "2-lines", "label": "2 lines" },
+        { "value": "3-lines", "label": "3 lines" },
+        { "value": "4-lines", "label": "4 lines" }
+      ],
+      "default": "1-line",
+      "visible_if": "{{ section.settings.toggle_showmore and section.settings.show_desc }}"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "按钮风格",
+      "options": [
+        {
+          "value": "m-button--primary",
+          "label": "主题按钮"
+        },
+        {
+          "value": "m-button--secondary",
+          "label": "次要按钮"
+        },
+        {
+          "value": "m-button--white",
+          "label": "白色按钮"
+        },
+        {
+          "value": "m-button--link",
+          "label": "下划线按钮"
+        }
+      ],
+      "default": "m-button--link",
+      "visible_if": "{{ section.settings.toggle_showmore and section.settings.show_desc }}"
+    },
+    {
+      "type": "select",
+      "id": "button_size",
+      "label": "按钮大小",
+      "options": [
+        { "value": "m-button--small", "label": "小" },
+        { "value": "", "label": "中等" },
+        { "value": "m-button--large", "label": "大" }
+      ],
+      "default": "",
+      "visible_if": "{{ section.settings.toggle_showmore and section.settings.show_desc }}"
+    },
+    {
       "type": "richtext",
       "id": "collection_all_desc",
       "label": "Description for all products"
     },
     {
       "type": "header",
-      "content": "Section Padding"
+      "content": "段落内边距"
     },
     {
       "type": "range",
       "id": "padding_top",
-      "label": "Padding Top",
+      "label": "上内边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -373,7 +493,7 @@
     {
       "type": "range",
       "id": "padding_bottom",
-      "label": "Padding Bottom",
+      "label": "下内边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -382,7 +502,7 @@
     },
     {
       "type": "header",
-      "content": "Animations"
+      "content": "动画"
     },
     {
       "type": "checkbox",
@@ -399,13 +519,18 @@
         {
           "type": "collection",
           "id": "collection",
-          "label": "Collection",
+          "label": "系列",
           "info": "Choose a collection to show this banner."
         },
         {
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "Image mobile"
         }
       ]
     }

@@ -188,7 +188,7 @@
 
 {% schema %}
 {
-  "name": "Video",
+  "name": "视频",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
@@ -200,52 +200,52 @@
     {
       "type": "select",
       "id": "container",
-      "label": "Container type",
+      "label": "容器类型",
       "default": "w-full",
       "options": [
         {
           "value": "container-fluid",
-          "label": "Default"
+          "label": "默认"
         },
         {
           "value": "w-full",
-          "label": "Full width"
+          "label": "撑满宽度"
         },
         {
           "value": "container",
-          "label": "Use container box"
+          "label": "使用当前区域"
         }
       ]
     },
     {
       "type": "color_scheme",
       "id": "color_scheme",
-      "label": "Color scheme"
+      "label": "颜色方案"
     },
     {
       "type": "header",
-      "content": "Video settings"
+      "content": "视频类型"
     },
     {
       "type": "select",
       "id": "video_type",
-      "label": "Video type",
+      "label": "视频类型",
       "default": "shopify",
       "options": [
         {
           "value": "shopify",
-          "label": "Shopify hosted"
+          "label": "自托管"
         },
         {
           "value": "external",
-          "label": "External"
+          "label": "外部"
         }
       ]
     },
     {
       "type": "video",
       "id": "shopify_video",
-      "label": "Shopify hosted"
+      "label": "自托管"
     },
     {
       "type": "video_url",
@@ -253,12 +253,12 @@
       "label": "Video link",
       "accept": ["youtube", "vimeo"],
       "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-      "info": "Accepts YouTube or Vimeo links"
+      "info": "接受 YouTube 或 Vimeo 链接"
     },
     {
       "type": "select",
       "id": "ratio",
-      "label": "Video ratio",
+      "label": "视频比例",
       "default": "16:9",
       "options": [
         {
@@ -299,20 +299,20 @@
     {
       "type": "textarea",
       "id": "video_title",
-      "label": "Heading"
+      "label": "标题"
     },
     {
       "type": "select",
       "id": "text_size",
-      "label": "Text size",
+      "label": "文本大小",
       "default": "medium",
       "options": [
         {
-          "label": "Medium",
+          "label": "中等",
           "value": "medium"
         },
         {
-          "label": "Large",
+          "label": "大",
           "value": "large"
         }
       ]
@@ -320,20 +320,20 @@
     {
       "type": "select",
       "id": "text_color",
-      "label": "Text color",
+      "label": "文本颜色",
       "default": "inherit",
       "options": [
         {
           "value": "black",
-          "label": "Dark"
+          "label": "暗色",
         },
         {
           "value": "white",
-          "label": "Light"
+          "label": "浅色"
         },
         {
           "value": "inherit",
-          "label": "Inherit"
+          "label": "继承",
         }
       ]
     },
@@ -344,11 +344,11 @@
       "options": [
         {
           "label": "Outline",
-          "value": "outline"
+          "value": "描边"
         },
         {
           "label": "Solid",
-          "value": "solid"
+          "value": "实线"
         }
       ],
       "default": "solid"
@@ -359,11 +359,11 @@
       "label": "Play button size",
       "options": [
         {
-          "label": "Medium",
+          "label": "中等",
           "value": "medium"
         },
         {
-          "label": "Large",
+          "label": "大",
           "value": "large"
         }
       ],
@@ -372,44 +372,44 @@
     {
       "type": "text",
       "id": "width",
-      "label": "Video width",
+      "label": "视频宽度",
       "default": "650px",
       "info": "Leave blank for follow container width"
     },
     {
       "type": "checkbox",
       "id": "autoplay",
-      "label": "Autoplay",
+      "label": "自动播放",
       "default": false,
       "info": "Only work if the muted box is checked"
     },
     {
       "type": "checkbox",
       "id": "loop",
-      "label": "Loop",
+      "label": "循环",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "muted",
-      "label": "Muted",
+      "label": "静音",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "show_controls",
-      "label": "Show controls",
+      "label": "显示控制",
       "default": false,
       "info": "Only work when use Shopify hosted video type"
     },
     {
       "type": "header",
-      "content": "Section Padding"
+      "content": "段落内边距"
     },
     {
       "type": "range",
       "id": "padding_top",
-      "label": "Padding Top",
+      "label": "上内边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -419,7 +419,7 @@
     {
       "type": "range",
       "id": "padding_bottom",
-      "label": "Padding Bottom",
+      "label": "下内边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -428,49 +428,49 @@
     },
     {
       "type": "header",
-      "content": "Custom Attributes"
+      "content": "自定义属性"
     },
     {
       "type": "text",
       "id": "custom_class",
-      "label": "Custom classes"
+      "label": "自定义类"
     },
     {
       "type": "header",
-      "content": "Animations"
+      "content": "动画"
     },
     {
       "type": "select",
       "id": "animations",
-      "label": "Visible in the view animation",
+      "label": "在视图中可见的动画",
       "default": "inherit",
       "options": [
         {
           "value": "inherit",
-          "label": "Inherit global setting"
+          "label": "继承全局设置",
         },
         {
           "value": "fade-in",
-          "label": "Fade in"
+          "label": "淡入",
         },
         {
           "value": "fade-in-up",
-          "label": "Fade in up"
+          "label": "淡入向上",
         },
         {
           "value": "fade-in-left",
-          "label": "Fade in left"
+          "label": "淡入向左",
         },
         {
           "value": "fade-in-right",
-          "label": "Fade in right"
+          "label": "淡入向右",
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Video",
+      "name": "视频",
       "category": "Video"
     }
   ]

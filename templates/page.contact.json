@@ -6,6 +6,17 @@
         "container": "container"
       }
     },
+    "maps": {
+      "type": "maps",
+      "settings": {
+        "container": "container",
+        "map_height": "large",
+        "textx": "40.6700",
+        "texty": "-73.9400",
+        "zoom": "11",
+        "text2": "New York"
+      }
+    },
     "contact-form": {
       "type": "contact-form",
       "blocks": {
@@ -46,16 +57,13 @@
       "settings": {
         "container": "container",
         "title": "We would love to hear from you.",
-        "description": "<p>If you’ve got great products your making or looking to work with us then drop us a line.<\/p>",
-        "show_name": true,
-        "show_phone": false,
-        "show_signup_email": true,
-        "animations": "inherit"
+        "description": "<p>If you’ve got great products your making or looking to work with us then drop us a line.<\/p>"
       }
     }
   },
   "order": [
     "main",
+    "maps",
     "contact-form"
   ]
 }

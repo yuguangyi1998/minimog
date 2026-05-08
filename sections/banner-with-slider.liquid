@@ -862,7 +862,7 @@
 
 {% schema %}
 {
-  "name": "Image with slider",
+  "name": "Image with slider 图片与幻灯片",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
@@ -873,25 +873,25 @@
     },
     {
       "type": "header",
-      "content": "Section header"
+      "content": "Section header 标题"
     },
     {
       "type": "text",
       "id": "heading",
-      "label": "Heading"
+      "label": "Heading 标题"
     },
     {
       "type": "select",
       "id": "heading_size",
-      "label": "Heading size",
+      "label": "Heading size 标题大小",
       "default": "h3",
       "options": [
         {
-          "label": "Medium",
+          "label": "Medium 中等",
           "value": "h3"
         },
         {
-          "label": "Large",
+          "label": "Large 大",
           "value": "h2"
         }
       ]
@@ -899,40 +899,40 @@
     {
       "type": "text",
       "id": "subheading",
-      "label": "Subheading"
+      "label": "Subheading 副标题"
     },
     {
       "type": "select",
       "id": "header_alignment",
-      "label": "Text alignment",
+      "label": "Text alignment 文本对齐",
       "default": "center",
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "Left 左对齐"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "Center 居中对齐"
         }
       ]
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "General 通用"
     },
     {
       "type": "select",
       "id": "layout",
-      "label": "Layout",
+      "label": "Layout 布局",
       "options": [
         {
           "value": "layout-1",
-          "label": "Layout 1"
+          "label": "Layout 1 布局1"
         },
         {
           "value": "layout-2",
-          "label": "Layout 2"
+          "label": "Layout 2 布局2"
         }
       ],
       "default": "layout-1"
@@ -940,57 +940,57 @@
     {
       "type": "select",
       "id": "container",
-      "label": "Container type",
+      "label": "Container type 容器类型",
       "default": "container-fluid",
       "options": [
         {
           "value": "container-fluid",
-          "label": "Default"
+          "label": "Default 默认"
         },
         {
           "value": "w-full",
-          "label": "Full width"
+          "label": "Full width 全宽"
         },
         {
           "value": "container",
-          "label": "Use container box"
+          "label": "Use container box 使用容器框"
         }
       ]
     },
     {
       "type": "color_scheme",
       "id": "color_scheme",
-      "label": "Color scheme"
+      "label": "Color scheme 颜色方案"
     },
     {
       "type": "header",
-      "content": "Slider"
+      "content": "Slider 幻灯片"
     },
     {
       "type": "checkbox",
       "id": "slide_autoplay",
-      "label": "Auto-rotate slides",
+      "label": "Auto-rotate slides 自动旋转幻灯片",
       "default": false
     },
     {
       "type": "select",
       "id": "pagination_position",
-      "label": "Pagination position",
+      "label": "Pagination position 分页位置",
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "Left 左对齐"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "Center 居中对齐"
         }
       ]
     },
     {
       "type": "range",
       "id": "autorotate_speed",
-      "label": "Change slides every",
+      "label": "Change slides every 每次幻灯片变化时间",
       "info": "Work when auto-rotate",
       "max": 10,
       "min": 2,
@@ -1000,7 +1000,7 @@
     },
     {
       "type": "header",
-      "content": "Mobile settings"
+      "content": "Mobile settings 移动设置"
     },
     {
       "type": "select",
@@ -1008,68 +1008,68 @@
       "options": [
         {
           "value": "1",
-          "label": "1 column"
+          "label": "1 column 1列"
         },
         {
           "value": "2",
-          "label": "2 columns"
+          "label": "2 columns 2列"
         }
       ],
       "default": "2",
-      "label": "Number of columns on mobile"
+      "label": "Number of columns on mobile 移动设备上的列数"
     },
     {
       "type": "checkbox",
-      "label": "Use horizontal scrollbar",
+      "label": "Use horizontal scrollbar 使用水平滚动条",
       "id": "use_scroll_mobile",
       "default": true,
-      "info": "Uncheck to display as grid"
+      "info": "Uncheck to display as grid 不勾选以显示为网格"
     },
     {
       "type": "header",
-      "content": "Banner Image 1"
+      "content": "Banner Image 1 横幅图片1"
     },
     {
       "type": "image_picker",
       "id": "banner_image_1",
-      "label": "Image"
+      "label": "Image 图片"
     },
     {
       "type": "image_picker",
       "id": "banner_image_mobile_1",
-      "label": "Mobile Image"
+      "label": "Mobile Image 移动设备图片"
     },
     {
       "type": "text",
       "id": "button_text_1",
-      "label": "Button label",
+      "label": "Button label 按钮标签",
       "default": "Shop Now"
     },
     {
       "type": "url",
       "id": "button_link_1",
-      "label": "Button link"
+      "label": "Button link 按钮链接"
     },
     {
       "type": "select",
       "id": "button_style_1",
-      "label": "Button style",
+      "label": "Button style 按钮样式",
       "options": [
         {
           "value": "m-button--primary",
-          "label": "Primary button"
+          "label": "Primary button 主要按钮"
         },
         {
           "value": "m-button--secondary",
-          "label": "Secondary button"
+          "label": "Secondary button 次要按钮"
         },
         {
           "value": "m-button--white",
-          "label": "White button"
+          "label": "White button 白色按钮"
         },
         {
           "value": "m-button--link",
-          "label": "Underline button"
+          "label": "Underline button 下划线按钮"
         }
       ],
       "default": "m-button--white"
@@ -1077,68 +1077,68 @@
     {
       "type": "select",
       "id": "button_size_1",
-      "label": "Button size",
+      "label": "Button size 按钮大小",
       "options": [
         {
           "value": "m-button--small",
-          "label": "Button small"
+          "label": "Button small 小按钮"
         },
         {
           "value": "",
-          "label": "Button medium"
+          "label": "Button medium 中按钮"
         },
         {
           "value": "m-button--large",
-          "label": "Button large"
+          "label": "Button large 大按钮"
         }
       ],
       "default": ""
     },
     {
       "type": "header",
-      "content": "Banner Image 2"
+      "content": "Banner Image 2 横幅图片2"
     },
     {
       "type": "image_picker",
       "id": "banner_image_2",
-      "label": "Image"
+      "label": "Image 图片"
     },
     {
       "type": "image_picker",
       "id": "banner_image_mobile_2",
-      "label": "Mobile Image"
+      "label": "Mobile Image 移动设备图片"
     },
     {
       "type": "text",
       "id": "button_text_2",
-      "label": "Button label",
+      "label": "Button label 按钮标签",
       "default": "Shop Now"
     },
     {
       "type": "url",
       "id": "button_link_2",
-      "label": "Button link"
+      "label": "Button link 按钮链接"
     },
     {
       "type": "select",
       "id": "button_style_2",
-      "label": "Button style",
+      "label": "Button style 按钮样式",
       "options": [
         {
           "value": "m-button--primary",
-          "label": "Primary button"
+          "label": "Primary button 主要按钮"
         },
         {
           "value": "m-button--secondary",
-          "label": "Secondary button"
+          "label": "Secondary button 次要按钮"
         },
         {
           "value": "m-button--white",
-          "label": "White button"
+          "label": "White button 白色按钮"
         },
         {
           "value": "m-button--link",
-          "label": "Underline button"
+          "label": "Underline button 下划线按钮"
         }
       ],
       "default": "m-button--white"
@@ -1146,68 +1146,68 @@
     {
       "type": "select",
       "id": "button_size_2",
-      "label": "Button size",
+      "label": "Button size 按钮大小",
       "options": [
         {
           "value": "m-button--small",
-          "label": "Button small"
+          "label": "Button small 小按钮"
         },
         {
           "value": "",
-          "label": "Button medium"
+          "label": "Button medium 中按钮"
         },
         {
           "value": "m-button--large",
-          "label": "Button large"
+          "label": "Button large 大按钮"
         }
       ],
       "default": ""
     },
     {
       "type": "header",
-      "content": "Banner image 3"
+      "content": "Banner image 3 横幅图片3"
     },
     {
       "type": "image_picker",
       "id": "banner_image_3",
-      "label": "Image"
+      "label": "Image 图片"
     },
     {
       "type": "image_picker",
       "id": "banner_image_mobile_3",
-      "label": "Mobile Image"
+      "label": "Mobile Image 移动设备图片"
     },
     {
       "type": "text",
       "id": "button_text_3",
-      "label": "Button label",
+      "label": "Button label 按钮标签",
       "default": "Shop Now"
     },
     {
       "type": "url",
       "id": "button_link_3",
-      "label": "Button link"
+      "label": "Button link 按钮链接"
     },
     {
       "type": "select",
       "id": "button_style_3",
-      "label": "Button style",
+      "label": "Button style 按钮样式",
       "options": [
         {
           "value": "m-button--primary",
-          "label": "Primary button"
+          "label": "Primary button 主要按钮"
         },
         {
           "value": "m-button--secondary",
-          "label": "Secondary button"
+          "label": "Secondary button 次要按钮"
         },
         {
           "value": "m-button--white",
-          "label": "White button"
+          "label": "White button 白色按钮"
         },
         {
           "value": "m-button--link",
-          "label": "Underline button"
+          "label": "Underline button 下划线按钮"
         }
       ],
       "default": "m-button--white"
@@ -1215,68 +1215,68 @@
     {
       "type": "select",
       "id": "button_size_3",
-      "label": "Button size",
+      "label": "Button size 按钮大小",
       "options": [
         {
           "value": "m-button--small",
-          "label": "Button small"
+          "label": "Button small 小按钮"
         },
         {
           "value": "",
-          "label": "Button medium"
+          "label": "Button medium 中按钮"
         },
         {
           "value": "m-button--large",
-          "label": "Button large"
+          "label": "Button large 大按钮"
         }
       ],
       "default": ""
     },
     {
       "type": "header",
-      "content": "Banner image 4"
+      "content": "Banner image 4 横幅图片4"
     },
     {
       "type": "image_picker",
       "id": "banner_image_4",
-      "label": "Image"
+      "label": "Image 图片"
     },
     {
       "type": "image_picker",
       "id": "banner_image_mobile_4",
-      "label": "Mobile Image"
+      "label": "Mobile Image 移动设备图片"
     },
     {
       "type": "text",
       "id": "button_text_4",
-      "label": "Button label",
+      "label": "Button label 按钮标签",
       "default": "Shop Now"
     },
     {
       "type": "url",
       "id": "button_link_4",
-      "label": "Button link"
+      "label": "Button link 按钮链接"
     },
     {
       "type": "select",
       "id": "button_style_4",
-      "label": "Button style",
+      "label": "Button style 按钮样式",
       "options": [
         {
           "value": "m-button--primary",
-          "label": "Primary button"
+          "label": "Primary button 主要按钮"
         },
         {
           "value": "m-button--secondary",
-          "label": "Secondary button"
+          "label": "Secondary button 次要按钮"
         },
         {
           "value": "m-button--white",
-          "label": "White button"
+          "label": "White button 白色按钮"
         },
         {
           "value": "m-button--link",
-          "label": "Underline button"
+          "label": "Underline button 下划线按钮"
         }
       ],
       "default": "m-button--white"
@@ -1284,31 +1284,31 @@
     {
       "type": "select",
       "id": "button_size_4",
-      "label": "Button size",
+      "label": "Button size 按钮大小",
       "options": [
         {
-          "value": "m-button--small",
-          "label": "Button small"
+          "value": "m-button--small ",
+          "label": "Button small 小按钮"
         },
         {
           "value": "",
-          "label": "Button medium"
+          "label": "Button medium 中按钮"
         },
         {
           "value": "m-button--large",
-          "label": "Button large"
+          "label": "Button large 大按钮"
         }
       ],
       "default": ""
     },
     {
       "type": "header",
-      "content": "Section Padding"
+      "content": "Section Padding 段落内边距"
     },
     {
       "type": "range",
       "id": "padding_top",
-      "label": "Padding Top",
+      "label": "Padding Top 上内边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -1318,7 +1318,7 @@
     {
       "type": "range",
       "id": "padding_bottom",
-      "label": "Padding Bottom",
+      "label": "Padding Bottom 下内边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -1327,42 +1327,42 @@
     },
     {
       "type": "header",
-      "content": "Custom Attributes"
+      "content": "Custom Attributes 自定义属性"
     },
     {
       "type": "text",
       "id": "custom_class",
-      "label": "Custom classes"
+      "label": "Custom classes 自定义类"
     },
     {
       "type": "header",
-      "content": "Animations"
+      "content": "Animations 动画"
     },
     {
       "type": "select",
       "id": "animations",
-      "label": "Visible in the view animation",
+      "label": "Visible in the view animation 在视图中可见动画",
       "default": "inherit",
       "options": [
         {
           "value": "inherit",
-          "label": "Inherit global setting"
+          "label": "Inherit global setting 继承全局设置"
         },
         {
           "value": "fade-in",
-          "label": "Fade in"
+          "label": "Fade in 淡入"
         },
         {
           "value": "fade-in-up",
-          "label": "Fade in up"
-        },
+          "label": "Fade in up 淡入上"
+        }, 
         {
           "value": "fade-in-left",
-          "label": "Fade in left"
+          "label": "Fade in left 淡入左"
         },
         {
           "value": "fade-in-right",
-          "label": "Fade in right"
+          "label": "Fade in right 淡入右"
         }
       ]
     }
@@ -1370,86 +1370,86 @@
   "blocks": [
     {
       "type": "item_slide",
-      "name": "Item slide",
+      "name": "Item slide 幻灯片项目",
       "settings": [
         {
           "type": "header",
-          "content": "Image settings"
+          "content": "Image settings 图片设置"
         },
         {
           "type": "image_picker",
           "id": "item_image",
-          "label": "Image"
+          "label": "Image 图片"
         },
         {
           "type": "header",
-          "content": "Content"
+          "content": "Content 内容"
         },
         {
           "type": "color_scheme",
           "id": "color_scheme",
-          "label": "Color scheme"
+          "label": "Color scheme 颜色方案"
         },
         {
           "type": "select",
           "id": "content_text_color",
-          "label": "Text color",
+          "label": "Text color 文本颜色",
           "default": "black",
           "options": [
             {
               "value": "black",
-              "label": "Dark"
+              "label": "Dark 暗"
             },
             {
               "value": "white",
-              "label": "Light"
+              "label": "Light 亮"
             },
             {
               "value": "inherit",
-              "label": "Inherit"
+              "label": "Inherit 继承"
             }
           ]
         },
         {
           "type": "select",
           "id": "content_position",
-          "label": "Content position",
+          "label": "Content position 内容位置",
           "default": "left middle",
           "options": [
             {
-              "label": "Top left",
-              "value": "left top"
+              "label": "Top left 顶部左",
+              "value": "左上"
             },
             {
-              "label": "Top center",
-              "value": "center top"
+              "label": "Top center 顶部居中",
+              "value": "中上"
             },
             {
-              "label": "Top right",
-              "value": "right top"
+              "label": "Top right 顶部右",
+              "value": "右上"
             },
             {
-              "label": "Middle left",
-              "value": "left middle"
+              "label": "Middle left 中间左",
+              "value": "左中"
             },
             {
-              "label": "Middle center",
+              "label": "Middle center 中间居中",
               "value": "center middle"
             },
             {
-              "label": "Middle right",
+              "label": "Middle right 中间右",
               "value": "right middle"
             },
             {
-              "label": "Bottom left",
+              "label": "Bottom left 底部左",
               "value": "left bottom"
             },
             {
-              "label": "Bottom center",
+              "label": "Bottom center 底部居中",
               "value": "center bottom"
             },
             {
-              "label": "Bottom right",
+              "label": "Bottom right 底部右",
               "value": "right bottom"
             }
           ]
@@ -1457,56 +1457,56 @@
         {
           "type": "select",
           "id": "text_alignment",
-          "label": "Content alignment",
+          "label": "Content alignment 内容对齐",
           "default": "left",
           "options": [
             {
               "value": "left",
-              "label": "Left"
+              "label": "Left 左对齐"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "Center 居中对齐"
             },
             {
               "value": "right",
-              "label": "Right"
+              "label": "Right 右对齐"
             }
           ]
         },
         {
           "type": "text",
           "id": "subheading",
-          "label": "Subheading",
+          "label": "Subheading 副标题",
           "default": "Hot this week"
         },
         {
           "type": "textarea",
           "id": "heading",
-          "label": "Heading",
+          "label": "Heading 标题",
           "default": "Chenille sweater with<br> raglan sleeves"
         },
         {
           "type": "richtext",
           "id": "description",
-          "label": "Description"
+          "label": "Description 描述"
         },
         {
           "type": "select",
           "id": "text_size",
-          "label": "Text size",
+          "label": "Text size 文本大小",
           "options": [
             {
               "value": "h3",
-              "label": "Small"
+              "label": "Small 小"
             },
             {
               "value": "h2",
-              "label": "Medium"
+              "label": "Medium 中"
             },
             {
               "value": "h1",
-              "label": "Large"
+              "label": "Large 大"
             }
           ],
           "default": "h2"
@@ -1514,34 +1514,34 @@
         {
           "type": "text",
           "id": "button_text",
-          "label": "Button label",
+          "label": "Button label 按钮标签",
           "default": "Shop Now"
         },
         {
           "type": "url",
           "id": "button_link",
-          "label": "Button link"
+          "label": "Button link 按钮链接"
         },
         {
           "type": "select",
           "id": "button_style",
-          "label": "Button style",
+          "label": "Button style 按钮样式",
           "options": [
             {
               "value": "m-button--primary",
-              "label": "Primary button"
+              "label": "Primary button 主要按钮"
             },
             {
               "value": "m-button--secondary",
-              "label": "Secondary button"
+              "label": "Secondary button 次要按钮"
             },
             {
               "value": "m-button--white",
-              "label": "White button"
+              "label": "White button 白色按钮"
             },
             {
               "value": "m-button--link",
-              "label": "Underline button"
+              "label": "Underline button 下划线按钮"
             }
           ],
           "default": "m-button--link"
@@ -1549,19 +1549,19 @@
         {
           "type": "select",
           "id": "button_size",
-          "label": "Button size",
+          "label": "Button size 按钮大小",
           "options": [
             {
               "value": "m-button--small",
-              "label": "Button small"
+              "label": "Button small 小按钮"
             },
             {
               "value": "",
-              "label": "Button medium"
+              "label": "Button medium 中按钮"
             },
             {
               "value": "m-button--large",
-              "label": "Button large"
+              "label": "Button large 大按钮"
             }
           ],
           "default": ""
@@ -1571,7 +1571,7 @@
   ],
   "presets": [
     {
-      "name": "Image with slider 1",
+      "name": "Image with slider 1 图片幻灯片1",
       "blocks": [
         {
           "type": "item_slide"
@@ -1585,7 +1585,7 @@
       ]
     },
     {
-      "name": "Image with slider 2",
+      "name": "Image with slider 2 图片幻灯片2",
       "settings": {
         "layout": "layout-2"
       },

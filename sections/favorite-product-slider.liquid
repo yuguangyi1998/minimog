@@ -250,138 +250,138 @@
 
 {% schema %}
 {
-  "name": "Favorite product slider",
+  "name": "最爱产品幻灯片",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
   "settings": [
     {
       "type": "header",
-      "content": "General"
+      "content": "通用"
     },
     {
       "type": "select",
       "id": "container",
-      "label": "Container type",
+      "label": "容器类型",
       "default": "container-fluid",
       "options": [
         {
           "value": "container-fluid",
-          "label": "Default"
+          "label": "默认"
         },
         {
           "value": "w-full",
-          "label": "Full width"
+          "label": "撑满宽度"
         },
         {
           "value": "container",
-          "label": "Use container box"
+          "label": "使用当前区域"
         }
       ]
     },
     {
       "type": "color_scheme",
       "id": "color_scheme",
-      "label": "Color scheme"
+      "label": "颜色方案"
     },
     {
       "type": "header",
-      "content": "Product information"
+      "content": "Product information 产品信息"
     },
     {
       "type": "product",
       "id": "featured_product",
-      "label": "Product"
+      "label": "Product 产品"
     },
     {
       "type": "text",
       "id": "heading",
-      "label": "Custom title",
+      "label": "Custom title 自定义标题",
       "default": "Example product title",
       "info": "Leave blank to display product title"
     },
     {
       "type": "text",
       "id": "subheading",
-      "label": "Subtitle"
+      "label": "Subtitle 副标题"
     },
     {
       "type": "textarea",
       "id": "description",
-      "label": "Description",
+      "label": "描述",
       "default": "Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store."
     },
     {
       "type": "select",
       "id": "header_alignment",
-      "label": "Text alignment",
+      "label": "文本对齐",
       "default": "center",
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "左"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "中"
         }
       ]
     },
     {
       "type": "select",
       "id": "text_color",
-      "label": "Text color",
+      "label": "文本颜色",
       "default": "inherit",
       "options": [
         {
           "value": "white",
-          "label": "Light"
+          "label": "浅色"
         },
         {
           "value": "black",
-          "label": "Dark"
+          "label": "暗色",
         },
         {
           "value": "inherit",
-          "label": "Inherit"
+          "label": "继承",
         }
       ]
     },
     {
       "type": "header",
-      "content": "Button settings"
+      "content": "Button settings 按钮设置"
     },
     {
       "type": "text",
       "id": "button_label",
-      "label": "Button label",
+      "label": "按钮标签",
       "default": "Shop now"
     },
     {
       "type": "url",
       "id": "button_link",
-      "label": "Button link"
+      "label": "按钮链接"
     },
     {
       "type": "select",
       "id": "button_style",
-      "label": "Button style",
+      "label": "按钮风格",
       "options": [
         {
           "value": "m-button--primary",
-          "label": "Primary button"
+          "label": "主题按钮"
         },
         {
           "value": "m-button--secondary",
-          "label": "Secondary button"
+          "label": "次要按钮"
         },
         {
           "value": "m-button--white",
-          "label": "White button"
+          "label": "白色按钮"
         },
         {
           "value": "m-button--link",
-          "label": "Underline button"
+          "label": "下划线按钮"
         }
       ],
       "default": "m-button--secondary"
@@ -389,31 +389,31 @@
     {
       "type": "select",
       "id": "button_size",
-      "label": "Button size",
+      "label": "按钮大小",
       "options": [
         {
           "value": "m-button--small",
-          "label": "Button small"
+          "label": "小按钮"
         },
         {
           "value": "",
-          "label": "Button medium"
+          "label": "中按钮"
         },
         {
           "value": "m-button--large",
-          "label": "Button large"
+          "label": "大按钮"
         }
       ],
       "default": ""
     },
     {
       "type": "header",
-      "content": "Section Padding"
+      "content": "段落内边距 段落内边距"
     },
     {
       "type": "range",
       "id": "padding_top",
-      "label": "Padding Top",
+      "label": "上内边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -423,7 +423,7 @@
     {
       "type": "range",
       "id": "padding_bottom",
-      "label": "Padding Bottom",
+      "label": "下内边距",
       "default": 50,
       "min": 0,
       "max": 100,
@@ -432,34 +432,34 @@
     },
     {
       "type": "header",
-      "content": "Custom Attributes"
+      "content": "自定义属性 自定义属性"
     },
     {
       "type": "text",
       "id": "custom_class",
-      "label": "Custom classes"
+      "label": "自定义类"
     },
     {
       "type": "header",
-      "content": "Animations"
+      "content": "动画 动画"
     },
     {
       "type": "select",
       "id": "animations",
-      "label": "Visible in the view animation",
+      "label": "在视图中可见的动画 在视图中可见的动画",
       "default": "inherit",
       "options": [
-        { "value": "inherit", "label": "Inherit global setting" },
-        { "value": "fade-in", "label": "Fade in" },
-        { "value": "fade-in-up", "label": "Fade in up" },
-        { "value": "fade-in-left", "label": "Fade in left" },
-        { "value": "fade-in-right", "label": "Fade in right" }
+        { "value": "inherit", "label": "继承全局设置", },
+        { "value": "fade-in", "label": "淡入", },
+        { "value": "fade-in-up", "label": "淡入向上", },
+        { "value": "fade-in-left", "label": "淡入向左", },
+        { "value": "fade-in-right", "label": "淡入向右", }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Favorite product slider"
+      "name": "Favorite product slider 最爱产品幻灯片"
     }
   ]
 }

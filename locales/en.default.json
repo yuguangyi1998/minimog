@@ -12,7 +12,9 @@
         "new_window": "Opens in a new window."
       },
       "close_header": "Close header",
-      "close": "Close"
+      "close": "Close",
+      "view_more": "View more",
+      "view_less": "View less"
     },
     "meta": {
       "tags": "Tagged \"{{ tags }}\"",
@@ -150,6 +152,9 @@
       "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
       "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
       "enter_discount_code": "Enter discount code here",
+      "remove_discount": "Remove {{ code }}",
+      "discount_duplicate_error_message": "The discount code has already been applied to your cart.",
+      "discount_apply_error_message": "The discount code cannot be applied to your cart.",
       "checkout": "Check out",
       "viewcart": "View Cart",
       "empty": "Your cart is currently empty.",

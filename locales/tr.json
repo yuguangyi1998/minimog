@@ -12,7 +12,9 @@
         "new_window": "Yeni bir pencerede açılır."
       },
       "close_header": "Başlığı kapat",
-      "close": "Kapalı"
+      "close": "Kapalı",
+      "view_more": "Daha fazla göster",
+      "view_less": "Daha az göster"
     },
     "meta": {
       "tags": "\"{{ tags }}\" ile etiketlendi",
@@ -150,6 +152,9 @@
       "taxes_included_but_shipping_at_checkout": "Vergi dahildir ve gönderim bedeli ödeme sırasında hesaplanır",
       "taxes_included_and_shipping_policy_html": "Vergi dahil. <a href=\"{{ link }}\">Gönderim bedeli</a> ödeme sırasında hesaplanır.",
       "enter_discount_code": "İndirim kodunu buraya girin",
+      "remove_discount": "{{ code }} kaldır",
+      "discount_duplicate_error_message": "İndirim kodu sepetinize zaten uygulanmıştır.",
+      "discount_apply_error_message": "İndirim kodu sepetinize uygulanamaz.",
       "checkout": "Çıkış yapmak",
       "viewcart": "Sepeti Görüntüle",
       "empty": "Sepetiniz şu anda boş.",

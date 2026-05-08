@@ -12,7 +12,9 @@
         "new_window": "Avautuu uuteen ikkunaan."
       },
       "close_header": "Sulje otsikko",
-      "close": "kiinni"
+      "close": "kiinni",
+      "view_more": "Näytä lisää",
+      "view_less": "Näytä vähemmän"
     },
     "meta": {
       "tags": "Tunnisteella \"{{ tags }}\"",
@@ -150,6 +152,9 @@
       "taxes_included_but_shipping_at_checkout": "Sisältää verot ja toimituskulut lasketaan kassalla",
       "taxes_included_and_shipping_policy_html": "Sisältäen verot. <a href=\"{{ link }}\">Toimituskulut</a> lasketaan kassalla.",
       "enter_discount_code": "Syötä alennuskoodi tähän",
+      "remove_discount": "Poista {{ code }}",
+      "discount_duplicate_error_message": "Alennuskoodia on jo sovellettu ostoskoriin.",
+      "discount_apply_error_message": "Alennuskoodia ei voida soveltaa ostoskoriin.",
       "checkout": "Tarkista",
       "viewcart": "Katso ostoskoria",
       "empty": "Ostoskorisi on tyhjä.",

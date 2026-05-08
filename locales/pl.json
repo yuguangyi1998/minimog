@@ -12,7 +12,9 @@
         "new_window": "Otwiera się w nowym oknie."
       },
       "close_header": "Zamknij nagłówek",
-      "close": "Zamknąć"
+      "close": "Zamknąć",
+      "view_more": "Zobacz więcej",
+      "view_less": "Zobacz mniej"
     },
     "meta": {
       "tags": "Oznaczony tagiem „{{ tags }}”",
@@ -150,6 +152,9 @@
       "taxes_included_but_shipping_at_checkout": "Podatek jest wliczony w cenę, a wysyłka obliczana przy kasie",
       "taxes_included_and_shipping_policy_html": "Z wliczonym podatkiem. <a href=\"{{ link }}\">Wysyłka</a> obliczana przy kasie.",
       "enter_discount_code": "Wpisz tutaj kod rabatowy",
+      "remove_discount": "Usuń {{ code }}",
+      "discount_duplicate_error_message": "Kod dyskontowy został już zastosowany do twojego koszyka.",
+      "discount_apply_error_message": "Kod dyskontowy nie można zastosować do twojego koszyka.",
       "checkout": "Wymeldować się",
       "viewcart": "Zobacz Koszyk",
       "empty": "Twój koszyk jest obecnie pusty.",

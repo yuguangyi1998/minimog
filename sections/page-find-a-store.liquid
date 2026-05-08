@@ -75,36 +75,36 @@
 </section>
 {% schema %}
 {
-  "name": "Find a store",
+  "name": "Find a store 查找店铺",
   "settings": [
     {
       "type": "header",
-      "content": "General"
+      "content": "通用"
     },
     {
       "type": "select",
       "id": "container",
-      "label": "Container type",
+      "label": "容器类型",
       "default": "container-fluid",
       "options": [
         {
           "value": "container-fluid",
-          "label": "Default"
+          "label": "默认"
         },
         {
           "value": "w-full",
-          "label": "Full width"
+          "label": "撑满宽度"
         },
         {
           "value": "container",
-          "label": "Use container box"
+          "label": "使用当前区域"
         }
       ]
     },
     {
       "type": "range",
       "id": "gap",
-      "label": "Column gap",
+      "label": "列间距",
       "default": 40,
       "min": 0,
       "max": 200,
@@ -113,12 +113,12 @@
     },
     {
       "type": "header",
-      "content": "Mobile Settings"
+      "content": "移动端设置"
     },
     {
       "type": "range",
       "id": "gap_mobile",
-      "label": "Column gap",
+      "label": "列间距",
       "default": 0,
       "min": 0,
       "max": 50,
@@ -130,21 +130,21 @@
   "blocks": [
     {
       "type": "image",
-      "name": "Image",
+      "name": "Image 图片",
       "settings": [
         {
           "type": "header",
-          "content": "Image settings"
+          "content": "图片设置"
         },
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image"
+          "label": "Image 图片"
         },
         {
           "type": "select",
           "id": "width",
-          "label": "Width",
+          "label": "Width 宽度",
           "default": "50%",
           "options": [
             {
@@ -183,39 +183,39 @@
         },
         {
           "type": "header",
-          "content": "Advanced"
+          "content": "高级设置"
         },
         {
           "type": "checkbox",
           "id": "enable_preload_image",
-          "label": "Enable preload image",
+          "label": "Enable preload image 启用预加载图片",
           "info": "If this section is visible when the page loads, enabling this setting can reduce LCP and may improve site speed scores."
         }
       ]
     },
     {
       "type": "content",
-      "name": "Content",
+      "name": "Content 内容",
       "settings": [
         {
           "type": "header",
-          "content": "Content settings"
+          "content": "Content settings 内容设置"
         },
         {
           "type": "text",
           "id": "heading",
-          "label": "Store title",
-          "default": "Store name"
+          "label": "Store title 店铺标题",
+          "default": "Store name 店铺名称"
         },
         {
           "type": "html",
           "id": "content",
-          "label": "Content"
+          "label": "Content 内容"
         },
         {
           "type": "select",
           "id": "width",
-          "label": "width",
+          "label": "width 宽度",
           "default": "50%",
           "options": [
             {
