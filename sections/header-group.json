@@ -38,7 +38,7 @@
       ],
       "settings": {
         "container": "container",
-        "color_scheme": "badge-sale",
+        "color_scheme": "badge-hot",
         "show_announcement": true,
         "homepage_only": true,
         "show_close": true,
@@ -78,7 +78,7 @@
       "settings": {
         "color_scheme": "",
         "color_scheme_menu": "",
-        "header_design": "logo-center-menu-left",
+        "header_design": "logo-left-menu-center",
         "container": "container-fluid",
         "sticky_header": "on_scroll_up",
         "transparent_on_top": false,
@@ -98,7 +98,7 @@
         "search": "show_icon",
         "show_account_icon": true,
         "show_cart_icon": true,
-        "show_wishlist_icon": true,
+        "show_wishlist_icon": false,
         "show_compare_icon": false,
         "show_currency_switcher": false,
         "show_country_selector": false,
