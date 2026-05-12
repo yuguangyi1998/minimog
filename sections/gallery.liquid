@@ -168,6 +168,9 @@
                 {{ 'image' | placeholder_svg_tag: 'm-placeholder-svg m:w-full m:h-full m:object-cover' }}
               {% endif %}
             </div>
+            {%- if block.settings.title != blank -%}
+              <p class="m-gallery__title">{{ block.settings.title }}</p>
+            {%- endif -%}
             {% if section.settings.icon != 'none' and block.settings.link != blank %}
               <div class="m-gallery__content">
                 <div class="m-gallery__icon">
@@ -506,6 +509,12 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "图片标题",
+          "info": "显示在图片下方"
         },
         {
           "type": "url",

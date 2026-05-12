@@ -11,20 +11,40 @@
     assign collection_title = 'Collection title'
   endif
 
+  assign button_label = block.settings.button_label
+  if button_label == blank
+    assign button_label = collection_title
+  endif
+
+  assign button_link = block.settings.button_link
+  if button_link == blank and collection != blank
+    assign button_link = collection.url
+  endif
+  if button_link == blank
+    assign button_link = '#'
+  endif
+
+  assign show_absolute_link = false
+  if block.settings.button_link != blank
+    assign show_absolute_link = true
+  elsif collection != blank
+    assign show_absolute_link = true
+  endif
+
   if block.settings.image != blank
     assign collection_image = block.settings.image
   elsif collection != blank and collection.image != blank
     assign collection_image = collection.image
   elsif collection != blank and collection.products.first and collection.products.first.images != empty
-    assign collection_image = collection.products.fisrt.featured_image
+    assign collection_image = collection.products.first.featured_image
   else
     assign collection_image = blank
   endif
 %}
 <div class="m-cascading-collection-card m-hover-box--scale-up m:relative">
-  {% if collection != blank %}
-    <a class="m-link-absolute" href="{{ collection.url }}">
-      <span class="m:sr-only">{{ collection.title }}</span>
+  {% if show_absolute_link %}
+    <a class="m-link-absolute" href="{{ button_link }}">
+      <span class="m:sr-only">{{ button_label }}</span>
     </a>
   {% endif %}
   <div class="m-cascading-collection-card__wrapper">
@@ -37,10 +57,10 @@
     </div>
     <div class="m-cascading-collection-card__content m:text-left">
       <a
-        class="m-cascading-collection-card__button m-button m-button--white"
-        href="{{ collection.url | default: "#" }}"
+        class="m-cascading-collection-card__button m-button m-button--link"
+        href="{{ button_link }}"
       >
-        {{- collection_title -}}
+        {{- button_label -}}
       </a>
     </div>
   </div>
