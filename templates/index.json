@@ -9,55 +9,6 @@
  */
 {
   "sections": {
-    "new_featured_product_VycJBY": {
-      "type": "new-featured-product",
-      "blocks": {
-        "title_Ey3FWL": {
-          "type": "title",
-          "settings": {}
-        },
-        "price_3P9iAG": {
-          "type": "price",
-          "settings": {
-            "show_saving": false,
-            "sale_badge_type": "percentage"
-          }
-        },
-        "variant_picker_xMkaTQ": {
-          "type": "variant_picker",
-          "settings": {}
-        },
-        "buy_buttons_6ie8NR": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_quantity_selector": true,
-            "show_atc_button": true,
-            "show_dynamic_checkout": true
-          }
-        }
-      },
-      "block_order": [
-        "title_Ey3FWL",
-        "price_3P9iAG",
-        "variant_picker_xMkaTQ",
-        "buy_buttons_6ie8NR"
-      ],
-      "disabled": true,
-      "name": "产品推荐",
-      "settings": {
-        "container": "container",
-        "color_scheme": "",
-        "featured_product": "",
-        "enable_variant_group_images": false,
-        "column_gap": 100,
-        "column_gap_mobile": 30,
-        "image_placement": "left",
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "custom_class": "",
-        "animations": "inherit"
-      }
-    },
     "slider_P6jYYK": {
       "type": "slider",
       "blocks": {
@@ -337,13 +288,100 @@
         "padding_bottom": 50,
         "custom_class": ""
       }
+    },
+    "featured_collection_EaGWMQ": {
+      "type": "featured-collection",
+      "name": "Featured collection 产品推荐",
+      "settings": {
+        "heading": "Featured Creations",
+        "heading_size": "h3",
+        "subheading": "SELECTED SPECIMENS",
+        "description": "",
+        "header_alignment": "center",
+        "color_scheme": "",
+        "container": "container-fluid",
+        "collection": "",
+        "enable_flashsale": false,
+        "show_countdown": false,
+        "product_to_show": 4,
+        "items_per_row": 4,
+        "item_gap": 30,
+        "pcard_layout": "",
+        "pcard_image_ratio": "",
+        "show_vendor": false,
+        "hide_title": false,
+        "enable_slider": false,
+        "show_pagination": false,
+        "show_navigation": false,
+        "show_button_on_header": false,
+        "button_type": "link",
+        "button_text": "Shop more",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "infinite_load": false,
+        "max_page_load": 3,
+        "mobile_disable_slider": false,
+        "use_scroll_mobile": true,
+        "item_gap_mobile": 16,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "collapsible_tabs_J6mdpN": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "item_eJH6Pc": {
+          "type": "item",
+          "settings": {
+            "header": "Collapsible tab heading",
+            "text_size": "h5",
+            "content": "<p>Shipping cost is based on weight. Just add products to your cart and use the Shipping Calculator to see the shipping price.</p><p>We want you to be 100% satisfied with your purchase. Items can be returned or exchanged within 30 days of delivery.</p>",
+            "content_page": "",
+            "open": false
+          }
+        },
+        "item_W9kYAP": {
+          "type": "item",
+          "settings": {
+            "header": "Collapsible tab heading",
+            "text_size": "h5",
+            "content": "<p>Shipping cost is based on weight. Just add products to your cart and use the Shipping Calculator to see the shipping price.</p><p>We want you to be 100% satisfied with your purchase. Items can be returned or exchanged within 30 days of delivery.</p>",
+            "content_page": "",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "item_eJH6Pc",
+        "item_W9kYAP"
+      ],
+      "name": "Collapsible tabs 折叠标签",
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "image_position": "left",
+        "column_gap": 100,
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h3",
+        "subheading": "CURATION &amp; CARE",
+        "description": "",
+        "header_alignment": "center",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "enable_preload_image": false,
+        "animations": "inherit",
+        "custom_class": ""
+      }
     }
   },
   "order": [
-    "new_featured_product_VycJBY",
     "slider_P6jYYK",
     "gallery_JnFmrJ",
     "image_with_text_8rYKY4",
-    "cascading_collection_FAHGeR"
+    "cascading_collection_FAHGeR",
+    "featured_collection_EaGWMQ",
+    "collapsible_tabs_J6mdpN"
   ]
 }
