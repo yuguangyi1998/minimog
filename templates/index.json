@@ -169,10 +169,100 @@
         "custom_class": "",
         "animations": "inherit"
       }
+    },
+    "gallery_JnFmrJ": {
+      "type": "gallery",
+      "blocks": {
+        "image_qTLGaz": {
+          "type": "image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "image_9rqbtc": {
+          "type": "image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "image_ryzzcX": {
+          "type": "image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "image_nrQiGW": {
+          "type": "image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "image_acB9iB": {
+          "type": "image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "image_7nLrGG": {
+          "type": "image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "image_MNREE9": {
+          "type": "image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "image_dUtLHE": {
+          "type": "image",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_qTLGaz",
+        "image_9rqbtc",
+        "image_ryzzcX",
+        "image_nrQiGW",
+        "image_acB9iB",
+        "image_7nLrGG",
+        "image_MNREE9",
+        "image_dUtLHE"
+      ],
+      "name": "Gallery images 图片画廊",
+      "settings": {
+        "heading": "Gallery images",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "m-button--primary",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "color_scheme_content": "",
+        "icon": "none",
+        "layout": "grid",
+        "grid_columns": 8,
+        "column_gap": 30,
+        "row_gap": 30,
+        "columns_mobile": "2",
+        "mobile_gap": 10,
+        "use_scroll_mobile": true,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "custom_class": "",
+        "animations": "inherit"
+      }
     }
   },
   "order": [
     "new_featured_product_VycJBY",
-    "slider_P6jYYK"
+    "slider_P6jYYK",
+    "gallery_JnFmrJ"
   ]
 }
