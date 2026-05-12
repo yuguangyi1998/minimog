@@ -234,9 +234,9 @@
       ],
       "name": "Gallery images 图片画廊",
       "settings": {
-        "heading": "Gallery images",
+        "heading": "Shop by Intention",
         "heading_size": "h3",
-        "subheading": "",
+        "subheading": "DISCOVER YOUR CRYSTAL",
         "description": "",
         "button_label": "",
         "button_link": "",
@@ -258,11 +258,92 @@
         "custom_class": "",
         "animations": "inherit"
       }
+    },
+    "image_with_text_8rYKY4": {
+      "type": "image-with-text",
+      "name": "图片文本",
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "item_gap": 100,
+        "item_gap_mobile": 30,
+        "layout": "right",
+        "image_column_size": "6",
+        "image_overlap": false,
+        "show_image_reverse": false,
+        "hover_effect": false,
+        "image_animation": "none",
+        "image": "shopify://shop_images/unnamed.png",
+        "link": "",
+        "link_2": "",
+        "second_image_offset_top": 10,
+        "title": "A Legacy Carved in Light",
+        "sub_title": "",
+        "text": "<p>Founded on the belief that nature's most profound artistry is hidden beneath its surface, Lumina Heritage has spent decades sourcing the world's most exceptional mineral specimens.</p><p>Our journey begins in the most remote corners of the globe, where we partner with ethical mines to discover crystals that possess not just clarity, but a distinct soul.</p><p>We combine traditional lapidary mastery with contemporary essentialism, refining each specimen to illuminate the modern home while preserving its primal energy.</p>",
+        "text_size": "medium",
+        "content_alignment": "left",
+        "button_label": "Shop Collection",
+        "button_link": "",
+        "button_style": "m-button--link",
+        "button_size": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "cascading_collection_FAHGeR": {
+      "type": "cascading-collection",
+      "blocks": {
+        "collection_63FyV7": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "image": "shopify://shop_images/unnamed_1.png",
+            "collection_title": "High Jewelry"
+          }
+        },
+        "collection_MdEGKk": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/screen_2.png",
+            "collection_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_63FyV7",
+        "collection_MdEGKk"
+      ],
+      "name": "Cascading collection 级联集合",
+      "settings": {
+        "color_scheme": "",
+        "container": "container-fluid",
+        "heading": "Shop by collections",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "overlay_heading": true,
+        "spacing": "medium",
+        "variance": "medium",
+        "sequence": 1,
+        "column_gap": 165,
+        "cascade_enable_parallax": true,
+        "cascade_parallax_intensity": 50,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "custom_class": ""
+      }
     }
   },
   "order": [
     "new_featured_product_VycJBY",
     "slider_P6jYYK",
-    "gallery_JnFmrJ"
+    "gallery_JnFmrJ",
+    "image_with_text_8rYKY4",
+    "cascading_collection_FAHGeR"
   ]
 }
