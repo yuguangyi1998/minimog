@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "1634178999acba9673": {
@@ -22,8 +31,7 @@
         },
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "price": {
           "type": "price",
@@ -96,7 +104,7 @@
           "type": "tab",
           "settings": {
             "header": "Shipping & Return",
-            "content": "<p>Shipping cost is based on weight. Just add products to your cart and use the Shipping Calculator to see the shipping price.<\/p><p>We want you to be 100% satisfied with your purchase. Items can be returned or exchanged within 30 days of delivery.<\/p>",
+            "content": "<p>Shipping cost is based on weight. Just add products to your cart and use the Shipping Calculator to see the shipping price.</p><p>We want you to be 100% satisfied with your purchase. Items can be returned or exchanged within 30 days of delivery.</p>",
             "content_page": ""
           }
         },
@@ -179,7 +187,7 @@
           "settings": {
             "image_by_url": "",
             "title": "Free Shipping",
-            "description": "<p>Get complimentary ground shipping on every <br\/>order.Don’t love it? Send it back, on us.<\/p>",
+            "description": "<p>Get complimentary ground shipping on every <br/>order.Don’t love it? Send it back, on us.</p>",
             "link": "",
             "button_label": "",
             "button_link": "",
@@ -192,7 +200,7 @@
           "settings": {
             "image_by_url": "",
             "title": "Earn Points",
-            "description": "<p>Join Minimog Rewards to earn gift cards<br\/>and enjoy exclusive member benefits.<\/p>",
+            "description": "<p>Join Minimog Rewards to earn gift cards<br/>and enjoy exclusive member benefits.</p>",
             "link": "",
             "button_label": "",
             "button_link": "",
@@ -205,7 +213,7 @@
           "settings": {
             "image_by_url": "",
             "title": "Money Back Gurantee",
-            "description": "<p>We believe getting dressed should be the <br\/>easiest part of your day.<\/p>",
+            "description": "<p>We believe getting dressed should be the <br/>easiest part of your day.</p>",
             "link": "",
             "button_label": "",
             "button_link": "",
@@ -220,17 +228,16 @@
         "698dfa16-43fc-4177-ade7-b973724a8e6b"
       ],
       "settings": {
+        "container": "container",
+        "color_scheme": "",
         "heading": "Why choose us?",
         "heading_size": "h3",
         "subheading": "",
         "description": "",
         "header_alignment": "center",
-        "container": "container",
-        "color_scheme": "",
         "item_per_row": 3,
         "item_gap": 30,
         "item_gap_mobile": 10,
-        "card_color_scheme": "",
         "card_style": "vertical",
         "image_max_width": "50px",
         "content_alignment": "center",
