@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "collection-header": {
@@ -16,6 +25,10 @@
         "text_color": "inherit",
         "upper_title": false,
         "show_desc": true,
+        "toggle_showmore": false,
+        "text_line_limit": "1-line",
+        "button_style": "m-button--link",
+        "button_size": "",
         "collection_all_desc": "",
         "padding_top": 0,
         "padding_bottom": 4,
@@ -96,11 +109,122 @@
         "custom_class": "",
         "animations": "inherit"
       }
+    },
+    "slider_HaUVyi": {
+      "type": "slider",
+      "blocks": {
+        "slider_item_qqWqwk": {
+          "type": "slider_item",
+          "settings": {
+            "background": "{{ collection.image }}",
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "New Collection",
+            "description": "<p>Tell your campaign through images</p>",
+            "image_link": "",
+            "button_text": "Shop now",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "second_button_text": "",
+            "second_button_link": "",
+            "second_button_style": "m-button--primary",
+            "second_button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": "",
+            "enable_preload_image": false
+          }
+        },
+        "slider_item_zaa3rF": {
+          "type": "slider_item",
+          "settings": {
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "New Collection",
+            "description": "<p>Tell your campaign through images</p>",
+            "image_link": "",
+            "button_text": "Shop now",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "second_button_text": "",
+            "second_button_link": "",
+            "second_button_style": "m-button--primary",
+            "second_button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": "",
+            "enable_preload_image": false
+          }
+        },
+        "slider_item_xTKhgA": {
+          "type": "slider_item",
+          "settings": {
+            "content_in_container": false,
+            "content_position": "center middle",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "black",
+            "subheading": "",
+            "title": "New Collection",
+            "description": "<p>Tell your campaign through images</p>",
+            "image_link": "",
+            "button_text": "Shop now",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "second_button_text": "",
+            "second_button_link": "",
+            "second_button_style": "m-button--primary",
+            "second_button_size": "",
+            "show_footer": false,
+            "footer_alignment": "end",
+            "footer_text": "New Collection",
+            "footer_button": "Shop Now",
+            "footer_link": "",
+            "enable_preload_image": false
+          }
+        }
+      },
+      "block_order": [
+        "slider_item_qqWqwk",
+        "slider_item_zaa3rF",
+        "slider_item_xTKhgA"
+      ],
+      "name": "幻灯片",
+      "settings": {
+        "container": "w-full",
+        "slideshow_height": "adapt",
+        "show_overlay": false,
+        "dots_position": "bottom",
+        "dots_color": "dark",
+        "show_dots": true,
+        "show_arrows": false,
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit"
+      }
     }
   },
   "order": [
     "collection-header",
     "main",
-    "recent-viewed"
+    "recent-viewed",
+    "slider_HaUVyi"
   ]
 }

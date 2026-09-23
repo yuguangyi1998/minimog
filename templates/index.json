@@ -15,14 +15,13 @@
         "slider_item_td7kGi": {
           "type": "slider_item",
           "settings": {
-            "background": "shopify://shop_images/screen.png",
             "content_in_container": false,
             "content_position": "center middle",
             "text_alignment": "center",
             "text_size": "medium",
             "text_color": "black",
             "subheading": "",
-            "title": "New Collection",
+            "title": "New Collection123123213123123",
             "description": "<p>Tell your campaign through images</p>",
             "image_link": "",
             "button_text": "Shop now",
@@ -44,7 +43,6 @@
         "slider_item_j8WMVi": {
           "type": "slider_item",
           "settings": {
-            "background": "shopify://shop_images/screen_1.png",
             "content_in_container": false,
             "content_position": "center middle",
             "text_alignment": "center",
@@ -73,7 +71,6 @@
         "slider_item_nEfWTm": {
           "type": "slider_item",
           "settings": {
-            "background": "shopify://shop_images/screen_2.png",
             "content_in_container": false,
             "content_position": "center middle",
             "text_alignment": "center",
@@ -127,48 +124,56 @@
         "image_qTLGaz": {
           "type": "image",
           "settings": {
+            "title": "",
             "link": ""
           }
         },
         "image_9rqbtc": {
           "type": "image",
           "settings": {
+            "title": "",
             "link": ""
           }
         },
         "image_ryzzcX": {
           "type": "image",
           "settings": {
+            "title": "",
             "link": ""
           }
         },
         "image_nrQiGW": {
           "type": "image",
           "settings": {
+            "title": "",
             "link": ""
           }
         },
         "image_acB9iB": {
           "type": "image",
           "settings": {
+            "title": "",
             "link": ""
           }
         },
         "image_7nLrGG": {
           "type": "image",
           "settings": {
+            "title": "",
             "link": ""
           }
         },
         "image_MNREE9": {
           "type": "image",
           "settings": {
+            "title": "",
             "link": ""
           }
         },
         "image_dUtLHE": {
           "type": "image",
           "settings": {
+            "title": "",
             "link": ""
           }
         }
@@ -227,7 +232,6 @@
         "show_image_reverse": false,
         "hover_effect": false,
         "image_animation": "none",
-        "image": "shopify://shop_images/unnamed.png",
         "link": "",
         "link_2": "",
         "second_image_offset_top": 10,
@@ -253,16 +257,18 @@
           "type": "collection",
           "settings": {
             "collection": "frontpage",
-            "image": "shopify://shop_images/unnamed_1.png",
-            "collection_title": "High Jewelry"
+            "collection_title": "High Jewelry",
+            "button_label": "",
+            "button_link": ""
           }
         },
         "collection_MdEGKk": {
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify://shop_images/screen_2.png",
-            "collection_title": ""
+            "collection_title": "",
+            "button_label": "",
+            "button_link": ""
           }
         }
       },
