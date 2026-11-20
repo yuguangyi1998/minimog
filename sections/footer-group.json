@@ -63,7 +63,7 @@
           "settings": {
             "title": "Our store",
             "description": "",
-            "show_email": false,
+            "show_email": true,
             "show_phone": false,
             "show_socials_link": true,
             "width": "33%",
