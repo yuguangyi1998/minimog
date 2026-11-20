@@ -157,11 +157,90 @@
         "animations": "inherit"
       }
     },
+    "collection_list_cdYfYe": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_block_QTTVjV": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "everyday-home-favorites",
+            "title": "Everyday Home Favorites",
+            "item_image": "shopify://shop_images/ChatGPT_Image_2026_9_21_16_38_46.png"
+          }
+        },
+        "collection_block_BRqUFy": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "storage",
+            "title": "Storage",
+            "item_image": "shopify://shop_images/ChatGPT_Image_2026_9_21_16_13_04.png"
+          }
+        },
+        "collection_block_6CN6Mr": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "cooling-air-care",
+            "title": "Cooling & Air Care",
+            "item_image": "shopify://shop_images/ChatGPT_Image_2026_9_21_15_53_35.png"
+          }
+        },
+        "collection_block_9PPfQU": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "home-comfort",
+            "title": "Home Comfort",
+            "item_image": "shopify://shop_images/ChatGPT_Image_2026_9_21_16_08_14.png"
+          }
+        }
+      },
+      "block_order": [
+        "collection_block_QTTVjV",
+        "collection_block_BRqUFy",
+        "collection_block_6CN6Mr",
+        "collection_block_9PPfQU"
+      ],
+      "name": "Collection list 系列列表",
+      "settings": {
+        "heading": "Shop by collections",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "m-button--primary",
+        "header_alignment": "center",
+        "color_scheme": "",
+        "container": "container-fluid",
+        "layout": "grid",
+        "expanded": true,
+        "card_style": "standard",
+        "text_alignment": "left",
+        "hover_effect": "scaling-down",
+        "show_product_count": true,
+        "count_inline_title": true,
+        "image_rounded": false,
+        "items_per_row": 4,
+        "item_gap": 30,
+        "enable_slider": false,
+        "show_pagination": false,
+        "show_navigation": false,
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "mobile_disable_slider": false,
+        "use_scroll_mobile": true,
+        "mobile_gap": 10,
+        "hidden_slide_control_mobile": false,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
     "featured_collection_EaGWMQ": {
       "type": "featured-collection",
       "name": "Featured collection 产品推荐",
       "settings": {
-        "heading": "Shop by corner of the home",
+        "heading": "Home Comfort",
         "heading_size": "h3",
         "subheading": "",
         "description": "",
@@ -389,6 +468,7 @@
   "order": [
     "slider_P6jYYK",
     "image_with_text_8rYKY4",
+    "collection_list_cdYfYe",
     "featured_collection_EaGWMQ",
     "gallery_JnFmrJ",
     "cascading_collection_FAHGeR",
