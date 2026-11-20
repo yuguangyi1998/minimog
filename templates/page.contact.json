@@ -1,20 +1,51 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "main": {
-      "type": "page-contact",
+    "image_with_text_2_fAPMdQ": {
+      "type": "image-with-text-2",
+      "name": "图片文本覆盖",
       "settings": {
-        "container": "container"
+        "color_scheme": "",
+        "container": "w-full",
+        "hero_size": "adapt",
+        "show_overlay": true,
+        "image": "shopify://shop_images/novaera-contact-hero.png",
+        "image_link": "",
+        "parallax": false,
+        "parallax_direction": "vertical",
+        "content_in_container": false,
+        "content_position": "center middle",
+        "text_alignment": "center",
+        "text_size": "medium",
+        "text_color": "white",
+        "title": "Contact Us",
+        "subtitle": "",
+        "text": "<p>Questions about a piece, an order, or how something will fit your room? We would love to hear from you.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "text_alignment_mobile": "center",
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit",
+        "enable_bg_zoom_effect": true,
+        "enable_preload_image": false
       }
     },
-    "maps": {
-      "type": "maps",
+    "main": {
+      "type": "page-contact",
+      "disabled": true,
       "settings": {
-        "container": "container",
-        "map_height": "large",
-        "textx": "40.6700",
-        "texty": "-73.9400",
-        "zoom": "11",
-        "text2": "New York"
+        "container": "container"
       }
     },
     "contact-form": {
@@ -24,14 +55,14 @@
           "type": "textblock",
           "settings": {
             "title": "Address",
-            "content": "<p>7895 Piermont Dr NE Albuquerque, NM 198866, <a href=\"#\">See Our Stores<\/a><\/p>"
+            "content": "<p>7895 Piermont Dr NE Albuquerque, NM 198866, <a href=\"#\">See Our Stores</a></p>"
           }
         },
         "text-block-2": {
           "type": "textblock",
           "settings": {
             "title": "Information",
-            "content": "<p>+391 (0)35 2568 4593<\/p><p>hello@domain.com<\/p>"
+            "content": "<p>+391 (0)35 2568 4593</p><p>hello@domain.com</p>"
           }
         },
         "text-block-3": {
@@ -44,7 +75,7 @@
           "type": "textblock",
           "settings": {
             "title": "We're Open",
-            "content": "<p>Our store has re-opened for shopping, exchanges<\/p><p>Every day 11am to 7pm<\/p>"
+            "content": "<p>Our store has re-opened for shopping, exchanges</p><p>Every day 11am to 7pm</p>"
           }
         }
       },
@@ -57,13 +88,17 @@
       "settings": {
         "container": "container",
         "title": "We would love to hear from you.",
-        "description": "<p>If you’ve got great products your making or looking to work with us then drop us a line.<\/p>"
+        "description": "<p>If you’ve got great products your making or looking to work with us then drop us a line.</p>",
+        "show_name": true,
+        "show_phone": false,
+        "show_signup_email": true,
+        "animations": "inherit"
       }
     }
   },
   "order": [
+    "image_with_text_2_fAPMdQ",
     "main",
-    "maps",
     "contact-form"
   ]
 }
