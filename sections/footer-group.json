@@ -51,7 +51,7 @@
         "49e72833-c68f-4a7b-ab64-3ef0cae99bcb": {
           "type": "menu",
           "settings": {
-            "menu": "main-menu",
+            "menu": "footer",
             "title": "Company",
             "width": "25%",
             "order_first": false,
