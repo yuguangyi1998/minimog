@@ -236,6 +236,45 @@
         "animations": "inherit"
       }
     },
+    "image_comparison_PampyC": {
+      "type": "image-comparison",
+      "blocks": {
+        "image_TBGqM6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/novaera-before-bedroom.png",
+            "heading": "Before"
+          }
+        },
+        "image_ayQLFQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/novaera-after-bedroom.png",
+            "heading": "After"
+          }
+        }
+      },
+      "block_order": [
+        "image_TBGqM6",
+        "image_ayQLFQ"
+      ],
+      "name": "前后图片滑动",
+      "settings": {
+        "container": "container-fluid",
+        "color_scheme": "",
+        "heading": "Before/after image slider",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "layout": "horizontal",
+        "image_height": "adapt",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "custom_class": "",
+        "enable_preload_image": false
+      }
+    },
     "collapsible_tabs_J6mdpN": {
       "type": "collapsible-tabs",
       "blocks": {
@@ -320,6 +359,7 @@
     "slider_P6jYYK",
     "image_with_text_8rYKY4",
     "collection_list_cdYfYe",
+    "image_comparison_PampyC",
     "collapsible_tabs_J6mdpN"
   ]
 }
