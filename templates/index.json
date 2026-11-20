@@ -275,30 +275,41 @@
         "enable_preload_image": false
       }
     },
-    "1795151091747a19b4": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_c34d493_mkaKQi": {
-          "type": "ai_gen_block_c34d493",
-          "settings": {
-            "desktop_width_percent": 100,
-            "story_image": "shopify://shop_images/novaera-evening-table.png",
-            "eyebrow": "Our story",
-            "heading": "Spaces shaped by considered living",
-            "story_text": "<p>We believe a home is built through thoughtful details, enduring materials and objects that feel personal. Discover the ideas and craft behind our collection.</p>",
-            "link_label": "Discover our story",
-            "story_link": "",
-            "background_color": "#ffffff",
-            "text_color": "#191919",
-            "accent_color": "#6b1f32"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_c34d493_mkaKQi"
-      ],
-      "settings": {}
+    "image_with_text_K6TaHK": {
+      "type": "image-with-text",
+      "name": "图片文本",
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "item_gap": 100,
+        "item_gap_mobile": 30,
+        "layout": "right",
+        "image_column_size": "6",
+        "image_overlap": false,
+        "show_image_reverse": false,
+        "hover_effect": false,
+        "image_animation": "none",
+        "image": "shopify://shop_images/novaera-evening-table.png",
+        "link": "",
+        "link_2": "",
+        "second_image_offset_top": 10,
+        "title": "Spaces shaped by considered living",
+        "sub_title": "Our story",
+        "text": "<p>We believe a home is built through thoughtful details, enduring materials and objects that feel personal. Discover the ideas and craft behind our collection.</p>",
+        "text_size": "medium",
+        "content_alignment": "left",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "m-button--link",
+        "button_size": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "custom_class": "",
+        "animations": "inherit"
+      }
     },
     "collapsible_tabs_J6mdpN": {
       "type": "collapsible-tabs",
@@ -385,7 +396,7 @@
     "image_with_text_8rYKY4",
     "collection_list_cdYfYe",
     "image_comparison_PampyC",
-    "1795151091747a19b4",
+    "image_with_text_K6TaHK",
     "collapsible_tabs_J6mdpN"
   ]
 }
