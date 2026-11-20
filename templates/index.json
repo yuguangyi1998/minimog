@@ -19,7 +19,7 @@
             "content_in_container": false,
             "content_position": "center middle",
             "text_alignment": "center",
-            "text_size": "medium",
+            "text_size": "large",
             "text_color": "black",
             "subheading": "",
             "title": "Make yourself at home.",
@@ -28,7 +28,7 @@
             "button_text": "Shop home comfort",
             "button_link": "",
             "button_style": "m-button--primary",
-            "button_size": "",
+            "button_size": "m-button--large",
             "second_button_text": "",
             "second_button_link": "",
             "second_button_style": "m-button--primary",
@@ -288,9 +288,9 @@
             "story_text": "<p>We believe a home is built through thoughtful details, enduring materials and objects that feel personal. Discover the ideas and craft behind our collection.</p>",
             "link_label": "Discover our story",
             "story_link": "",
-            "background_color": "#FFFFFF",
+            "background_color": "#ffffff",
             "text_color": "#191919",
-            "accent_color": "#6B1F32"
+            "accent_color": "#6b1f32"
           },
           "blocks": {}
         }
