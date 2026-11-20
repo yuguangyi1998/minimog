@@ -15,13 +15,14 @@
         "slider_item_td7kGi": {
           "type": "slider_item",
           "settings": {
+            "background": "shopify://shop_images/novaera-living-room-hero.png",
             "content_in_container": false,
             "content_position": "center middle",
             "text_alignment": "center",
             "text_size": "medium",
             "text_color": "black",
             "subheading": "",
-            "title": "New Collection123123213123123",
+            "title": "Make yourself at home.",
             "description": "<p>Tell your campaign through images</p>",
             "image_link": "",
             "button_text": "Shop now",
@@ -42,6 +43,7 @@
         },
         "slider_item_j8WMVi": {
           "type": "slider_item",
+          "disabled": true,
           "settings": {
             "content_in_container": false,
             "content_position": "center middle",
@@ -70,6 +72,7 @@
         },
         "slider_item_nEfWTm": {
           "type": "slider_item",
+          "disabled": true,
           "settings": {
             "content_in_container": false,
             "content_position": "center middle",
