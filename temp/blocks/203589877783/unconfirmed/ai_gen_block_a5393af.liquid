@@ -1,6 +1,97 @@
+{% doc %}
+  @prompt
+    添加一个用户故事板块
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-story-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 52px 24px;
+    background: {{ block.settings.background_color }};
+    color: {{ block.settings.text_color }};
+  }
+  .ai-story-{{ ai_gen_id }}__inner { max-width: 1160px; margin: 0 auto; }
+  .ai-story-{{ ai_gen_id }}__heading { margin: 0 0 12px; color: {{ block.settings.text_color }}; font-size: clamp(26px, 3vw, 40px); line-height: 1.2; text-align: center; }
+  .ai-story-{{ ai_gen_id }}__intro { max-width: 680px; margin: 0 auto 34px; color: {{ block.settings.text_color }}; opacity: .8; line-height: 1.65; text-align: center; }
+  .ai-story-{{ ai_gen_id }}__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+  .ai-story-{{ ai_gen_id }}__card { min-width: 0; text-align: center; }
+  .ai-story-{{ ai_gen_id }}__image { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+  .ai-story-{{ ai_gen_id }}__placeholder { width: 100%; aspect-ratio: 4 / 5; background: #f3f1ef; overflow: hidden; }
+  .ai-story-{{ ai_gen_id }}__placeholder svg { width: 100%; height: 100%; object-fit: cover; }
+  .ai-story-{{ ai_gen_id }}__quote { margin: 20px 0 12px; font-size: 16px; line-height: 1.7; }
+  .ai-story-{{ ai_gen_id }}__name { margin: 0; color: {{ block.settings.text_color }}; font-size: 14px; font-weight: 600; letter-spacing: .04em; }
+  .ai-story-{{ ai_gen_id }}__detail { margin: 5px 0 0; color: {{ block.settings.text_color }}; opacity: .72; font-size: 13px; }
+  @media screen and (max-width: 749px) {
+    .ai-story-{{ ai_gen_id }} { padding: 38px 18px; }
+    .ai-story-{{ ai_gen_id }}__grid { grid-template-columns: 1fr; gap: 32px; }
+    .ai-story-{{ ai_gen_id }}__card { max-width: 460px; width: 100%; margin: 0 auto; }
+  }
+{% endstyle %}
+
+<div class="ai-story-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-story-{{ ai_gen_id }}__inner">
+    {% if block.settings.heading != blank %}<h2 class="ai-story-{{ ai_gen_id }}__heading">{{ block.settings.heading | escape }}</h2>{% endif %}
+    {% if block.settings.intro != blank %}<div class="ai-story-{{ ai_gen_id }}__intro">{{ block.settings.intro }}</div>{% endif %}
+    <div class="ai-story-{{ ai_gen_id }}__grid">
+      {% for i in (1..3) %}
+        {% liquid
+          assign image_key = 'story_' | append: i | append: '_image'
+          assign quote_key = 'story_' | append: i | append: '_quote'
+          assign name_key = 'story_' | append: i | append: '_name'
+          assign detail_key = 'story_' | append: i | append: '_detail'
+          assign story_image = block.settings[image_key]
+          assign story_quote = block.settings[quote_key]
+          assign story_name = block.settings[name_key]
+          assign story_detail = block.settings[detail_key]
+        %}
+        {% if story_quote != blank or story_name != blank or story_image != blank %}
+          <article class="ai-story-{{ ai_gen_id }}__card">
+            {% if story_image != blank %}
+              <img class="ai-story-{{ ai_gen_id }}__image" src="{{ story_image | image_url: width: 900 }}" alt="{{ story_image.alt | escape }}" loading="lazy" width="{{ story_image.width }}" height="{{ story_image.height }}">
+            {% else %}
+              <div class="ai-story-{{ ai_gen_id }}__placeholder">{{ 'image' | placeholder_svg_tag }}</div>
+            {% endif %}
+            {% if story_quote != blank %}<blockquote class="ai-story-{{ ai_gen_id }}__quote">“{{ story_quote | escape }}”</blockquote>{% endif %}
+            {% if story_name != blank %}<p class="ai-story-{{ ai_gen_id }}__name">{{ story_name | escape }}</p>{% endif %}
+            {% if story_detail != blank %}<p class="ai-story-{{ ai_gen_id }}__detail">{{ story_detail | escape }}</p>{% endif %}
+          </article>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "用户故事",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "标题", "default": "Stories from our community" },
+    { "type": "richtext", "id": "intro", "label": "引言", "default": "<p>Thoughtful pieces, made part of everyday life.</p>" },
+    { "type": "range", "id": "desktop_width_percent", "label": "桌面宽度", "min": 50, "max": 100, "step": 5, "unit": "%", "default": 100 },
+    { "type": "color", "id": "background_color", "label": "背景", "default": "#FFFFFF" },
+    { "type": "color", "id": "text_color", "label": "文字", "default": "#222222" },
+    { "type": "header", "content": "故事 1" },
+    { "type": "image_picker", "id": "story_1_image", "label": "照片" },
+    { "type": "textarea", "id": "story_1_quote", "label": "故事内容", "default": "A calm, considered detail that brings the whole room together." },
+    { "type": "text", "id": "story_1_name", "label": "姓名", "default": "A customer" },
+    { "type": "text", "id": "story_1_detail", "label": "补充说明", "default": "Novaera community" },
+    { "type": "header", "content": "故事 2" },
+    { "type": "image_picker", "id": "story_2_image", "label": "照片" },
+    { "type": "textarea", "id": "story_2_quote", "label": "故事内容", "default": "Beautifully made, with a timeless feel that suits our home." },
+    { "type": "text", "id": "story_2_name", "label": "姓名", "default": "A customer" },
+    { "type": "text", "id": "story_2_detail", "label": "补充说明", "default": "Novaera community" },
+    { "type": "header", "content": "故事 3" },
+    { "type": "image_picker", "id": "story_3_image", "label": "照片" },
+    { "type": "textarea", "id": "story_3_quote", "label": "故事内容", "default": "A piece we reach for every day, and still love looking at." },
+    { "type": "text", "id": "story_3_name", "label": "姓名", "default": "A customer" },
+    { "type": "text", "id": "story_3_detail", "label": "补充说明", "default": "Novaera community" }
+  ],
+  "presets": [{ "name": "用户故事" }],
+  "tag": null,
+  "class": "user-story-block"
+}
 {% endschema %}
