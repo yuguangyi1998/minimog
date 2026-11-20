@@ -236,197 +236,15 @@
         "animations": "inherit"
       }
     },
-    "featured_collection_EaGWMQ": {
-      "type": "featured-collection",
-      "name": "Featured collection 产品推荐",
-      "settings": {
-        "heading": "Home Comfort",
-        "heading_size": "h3",
-        "subheading": "",
-        "description": "",
-        "header_alignment": "center",
-        "color_scheme": "",
-        "container": "container-fluid",
-        "collection": "cooling-air-care",
-        "enable_flashsale": false,
-        "show_countdown": false,
-        "product_to_show": 4,
-        "items_per_row": 4,
-        "item_gap": 30,
-        "pcard_layout": "",
-        "pcard_image_ratio": "",
-        "show_vendor": false,
-        "hide_title": false,
-        "enable_slider": false,
-        "show_pagination": false,
-        "show_navigation": false,
-        "show_button_on_header": false,
-        "button_type": "link",
-        "button_text": "Shop more",
-        "button_style": "m-button--primary",
-        "button_size": "",
-        "infinite_load": false,
-        "max_page_load": 3,
-        "mobile_disable_slider": false,
-        "use_scroll_mobile": true,
-        "item_gap_mobile": 16,
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "custom_class": "",
-        "animations": "inherit"
-      }
-    },
-    "gallery_JnFmrJ": {
-      "type": "gallery",
-      "blocks": {
-        "image_qTLGaz": {
-          "type": "image",
-          "settings": {
-            "title": "",
-            "link": ""
-          }
-        },
-        "image_9rqbtc": {
-          "type": "image",
-          "settings": {
-            "title": "",
-            "link": ""
-          }
-        },
-        "image_ryzzcX": {
-          "type": "image",
-          "settings": {
-            "title": "",
-            "link": ""
-          }
-        },
-        "image_nrQiGW": {
-          "type": "image",
-          "settings": {
-            "title": "",
-            "link": ""
-          }
-        },
-        "image_acB9iB": {
-          "type": "image",
-          "settings": {
-            "title": "",
-            "link": ""
-          }
-        },
-        "image_7nLrGG": {
-          "type": "image",
-          "settings": {
-            "title": "",
-            "link": ""
-          }
-        },
-        "image_MNREE9": {
-          "type": "image",
-          "settings": {
-            "title": "",
-            "link": ""
-          }
-        },
-        "image_dUtLHE": {
-          "type": "image",
-          "settings": {
-            "title": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_qTLGaz",
-        "image_9rqbtc",
-        "image_ryzzcX",
-        "image_nrQiGW",
-        "image_acB9iB",
-        "image_7nLrGG",
-        "image_MNREE9",
-        "image_dUtLHE"
-      ],
-      "name": "Gallery images 图片画廊",
-      "settings": {
-        "heading": "Shop by Intention",
-        "heading_size": "h3",
-        "subheading": "DISCOVER YOUR CRYSTAL",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "m-button--primary",
-        "header_alignment": "center",
-        "container": "container-fluid",
-        "color_scheme": "",
-        "color_scheme_content": "",
-        "icon": "none",
-        "layout": "grid",
-        "grid_columns": 8,
-        "column_gap": 30,
-        "row_gap": 30,
-        "columns_mobile": "2",
-        "mobile_gap": 10,
-        "use_scroll_mobile": true,
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "custom_class": "",
-        "animations": "inherit"
-      }
-    },
-    "cascading_collection_FAHGeR": {
-      "type": "cascading-collection",
-      "blocks": {
-        "collection_63FyV7": {
-          "type": "collection",
-          "settings": {
-            "collection": "frontpage",
-            "collection_title": "High Jewelry",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "collection_MdEGKk": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "collection_title": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection_63FyV7",
-        "collection_MdEGKk"
-      ],
-      "name": "Cascading collection 级联集合",
-      "settings": {
-        "color_scheme": "",
-        "container": "container-fluid",
-        "heading": "Shop by collections",
-        "heading_size": "h1",
-        "heading_alignment": "left",
-        "overlay_heading": true,
-        "spacing": "medium",
-        "variance": "medium",
-        "sequence": 1,
-        "column_gap": 165,
-        "cascade_enable_parallax": true,
-        "cascade_parallax_intensity": 50,
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "custom_class": ""
-      }
-    },
     "collapsible_tabs_J6mdpN": {
       "type": "collapsible-tabs",
       "blocks": {
         "item_eJH6Pc": {
           "type": "item",
           "settings": {
-            "header": "Collapsible tab heading",
+            "header": "How long does delivery take?",
             "text_size": "h5",
-            "content": "<p>Shipping cost is based on weight. Just add products to your cart and use the Shipping Calculator to see the shipping price.</p><p>We want you to be 100% satisfied with your purchase. Items can be returned or exchanged within 30 days of delivery.</p>",
+            "content": "<p>Delivery times depend on where you live and the piece you order. You will see the available shipping options and estimated timing at checkout before you pay.</p>",
             "content_page": "",
             "open": false
           }
@@ -434,9 +252,39 @@
         "item_W9kYAP": {
           "type": "item",
           "settings": {
-            "header": "Collapsible tab heading",
+            "header": "Can I return an item if it does not suit my space?",
             "text_size": "h5",
-            "content": "<p>Shipping cost is based on weight. Just add products to your cart and use the Shipping Calculator to see the shipping price.</p><p>We want you to be 100% satisfied with your purchase. Items can be returned or exchanged within 30 days of delivery.</p>",
+            "content": "<p>Yes. If a piece is not right for your room, reach out to us and we will walk you through our return process. Full details are in our refund policy.</p><h3>How should I care for wood and linen pieces?</h3><p></p><h3>Do your pieces need assembly?</h3><p></p><h3>How can I get help choosing the right piece?</h3><p></p><p>Warm, unhurried pieces for the rooms you live in.</p><ul><li><a href=\"https://editor.shopifycdn.com/pages/data-sharing-opt-out\">Privacy Choices</a></li><li><a href=\"https://editor.shopifycdn.com/pages/contact\">Contact Us</a></li><li><a href=\"https://editor.shopifycdn.com/policies/contact-information\">Contact Information</a></li><li><a href=\"https://editor.shopifycdn.com/policies/legal-notice\">Legal Notice</a></li><li><a href=\"https://editor.shopifycdn.com/policies/privacy-policy\">Privacy Policy</a></li></ul><p>© 2026 Novaera</p><ul><li><a href=\"https://editor.shopifycdn.com/policies/privacy-policy\">Privacy policy</a></li><li><a href=\"https://editor.shopifycdn.com/policies/refund-policy\">Refund policy</a></li><li><a href=\"https://editor.shopifycdn.com/policies/terms-of-service\">Terms of service</a></li><li><a href=\"https://editor.shopifycdn.com/policies/shipping-policy\">Shipping policy</a></li><li><a href=\"https://editor.shopifycdn.com/policies/contact-information\">Contact information</a></li><li><a href=\"https://editor.shopifycdn.com/policies/legal-notice\">Legal notice</a></li></ul><p><a href=\"https://www.shopify.com/?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore\" target=\"_blank\">Powered by Shopify</a></p><p>容器</p>",
+            "content_page": "",
+            "open": false
+          }
+        },
+        "item_WQkNze": {
+          "type": "item",
+          "settings": {
+            "header": "How should I care for wood and linen pieces?",
+            "text_size": "h5",
+            "content": "<p>Dust wood surfaces with a soft dry cloth and keep them out of direct, harsh sunlight. Spot-clean linen gently with mild soap and cool water, and check each product page for specific care notes.</p>",
+            "content_page": "",
+            "open": false
+          }
+        },
+        "item_8qLPrx": {
+          "type": "item",
+          "settings": {
+            "header": "Do your pieces need assembly?",
+            "text_size": "h5",
+            "content": "<p>Some pieces arrive ready to use, while larger items may need simple assembly. Each product page lists what to expect.</p>",
+            "content_page": "",
+            "open": false
+          }
+        },
+        "item_f7QrVa": {
+          "type": "item",
+          "settings": {
+            "header": "How can I get help choosing the right piece?",
+            "text_size": "h5",
+            "content": "<p>Send us a message with your room size and style, and we will happily suggest pieces that fit.</p>",
             "content_page": "",
             "open": false
           }
@@ -444,7 +292,10 @@
       },
       "block_order": [
         "item_eJH6Pc",
-        "item_W9kYAP"
+        "item_W9kYAP",
+        "item_WQkNze",
+        "item_8qLPrx",
+        "item_f7QrVa"
       ],
       "name": "Collapsible tabs 折叠标签",
       "settings": {
@@ -452,10 +303,10 @@
         "color_scheme": "",
         "image_position": "left",
         "column_gap": 100,
-        "heading": "Frequently Asked Questions",
+        "heading": "Questions, answered",
         "heading_size": "h3",
-        "subheading": "CURATION &amp; CARE",
-        "description": "",
+        "subheading": "",
+        "description": "Everything you might want to know before bringing a new piece home.",
         "header_alignment": "center",
         "padding_top": 50,
         "padding_bottom": 50,
@@ -469,9 +320,6 @@
     "slider_P6jYYK",
     "image_with_text_8rYKY4",
     "collection_list_cdYfYe",
-    "featured_collection_EaGWMQ",
-    "gallery_JnFmrJ",
-    "cascading_collection_FAHGeR",
     "collapsible_tabs_J6mdpN"
   ]
 }
