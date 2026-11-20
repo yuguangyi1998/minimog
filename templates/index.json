@@ -216,7 +216,7 @@
         "card_style": "standard",
         "text_alignment": "left",
         "hover_effect": "scaling-down",
-        "show_product_count": true,
+        "show_product_count": false,
         "count_inline_title": true,
         "image_rounded": false,
         "items_per_row": 4,
@@ -274,6 +274,31 @@
         "custom_class": "",
         "enable_preload_image": false
       }
+    },
+    "1795151091747a19b4": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c34d493_mkaKQi": {
+          "type": "ai_gen_block_c34d493",
+          "settings": {
+            "desktop_width_percent": 100,
+            "story_image": "shopify://shop_images/novaera-evening-table.png",
+            "eyebrow": "Our story",
+            "heading": "Spaces shaped by considered living",
+            "story_text": "<p>We believe a home is built through thoughtful details, enduring materials and objects that feel personal. Discover the ideas and craft behind our collection.</p>",
+            "link_label": "Discover our story",
+            "story_link": "",
+            "background_color": "#FFFFFF",
+            "text_color": "#191919",
+            "accent_color": "#6B1F32"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c34d493_mkaKQi"
+      ],
+      "settings": {}
     },
     "collapsible_tabs_J6mdpN": {
       "type": "collapsible-tabs",
@@ -353,31 +378,6 @@
         "animations": "inherit",
         "custom_class": ""
       }
-    },
-    "1795151091747a19b4": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_c34d493_mkaKQi": {
-          "type": "ai_gen_block_c34d493",
-          "settings": {
-            "desktop_width_percent": 100,
-            "story_image": "shopify://shop_images/novaera-evening-table.png",
-            "eyebrow": "Our story",
-            "heading": "Spaces shaped by considered living",
-            "story_text": "<p>We believe a home is built through thoughtful details, enduring materials and objects that feel personal. Discover the ideas and craft behind our collection.</p>",
-            "link_label": "Discover our story",
-            "story_link": "",
-            "background_color": "#FFFFFF",
-            "text_color": "#191919",
-            "accent_color": "#6B1F32"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_c34d493_mkaKQi"
-      ],
-      "settings": {}
     }
   },
   "order": [
